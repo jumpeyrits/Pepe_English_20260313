@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>The Executive's Trainer v3</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f8f9fa; margin: 0; color: #333; }
+        .container { background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); padding: 40px; width: 90%; max-width: 700px; text-align: center; }
+        .hidden { display: none !important; }
+        
+        /* Setup Screen */
+        h2 { color: #2c3e50; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .setup-group { margin-bottom: 25px; text-align: left; }
+        .setup-group label { display: block; margin: 8px 0; font-size: 1.1em; cursor: pointer; }
+        button.start-btn { width: 100%; font-size: 1.3em; padding: 15px; background-color: #27ae60; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+        button.start-btn:hover { background-color: #219653; }
+
+        /* Training Screen */
+        .sentence { font-size: 1.8em; font-weight: bold; margin-bottom: 15px; line-height: 1.4; color: #1a252f; }
+        .translation { font-size: 1.4em; color: #e74c3c; margin-bottom: 20px; font-weight: bold; }
+        .explanation { font-size: 1.1em; color: #555; line-height: 1.6; border-top: 1px solid #eee; padding-top: 20px; }
+        .controls { margin-top: 40px; display: flex; gap: 20px; justify-content: center; }
+        button.action-btn { font-size: 1.2em; padding: 15px 30px; cursor: pointer; border: none; border-radius: 5px; background-color: #2c3e50; color: white; font-weight: bold; flex: 1; }
+        button.action-btn:hover { background-color: #1a252f; }
+        button.action-btn:disabled { background-color: #bdc3c7; cursor: not-allowed; }
+        #status-text { font-size: 1.2em; color: #7f8c8d; font-style: italic; min-height: 200px; display: flex; align-items: center; justify-content: center; }
+    </style>
+</head>
+<body>
+
+<div id="setup-screen" class="container">
+    <h2>Training Setup</h2>
+    
+    <div class="setup-group">
+        <h3>1. モード選択</h3>
+        <label><input type="radio" name="mode" value="reproduction" checked> リプロダクション (英音を聞いて復唱)</label>
+        <label><input type="radio" name="mode" value="composition"> 英作文 (日音を聞いて英訳)</label>
+    </div>
+
+    <div class="setup-group">
+        <h3>2. カテゴリ選択</h3>
+        <label><input type="checkbox" class="category-cb" value="会話フレーズ" checked> 会話フレーズ</label>
+        <label><input type="checkbox" class="category-cb" value="ヨット" checked> ヨット</label>
+        <label><input type="checkbox" class="category-cb" value="会計" checked> 会計</label>
+        <label><input type="checkbox" class="category-cb" value="一般その他" checked> 一般その他</label>
+    </div>
+
+    <button id="btn-start" class="start-btn">訓練開始</button>
+</div>
+
+<div id="training-screen" class="container hidden">
+    <div id="status-text">「開始 / 次に進む」をクリックしてください</div>
+    
+    <div id="text-container" class="hidden">
+        <div class="sentence" id="sentence-display"></div>
+        <div class="translation" id="translation-display"></div>
+        <div class="explanation" id="explanation-display"></div>
+    </div>
+
+    <div class="controls">
+        <button id="btn-repeat" class="action-btn" disabled>もう一度</button>
+        <button id="btn-next" class="action-btn">開始 / 次に進む</button>
+    </div>
+</div>
+
+<script>
+    // 【問題ストック】カテゴリ別に整理（日本語訳 translation を追加）
+    const database = {
+        "会話フレーズ": [
+            {
+                sentence: "We need to pressure-test these phrases in a live dialogue.",
+                translation: "これらのフレーズを実際の対話でプレッシャーテスト（実戦配備）する必要があります。",
+                word: "pressure-test",
+                explanation: "【動詞】（実戦などの）厳しい状況でテストする。"
+            },
+            {
+                sentence: "Let's pivot to a healthier alternative.",
+                translation: "より健康的な選択肢へ方向転換しましょう。",
+                word: "pivot to",
+                explanation: "【群動詞】～へ方向転換する。"
+            }
+        ],
+        "ヨット": [
+            {
+                sentence: "Make sure to trim the sails according to the wind direction.",
+                translation: "風向きに合わせてセールを確実にトリム（調整）してください。",
+                word: "trim the sails",
+                explanation: "【フレーズ】帆を調整する。状況に合わせて微調整を行う比喩としても使える。"
+            }
+        ],
+        "会計": [
+            {
+                sentence: "This late adjustment invalidates the early-bird discount.",
+                translation: "この直前の変更により、早期割引は無効となります。",
+                word: "invalidate",
+                explanation: "【動詞】無効にする、効力を失わせる。"
+            }
+        ],
+        "一般その他": [
+            {
+                sentence: "I want to make sure I'm conveying my nuances carefully in my own words.",
+                translation: "自分自身の言葉で、ニュアンスを丁寧に伝えているか確認したいのです。",
+                word: "convey nuances",
+                explanation: "【フレーズ】微妙な意味合いを伝える。"
+            }
+        ]
+    };
+
+    let activeStock = [];
+    let currentItem = null;
+    let isSpeaking = false;
+    let currentMode = "reproduction";
+    let voices = [];
+
+    // DOM Elements
+    const setupScreen = document.getElementById('setup-screen');
+    const trainingScreen = document.getElementById('training-screen');
+    const btnStart = document.getElementById('btn-start');
+    const btnRepeat = document.getElementById('btn-repeat');
+    const btnNext = document.getElementById('btn-next');
+    const textContainer = document.getElementById('text-container');
+    const statusText = document.getElementById('status-text');
+
+    // 音声リストの読み込み
+    function populateVoiceList() { voices = window.speechSynthesis.getVoices(); }
+    populateVoiceList();
+    if (speechSynthesis.onvoiceschanged !== undefined) { speechSynthesis.onvoiceschanged = populateVoiceList; }
+
+    // 訓練開始ボタンの処理
+    btnStart.addEventListener('click', () => {
+        // モードの取得
+        currentMode = document.querySelector('input[name="mode"]:checked').value;
+        
+        // 選択されたカテゴリの問題を結合
+        activeStock = [];
+        document.querySelectorAll('.category-cb:checked').forEach(cb => {
+            if (database[cb.value]) {
+                activeStock = activeStock.concat(database[cb.value]);
+            }
+        });
+
+        if (activeStock.length === 0) {
+            alert("カテゴリを少なくとも1つ選択してください。");
+            return;
+        }
+
+        // 画面切り替え
+        setupScreen.classList.add('hidden');
+        trainingScreen.classList.remove('hidden');
+    });
+
+    function speakAndShow() {
+        if (isSpeaking) return;
+        isSpeaking = true;
+
+        btnRepeat.disabled = true;
+        btnNext.disabled = true;
+        textContainer.classList.add('hidden');
+        statusText.classList.remove('hidden');
+
+        let textToSpeak = "";
+        let utterance = new SpeechSynthesisUtterance();
+
+        // モードによる分岐
+        if (currentMode === "reproduction") {
+            statusText.innerText = "Listening... (English)";
+            textToSpeak = currentItem.sentence;
+            utterance.lang = 'en-US';
+            const evanVoice = voices.find(v => v.name.includes("Evan"));
+            if (evanVoice) utterance.voice = evanVoice;
+        } else {
+            statusText.innerText = "Listening... (Japanese) -> Translate to English!";
+            textToSpeak = currentItem.translation;
+            utterance.lang = 'ja-JP';
+            const kyokoVoice = voices.find(v => v.name.includes("Kyoko") || v.lang === "ja-JP");
+            if (kyokoVoice) utterance.voice = kyokoVoice;
+        }
+
+        utterance.text = textToSpeak;
+        utterance.rate = 0.9;
+
+        utterance.onend = function() {
+            statusText.classList.add('hidden');
+            document.getElementById('sentence-display').innerText = currentItem.sentence;
+            document.getElementById('translation-display').innerText = currentItem.translation;
+            document.getElementById('explanation-display').innerHTML = `<strong>Target: ${currentItem.word}</strong><br><br>${currentItem.explanation}`;
+            textContainer.classList.remove('hidden');
+
+            btnRepeat.disabled = false;
+            btnNext.disabled = false;
+            btnNext.innerText = "次に進む";
+            isSpeaking = false;
+        };
+
+        window.speechSynthesis.speak(utterance);
+    }
+
+    function playNext() {
+        const randomIndex = Math.floor(Math.random() * activeStock.length);
+        currentItem = activeStock[randomIndex];
+        speakAndShow();
+    }
+
+    btnRepeat.addEventListener('click', speakAndShow);
+    btnNext.addEventListener('click', playNext);
+</script>
+
+</body>
+</html>
