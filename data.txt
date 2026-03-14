@@ -3028,3 +3028,140 @@ Tea	[tiː]	ゴシップ、噂話	What’s the tea on the new department restruct
 Bet	[bet]	了解、もちろん、受けて立つ	"Can you send me the link later?" "Bet."	「あとでリンク送ってくれる？」「了解（もちろん）。」	相手の提案や依頼に対して、短く力強く「いいよ」「分かった」と同意する時に使われます。	日常会話
 Vibing	[ˈvaɪbɪŋ]	リラックスして楽しんでいる、波長が合っている	We were just vibing in the lounge and talking about our research.	ラウンジでリラックスしながら、自分たちの研究について楽しく話していました。	特に何をするでもなく、その場の雰囲気や会話を心地よく楽しんでいる状態です。	日常会話
 Ghost	[ɡoʊst]	（連絡を断って）消える、音信不通になる	He was supposed to collaborate with us, but he ghosted the whole team.	彼は協力してくれるはずだったのに、チーム全員に対して音信不通になってしまった。	メールや返信を突然やめて、幽霊のように消えてしまうことを指します。	一般その他
+Is that the case?	-	左様でございますか、そうなんですか	Is that the case? I didn't realize the deadline had been moved up.	左様でございますか。締め切りが繰り上げられたとは存じませんでした。	相手の言った事実を確認する、丁寧で知的な響きのある表現です。	一般その他
+I'm ashamed.	-	面目ない、恥じ入るばかりです	I'm ashamed to admit that I overlooked such a basic error.	このような初歩的なミスを見落としていたとは、面目ございません。	自分の非を認め、深く反省していることを伝える際に使われます。	一般その他
+As you wish.	-	御意、仰せの通りに	We will adjust the parameters of the study as you wish, Professor.	教授、仰せの通りに調査のパラメーターを調整いたします。	相手の意向を尊重し、それに従うことを示す非常に丁寧な表現です。	教育研究
+It is regrettable.	-	誠に遺憾でございます	It is regrettable that we have to postpone the symposium.	シンポジウムを延期しなければならないことは、誠に遺憾でございます。	公式な場で、残念な結果や事態に対して遺憾の意を表明する定型句です。	一般その他
+Over the moon	-	めっちゃ嬉しい、最高に幸せ	I was over the moon when I received the acceptance letter.	採用通知を受け取ったときは、もう最高に嬉しかったです。	非常に大きな喜びを表現する、ポジティブで可愛らしいイディオムです。	日常会話
+Bad apple	-	問題児、周囲に悪影響を与える人	We need to address the behavior of one bad apple before it affects the whole team.	チーム全体に影響が出る前に、一人の問題児の行動に対処する必要があります。	「腐ったリンゴ」が周囲をダメにするというニュアンスから来ています。	一般その他
+I'm down.	-	いいね、やろう！	"Want to grab some coffee after the meeting?" "I'm down."	「会議の後にコーヒーでもどう？」「いいね、やろう！」	提案に対して「自分も参加する」とカジュアルに同意する時の定番です。	日常会話
+Open book	-	隠し事がない人、分かりやすい人	Ask me anything; when it comes to my research, I’m an open book.	何でも聞いてください。自分の研究に関しては、包み隠さずお話しします。	隠し事がなく、何でもオープンに話す性格や状態を指します。	一般その他
+That much?	-	そんなに？、それほどまで？	Did the data fluctuate that much? We should re-examine the sensors.	そんなにデータが変動したのですか？ センサーを再点検すべきですね。	程度や量の大きさに驚きを示す際の簡潔な問いかけです。	一般その他
+One way or another	-	どっちみち、いずれにせよ	One way or another, we need to finalize this report by tomorrow morning.	どっちみち、明日の朝までにこの報告書を仕上げる必要があります。	手段を問わず、あるいは結果に関わらず「とにかく」という意味で使われます。	一般その他
+And then, what?	-	それで何？、その後どうなるの？	You found the anomaly, and then, what? Did you run a re-test?	異常を見つけたんですね、それで？ 再テストは行いましたか？	話の続きや、その後の展開を促す際に使われます。	日常会話
+Spill the tea	-	暴露する、真相を話す	Come on, spill the tea! What actually happened at the faculty meeting?	ねえ、本当のことを話してよ！ 教授会で実際何があったの？	ゴシップや内緒話を「お茶をこぼす」ように漏らすことを指すトレンド表現です。	日常会話
+Shit happens.	-	そんなこともあるよ、災難だね	I'm sorry your experiment failed, but hey, shit happens.	実験が失敗して残念だったね、でもまあ、そういうこともあるよ。	（親しい間柄で）避けられない不運に対して「仕方ない」と慰める際に使います。	日常会話
+Potato potato	-	同じこと、似たようなもの	Whether we call it "Method A" or "Method B," it's potato potato.	「方法A」と呼ぼうが「方法B」と呼ぼうが、結局は同じことです。	発音が違うだけで同じリンゴ、という皮肉から「些細な違いだ」という意味で使います。	一般その他
+My jam	-	お気に入り、大好きなもの	Data visualization is totally my jam; I can do it all day.	データの可視化はまさに私の得意分野（お気に入り）です。一日中やっていられます。	自分の好きな音楽や得意なことを「これだ！」と言う際に使います。	日常会話
+Mean well	-	悪気はない、良かれと思ってやる	He might have been a bit intrusive, but he means well.	彼は少しお節介だったかもしれませんが、悪気はないんですよ。	結果が伴わなくても、動機が善意であることを強調する際に使います。	一般その他
+Way to go!	-	やるじゃん、その調子！	You finished the manuscript early? Way to go!	原稿を早く仕上げたんですか？ やるじゃん！	相手の成果をカジュアルに、かつ温かく褒める表現です。	一般その他
+Tea with lemon	-	レモンティー	Could I have a tea with lemon, please?	レモンティーを一杯いただけますか？	英語では「Lemon tea」よりもこの表現の方が自然に伝わります。	日常会話
+Cream puff	-	シュークリーム	I bought some cream puffs for the lab members to enjoy during the break.	休憩時間にみんなで食べようと思って、シュークリームを買ってきました。	和製英語の「シュークリーム」は英語では靴墨の意味になるので注意です。	日常会話
+Soft serve ice cream	-	ソフトクリーム	The cafeteria started selling soft serve ice cream for the summer.	食堂が夏に向けてソフトクリームの販売を始めました。	いわゆる「ソフトクリーム」の正しい英語名称です。	日常会話
+Rearview mirror	-	バックミラー	Adjust your rearview mirror before you start the car.	車を出す前に、バックミラーを調整してください。	「Back mirror」は通じないわけではないですが、こちらが正式です。	日常会話
+Like what?	-	たとえば？、どんなもの？	You said there are some risks. Like what?	リスクがあると言いましたが、たとえばどんなものですか？	具体例を求める際の、非常に短く効果的な問いかけです。	一般その他
+I can tell.	-	わかる、見てれば分かるよ	You've put a lot of work into this project. I can tell.	このプロジェクトに心血を注いできましたね。見ていれば分かります。	言葉にしなくても、状況や外見から明白であることを伝える共感の言葉です。	一般その他
+Food baby	-	お腹いっぱい（食べすぎて出たお腹）	I ate way too much at the buffet; I have a total food baby now.	ビュッフェで食べすぎちゃった。お腹がパンパン（妊婦さんみたい）だよ。	食べすぎてぽっこり出たお腹をコミカルに表現するスラングです。	日常会話
+A big hand	-	大きな拍手	Let’s give a big hand to our guest speaker for today.	今日のゲストスピーカーに、盛大な拍手をお願いします。	司会者が拍手を促す際の定番フレーズです。	教育研究
+I'm your man.	-	任せて！、私が適任だ	If you need someone to fix this code, I'm your man.	このコードを直せる人間が必要なら、私に任せてください。	自分がその役割に最適であることを自信を持って伝える表現です。	一般その他
+Read the room	-	空気読め、場の状況を察する	It’s important to read the room before making a joke during a serious debate.	真面目な討論中にジョークを言う前に、空気を読むことが大切です。	周囲の状況や雰囲気を理解して行動することを促す際に使われます。	一般その他
+Hit it off	-	意気投合する、すぐに仲良くなる	We hit it off immediately and started talking about our common research interests.	私たちはすぐに意気投合し、共通の研究テーマについて話し始めました。	初対面でパッと気が合う様子を指します。	日常会話
+That's the ticket.	-	それだよ！、まさに正解だ	Add a few more citations here, and that's the ticket.	ここにあといくつか引用を加えれば、それでバッチリ（正解）だよ。	「まさに求めていたものだ」「その通りだ」と賛成する際に使われます。	一般その他
+I just work here.	-	私に言われても〜、私はただの従業員です	"Why did the policy change?" "I don't know, I just work here."	「なんで方針が変わったの？」「知らないよ、私に言われても（ただ働いてるだけだから）。」	自分には決定権がないことや、責任がないことを少しおどけて（または突き放して）言う表現です。	日常会話
+In your face!	-	ざまあみろ！、どうだ！	In your face! I told you my hypothesis was correct.	ざまあみろ！ 私の仮説が正しいって言ったでしょ。	相手を打ち負かした時や、自分の正しさが証明された時に使う非常に強い（時に失礼な）表現です。	日常会話
+She's very together.	-	彼女はしっかりものだ	She's very together and always keeps the lab organized.	彼女はとてもしっかりしていて、いつも研究室を整理整頓してくれています。	精神的に自立し、物事をうまく管理できている人を指す洗練された褒め言葉です。	一般その他
+A pushover	-	チョロい人、押しに弱い人	Don't be such a pushover; you need to stand up for your own ideas.	そんなにチョロい（言いなり）にならないで。自分の考えを主張しなきゃ。	簡単に説得されたり、他人の言いなりになったりする人を指します。	日常会話
+What's the damage?	-	いくらだった？、費用は？	That was a great dinner. So, what's the damage?	最高の夕食だったね。で、お会計（被害額）はいくら？	支払うべき金額を「損害（damage）」に例えて聞く、ユーモアのある表現です。	日常会話
+He's all talk.	-	彼は口ばっかりだ	He promises to help with the data, but he's all talk.	彼はデータを手伝うと約束しますが、いつも口ばっかりです。	言うだけで実行が伴わない人を批判的に指す表現です。	一般その他
+Cold turkey	-	（悪い習慣を）急にやめること	I decided to quit caffeine cold turkey to improve my sleep.	睡眠を改善するために、カフェインをキッパリ（急に）やめることにしました。	徐々にではなく、ある日突然完全に断つことを意味します。	日常会話
+Make a toast	-	乾杯する、祝杯をあげる	Let’s make a toast to the successful completion of our project.	プロジェクトの成功を祝して、乾杯しましょう。	公式な場やパーティーで乾杯の音頭を取る際の正しい表現です。	一般その他
+Killing it	-	最高やん、絶好調だ	You are totally killing it with your new YouTube channel!	新しいYouTubeチャンネル、めちゃくちゃ絶好調（最高）だね！	何かが非常にうまくいっている、大成功している状態を指します。	日常会話
+Make fun of	-	馬鹿にする、からかう	It’s not professional to make fun of other people's mistakes.	他人のミスを馬鹿にするのは、プロフェッショナルではありません。	相手を冷やかしたり、笑いものにしたりすることを指します。	一般その他
+Look fly	-	イカしてる、格好いい	You look fly in that suit for the conference!	学会用のそのスーツ、すごくイカしてるね！	特に服装や外見が今風で格好いいことを表すスラングです。	日常会話
+Get out of here!	-	マジで？、嘘でしょ！	"I got a full scholarship." "Get out of here! That's amazing!"	「全額奨学金をもらったんだ。」「マジで！？ すごいじゃない！」	驚きを表す「信じられない」というニュアンスです（場所を去れという意味ではありません）。	日常会話
+It's lame.	-	退屈だ、ダサい、つまらない	I thought the movie was a bit lame compared to the book.	その映画は本に比べると、ちょっと退屈（イマイチ）だと思いました。	期待外れだったり、魅力がなかったりするものを指します。	日常会話
+Be so pumped	-	ワクワクしてる、気合が入っている	I'm so pumped for the upcoming field research in Okinawa!	今度の沖縄でのフィールド調査に、すごくワクワクしています！	エネルギーに満ち溢れ、楽しみで仕方ない状態を指します。	一般その他
+Likewise	[ˈlaɪkwaɪz]	こちらこそ、同様に	"It was a pleasure meeting you." "Likewise."	「お会いできて光栄でした。」「こちらこそ。」	相手の言葉に対して「私も同じです」とスマートに返す時に非常に便利です。	一般その他
+Crystal clear	-	完全に理解した、非常に明白な	The professor's explanation made the complex theory crystal clear.	教授の説明のおかげで、複雑な理論が完全に理解（明白に）できました。	疑問の余地がないほどはっきりしている状態を指します。	教育研究
+Spot on	-	まさに、その通り	Your analysis of the experimental results was spot on.	実験結果に関するあなたの分析は、まさにその通り（的確）でした。	正確さや適切さが完璧であることを称賛する表現です。	一般その他
+Thanks anyway.	-	なんにしてもありがとう	I couldn't find the book, but thanks anyway for looking.	本は見つかりませんでしたが、探してくれてとにかくありがとう。	結果的に助けにならなかった相手に対しても、その労力に感謝を示す丁寧な言葉です。	一般その他
+I'm rooting for you.	-	応援してるよ！	I know the entrance exam is tough, but I'm rooting for you.	入試が大変なのは分かっているけど、応援しているよ！	誰かの成功を心から願い、サポートしていることを伝える温かい表現です。	一般その他
+The kiss of death	-	災いのもと、破滅の原因	Lack of funding can be the kiss of death for a small research lab.	資金不足は、小さな研究室にとって破滅の原因になりかねません。	一見良さそうに見えても、最終的に失敗や終わりをもたらすものを指します。	教育研究
+Eager beaver	-	がんばりやさん、超積極的な人	He's such an eager beaver; he's always the first one to arrive at the lab.	彼は本当のがんばりやさんで、いつも一番に研究室に来ます。	少し皮肉混じりに「張り切りすぎ」という意味で使われることもあります。	一般その他
+It takes two to tango	-	喧嘩両成敗、どっちもどっち	They are blaming each other, but it takes two to tango.	彼らはお互いを責め合っていますが、どっちもどっち（両方に責任がある）です。	問題が起きるには二人（両者）の関与が必要だという教訓的な表現です。	一般その他
+Two's company, three's a crowd	-	3人だったら仲間割れするかも（2人ならいいけど3人は邪魔）	I'll leave you two to discuss the project; two's company, three's a crowd.	プロジェクトの相談は二人でどうぞ。私はお邪魔（3人目は邪魔者）でしょうから。	二人きりでいたい時や、3人になるとバランスが崩れる時に使われる格言です。	日常会話
+Step up your game	-	もっと頑張れ、レベルを上げろ	You need to step up your game if you want to be published in a top journal.	トップジャーナルに掲載されたいなら、もっとレベルを上げる必要があります。	現在の努力では足りず、さらに本気を出して質を高めるよう促す表現です。	教育研究
+You can’t swing a cat	-	非常に狭い、場所が狭苦しい	The office they gave us is so tiny that you can’t swing a cat in there.	私たちが与えられたオフィスは非常に狭く、身動きも取れないほどです。	「猫を振り回すスペースもない」という比喩から、空間が極めて狭いことを表す口語表現です。	日常会話
+Cat got your tongue	-	黙り込む、言葉に詰まる	You've been very quiet during the meeting. Cat got your tongue?	会議中ずっと静かですね。どうしたのですか、言葉に詰まってしまいましたか？	相手が返答に困っていたり、急に黙り込んだりしたときに、少しからかうように使われます。	日常会話
+Couch potato	-	怠け者、座ってばかりいる人	I used to be a couch potato, but now I try to go to the gym after work.	以前は怠け者でしたが、今は仕事の後にジムへ行くようにしています。	ソファに座ってポテトチップスを食べながらテレビばかり見ている人を指す有名な比喩です。	日常会話
+Bob’s your uncle	-	ほら出来上がり、あとは簡単だ	Just plug it in, press this button, and Bob’s your uncle.	プラグを差し込んでこのボタンを押せば、ほら、それだけで完了です。	手順を説明した後に「これだけで万事解決だ」と付け加える際に使われる主に英・豪由来の表現ですが、米国でも通じます。	日常会話
+Hairy at the heel	-	信用できない、育ちが悪い、怪しい	I’d be careful with that contractor; he seems a bit hairy at the heel.	あの請負業者には気をつけたほうがいい。少し信用できないところがありそうだ。	人の品格や信頼性に欠ける部分があることを指すやや古い表現です。	一般その他
+Use your loaf	-	頭を使え、自分で考えろ	You can solve this problem if you just use your loaf for a minute.	少しの間、自分の頭を使って考えれば、この問題は解決できますよ。	「Loaf of bread（パンの塊）」が「Head（頭）」の韻を踏んだスラング（Loaf = Head）に由来します。	日常会話
+Finger-lickin’ good	-	非常に美味しい、指をなめたくなるほど旨い	My grandmother’s apple pie is always finger-lickin’ good.	祖母のアップルパイはいつも、指をなめたくなるほど絶品です。	食べ物が非常に美味しいことを表す決まり文句です。	日常会話
+Ignorance is bliss	-	知らぬが仏	I didn't know about the budget cuts until today, but I guess ignorance is bliss.	今日まで予算削減のことは知りませんでしたが、知らぬが仏といったところですね。	不都合な事実を知らずにいる方が幸せであるという状況で使われます。	一般その他
+What goes around comes around	-	因果応報、自業自得	He was always rude to his colleagues, and now he needs their help. What goes around comes around.	彼はいつも同僚に失礼な態度をとっていましたが、今や彼らの助けが必要です。因果応報ですね。	自分の行いは、良いことも悪いことも最終的には自分に返ってくるという意味です。	一般その他
+Better safe than sorry	-	備えあれば憂いなし、念には念を	We should double-check the laboratory equipment; better safe than sorry.	実験器具を再確認すべきです。念には念を入れたほうがいいですから。	後で後悔するよりも、今慎重に行動しておくべきだという教訓です。	教育研究
+People who live in glass houses shouldn’t throw stones	-	自分の弱みを棚に上げて人を批判するな	She shouldn't criticize his research methods; people who live in glass houses shouldn't throw stones.	彼女は彼の研究手法を批判すべきではありません。自分にも弱みがあるなら人を責めるべきではないからです。	自分に欠点がある者は、他人の欠点を批判すべきではないという意味の格言です。	教育研究
+Don’t judge a book by its cover	-	外見で判断するな	The seminar room looked old, but the lecture was excellent. Don’t judge a book by its cover.	セミナー室は古く見えましたが、講義は素晴らしかった。外見で判断してはいけませんね。	物事や人の真の価値は、外見だけではわからないという意味です。	教育研究
+Such is life	-	それが人生だ、浮世はままならぬもの	The project was canceled after months of hard work, but such is life.	数ヶ月の努力の末にプロジェクトは中止になりましたが、それが人生というものです。	不運なことが起きたとき、それを潔く受け入れる際に使われる言葉です。	一般その他
+No sweet without sweat	-	苦労なくして快楽なし、労なくして得なし	We spent all night finishing the report, but no sweet without sweat.	一晩中かかってレポートを完成させましたが、苦労なくして成果は得られません。	何かを得るためには、それ相応の努力や苦労が必要であるという意味です。	日常会話
+What will be, will be	-	なるようになる	I’ve done my best for the presentation; what will be, will be.	プレゼンのために最善を尽くしました。あとはなるようになるだけです。	（ケ・セラ・セラ）未来を心配しても始まらない、運命に任せるという考え方です。	一般その他
+Soon learnt, soon forgotten	-	安易に覚えたものはすぐに忘れる	Don't just memorize the formulas for the test; soon learnt, soon forgotten.	テストのために公式を暗記するだけではいけません。安易に覚えたものはすぐに忘れてしまいます。	時間をかけて深く理解しないと、知識として定着しないという戒めです。	教育研究
+Better late than never	-	遅れても、しないよりはマシ	I finally submitted the manuscript. It’s two days overdue, but better late than never.	ようやく原稿を提出しました。2日遅れですが、出さないよりはマシです。	何かが遅れた際、それを正当化したり、慰めたりするときに非常によく使われます。	日常会話
+The pot calls the kettle black	-	目糞鼻糞を笑う、自分の欠点を棚に上げる	You're calling me disorganized? That’s the pot calling the kettle black!	私をだらしないと言うのですか？ それこそ自分のことを棚に上げていますよ。	自分も同じような欠点を持っているのに、他人を批判することを指します。	日常会話
+When one door shuts, another opens	-	捨てる神あれば拾う神あり	I didn't get the grant, but when one door shuts, another opens.	助成金は得られませんでしたが、一つ扉が閉じればまた別の道が開けるものです。	一つのチャンスを逃しても、必ず別の機会が訪れるという前向きな表現です。	一般その他
+A friend to everybody is a friend to nobody.	-	八方美人は誰の友でもない	He tries to please everyone in the department, but a friend to everybody is a friend to nobody.	彼は部署の全員にいい顔をしようとしますが、八方美人は結局誰からも信頼されません。	誰にでも調子を合わせる人は、真の友人にはなり得ないという意味の格言です。	一般その他
+History repeats itself.	-	歴史は繰り返す	We must analyze these past economic trends, as history repeats itself.	歴史は繰り返すものですから、過去の経済動向を分析しなければなりません。	過去に起きたことは、形を変えて再び起こるという教訓です。	教育研究
+Bad news travels fast	-	悪事千里を走る、悪い噂はすぐに広まる	The news of the store closing spread in an hour; bad news travels fast.	閉店のニュースは1時間で広まりました。悪い噂はすぐに広まるものです。	悪い知らせや噂は、良い知らせよりもずっと早く伝わるという意味です。	一般その他
+Love is blind	-	恋は盲目	He can't see any of her flaws because love is blind.	恋は盲目と言いますが、彼は彼女の欠点が全く見えていないようです。	恋をすると理性的な判断ができなくなることを指します。	日常会話
+What’s done is done	-	済んだことは仕方がない	We made a mistake in the calculations, but what’s done is done; let’s fix it.	計算を間違えてしまいましたが、済んだことは仕方ありません。修正しましょう。	過去の過ちを悔やむよりも、現状を受け入れて前に進もうというニュアンスです。	日常会話
+Learn to walk before you run	-	走る前に歩き方を学べ、基本が先だ	You should master the basic software functions first; learn to walk before you run.	まずはソフトウェアの基本機能をマスターすべきです。基本が先ですから。	高度なことに挑戦する前に、まず基礎を固めるべきだというアドバイスです。	教育研究
+Nothing comes of nothing	-	無からは何も生じない、努力なしに成果なし	If you don't invest in research and development, nothing comes of nothing.	研究開発に投資しなければ、無からは何も生まれません。	何事も原因や努力がなければ、結果は得られないという意味です。	教育研究
+A broken bone is the stronger when it is well set	-	雨降って地固まる	After that argument, their partnership became even more solid. A broken bone is the stronger when it is well set.	あの議論の後、彼らの協力体制はより強固になりました。まさに雨降って地固まるです。	困難や争いを乗り越えた後は、以前よりも状態が良くなることを指します。	一般その他
+A bad workman always blames his tools	-	弘法筆を選ばず（の逆）、下手な職人ほど道具のせいにする	He complained about the slow computer, but a bad workman always blames his tools.	彼はコンピュータの遅さに不平を言っていましたが、腕の悪い者ほど道具のせいにするものです。	自分の技術不足を認めず、環境や道具のせいにする人を批判する言葉です。	一般その他
+More is not always better	-	多ければ良いというものではない	Adding too many variables to the model can cause issues; more is not always better.	モデルにあまりに多くの変数を加えると問題が生じます。多ければ良いというわけではありません。	量よりも質や適切さが重要であるという教訓です。	教育研究
+Hope for the best, but prepare for the worst	-	最善を願い、最悪に備えよ	We are launching the product tomorrow. Hope for the best, but prepare for the worst.	明日製品を発売します。最善の結果を期待しつつ、最悪の事態にも備えておきましょう。	楽観的な期待を持ちつつも、危機管理を怠らないという実利的な姿勢です。	日常会話
+Dead men tell no tales	-	死人に口なし	The secret died with the owner of the company. Dead men tell no tales.	その秘密は会社経営者と共に葬り去られました。死人に口なしです。	死んでしまった人は秘密を漏らすことができないという意味です。	一般その他
+Don’t put all your eggs in one basket	-	卵を一つのカゴに盛るな、リスクを分散せよ	You should diversify your investments; don't put all your eggs in one basket.	投資を分散させるべきです。リスクを一点に集中させてはいけません。	一つのものに全てを賭けるリスクを警告する際によく使われます。	一般その他
+Don’t teach fishes to swim	-	釈迦に説法	Telling the professor how to use the lab is like teaching fishes to swim.	教授に研究室の使い方を教えるなんて、まさに釈迦に説法ですよ。	その道の専門家に何かを教えようとする愚かさを指します。	教育研究
+It is no use crying over spilt milk	-	覆水盆に返らず、悔いても始まらない	I know the experiment failed, but it is no use crying over spilt milk.	実験が失敗したのはわかりますが、済んだことを悔やんでも始まりません。	起きてしまった失敗を嘆いても無駄であるという意味です。	教育研究
+A jack of all trades is master of none	-	多芸は無芸	He knows a little about many subjects, but a jack of all trades is master of none.	彼は多くの分野に少しずつ詳しいですが、器用貧乏で専門性がありません。	何でもできる人は、結局一つのことにも秀でていないという意味です。	一般その他
+Easy come, easy go	-	得やすいものは失いやすい、悪銭身に付かず	I won fifty dollars and spent it all on lunch. Easy come, easy go.	50ドル当たったので全部ランチに使ってしまいました。得やすいものは失いやすいですね。	苦労せずに手に入れたものは、すぐになくなってしまうという意味です。	日常会話
+A stumble might prevent a fall	-	小さなつまずきが大きな失敗を防ぐ	Losing that small contract taught us a lesson; sometimes a stumble might prevent a fall.	あの小さな契約を逃したことで教訓を得ました。小さな失敗が将来の大事故を防ぐこともあります。	小さなミスを経験することで、将来のより深刻な事態を回避できるという意味です。	日常会話
+While there is life there is hope	-	命ある限り希望はある	The situation is difficult, but while there is life there is hope.	状況は困難ですが、命がある限り希望は捨ててはいけません。	どんなに苦しくても、生きている限り可能性はあるという励ましの言葉です。	一般その他
+Adversity makes a man wise	-	災い転じて福となす、逆境が人を育てる	He learned a lot from the project's failure. Adversity makes a man wise.	彼はプロジェクトの失敗から多くを学びました。逆境こそが人を賢くするのです。	困難な経験こそが、人を成長させ知恵を与えるという意味です。	教育研究
+A creaking gate hangs long	-	一病息災、病身の人ほど長生きする	My grandfather has been complaining about his health for years, but a creaking gate hangs long.	祖父は何年も健康状態について不平を言っていますが、案外長生きするものです。	不完全なものや少し具合の悪いものの方が、かえって長持ちするという意味です。	一般その他
+Once you lose grip of reality, it’s difficult to come back	-	一度現実感を見失うと、戻ってくるのは難しい	In theoretical physics, once you lose grip of reality, it’s difficult to come back.	理論物理学において、一度現実の感覚を見失うと、立て直すのが難しくなります。	客観的な視点や現実的な感覚を維持することの重要性を説く言葉です。	教育研究
+In the end, everyone will be hypocrites	-	結局、誰もが偽善者になる	It's easy to judge others, but in the end, everyone will be hypocrites.	他人を裁くのは簡単ですが、結局のところ、誰もがどこかで偽善者になってしまうものです。	人間は理想通りには生きられず、矛盾を抱えるものであるという諦念混じりの表現です。	一般その他
+Over the moon	-	大喜びして、天にも昇る心地で	She was over the moon when she heard she got the promotion.	昇進が決まったと聞いて、彼女は天にも昇る心地でした。	非常に嬉しく、興奮している状態を表します。	日常会話
+Monkey business	-	いかがわしい行為、いたずら、ごまかし	The manager suspected some monkey business with the accounting records.	マネージャーは、会計記録に何かいかがわしい操作があるのではないかと疑いました。	不誠実な行為や、ふざけたいたずらを指します。	一般その他
+Get out of hand	-	手に負えなくなる、収拾がつかなくなる	The protest started peacefully but quickly got out of hand.	抗議活動は平和的に始まりましたが、すぐに収拾がつかなくなりました。	状況が制御不能になることを意味します。	日常会話
+No-Brainer	-	考えるまでもないこと、極めて簡単な決断	Choosing the cheaper but higher-quality option was a no-brainer.	安くて質の高い方を選ぶのは、考えるまでもないことでした。	迷う必要がないほど明らかな選択や問題を指します。	日常会話
+Be chuffed to bits	-	とても喜んでいる、満足している	He was chuffed to bits with his exam results.	彼は試験の結果にとても満足し、喜んでいました。	イギリス英語由来ですが、アメリカでも「非常に嬉しい」という意味で通じます。	日常会話
+Piece of cake	-	朝飯前、非常に簡単なこと	Setting up the Wi-Fi was a piece of cake.	Wi-Fiの設定なんて朝飯前でしたよ。	何の苦労もなく達成できることを指します。	日常会話
+Comfort food	-	おふくろの味、元気をくれる食べ物	For me, warm chicken soup is the ultimate comfort food.	私にとって、温かいチキンスープは最高に元気をくれる食べ物です。	精神的な安心感や懐かしさを与えてくれる食べ物のことです。	日常会話
+Get your head around it	-	（難しいことを）理解する、飲み込む	It took me a while to get my head around the new tax laws.	新しい税法を理解するのに、しばらく時間がかかりました。	複雑な概念や受け入れがたい状況を、何とか理解しようとすることを指します。	教育研究
+Stab someone in the back	-	人を裏切る、後ろから刺す	I trusted him with my idea, but he stabbed me in the back and claimed it as his own.	彼にアイデアを預けて信頼していたのに、彼は私を裏切って自分のものだと主張しました。	信頼していた人に裏切られることを指す一般的な表現です。	日常会話
+There are plenty of fish in the sea	-	代わりはいくらでもいる、星の数ほどいる	Don't worry about the breakup; there are plenty of fish in the sea.	別れのことは心配しないで。他にもいい人はいくらでもいるわ。	失恋した人を慰める際によく使われる決まり文句です。	日常会話
+Break the ice	-	場を和ませる、口火を切る	I told a joke at the start of the seminar to break the ice.	セミナーの冒頭でジョークを言って、場の緊張を和ませました。	初対面の場などで緊張を解き、話しやすい雰囲気を作ることを指します。	教育研究
+The tip of the iceberg	-	氷山の一角	These statistics only show the tip of the iceberg of the real problem.	これらの統計は、真の問題の氷山の一角を示しているに過ぎません。	表面化している問題が、全体のほんの一部であることを指します。	教育研究
+Ring a bell	-	ピンとくる、聞き覚えがある	The name doesn't ring a bell, but I might recognize his face.	その名前には聞き覚えがありませんが、顔を見れば思い出すかもしれません。	何かを思い出しかけているときや、以前聞いたことがあると感じる時に使います。	日常会話
+Touch wood	-	くわばらくわばら、幸運が続きますように	I’ve never been late for a presentation, touch wood.	今までプレゼンに遅刻したことはありません。これからもそうありますように。	（木を叩きながら）不吉なことを避けたり、今の幸運が続くよう願うときのおまじないです。米国では "Knock on wood" と言うのが一般的です。	日常会話
+Down to earth	-	現実的な、地に足のついた、気取らない	Despite his fame, the professor is very down to earth.	名声があるにもかかわらず、その教授は非常に謙虚で気取りがありません。	性格が誠実で現実的、あるいは気さくな人を褒める言葉です。	教育研究
+Couldn’t care less	-	全く気にしない、知ったことではない	I couldn't care less what they think of my style.	彼らが私のスタイルをどう思おうが、全く知ったことではありません。	関心が全くないことを強調する表現です。	日常会話
+To be loaded	-	金持ちである、金がうなっている	He just bought a private jet; he must be loaded.	彼はプライベートジェットを買ったばかりです。相当なお金持ちに違いありません。	非常に裕福であることを指す口語表現です。	日常会話
+Burning the midnight oil	-	夜なべをする、夜遅くまで勉強・仕事をする	I’ve been burning the midnight oil to finish the research paper.	研究論文を完成させるために、連日夜遅くまで作業をしています。	深夜まで熱心に作業に取り組むことを指します。	教育研究
+More holes than Swiss cheese	-	穴だらけ、欠陥だらけ	The legal defense’s argument had more holes than Swiss cheese.	弁護側の主張は欠陥だらけ（穴だらけ）でした。	計画や理論、説明などが不完全で突っ込みどころが多い状態を指します。	一般その他
+Blue in the face	-	（疲れ果てるまで）言い続ける、へとへとになる	I explained it until I was blue in the face, but he still didn't understand.	へとへとになるまで説明しましたが、彼はまだ理解してくれませんでした。	いくら言っても無駄な状況で、精根尽き果てるまで努力することを表します。	日常会話
+Cold turkey	-	（悪い習慣を）きっぱり即座にやめること	He decided to quit smoking cold turkey.	彼はタバコをきっぱり即座にやめることに決めました。	徐々にではなく、ある日突然、悪い習慣（喫煙や薬物など）を完全に断つことを指します。	日常会話
+Burn your bridges	-	後戻りできないようにする、背水の陣を敷く	Don't burn your bridges when you leave the company; you might need them later.	退職するときに人間関係を台無しにしてはいけません。後で助けが必要になるかもしれませんから。	以前の関係を完全に断ち切ったり、引き返せない状況を作ったりすることを指します。	一般その他
+Wear your heart on your sleeve	-	感情を露わにする、気持ちを隠さない	You always know how he feels because he wears his heart on his sleeve.	彼は感情を隠さないので、どう思っているかいつもすぐにわかります。	感情が顔や態度に出やすい人、または率直に気持ちを出す人を指します。	日常会話
+Water under the bridge	-	過ぎたこと、済んだこと	We had our differences in the past, but that's all water under the bridge now.	過去には相違もありましたが、今ではもう全て過ぎたことです。	過去に起きた悪い出来事が、今はもう重要ではなくなった状態を指します。	日常会話
+Every cloud has a silver lining	-	どの雲にも銀の裏地がある（＝絶望の裏には希望がある）	I lost my job, but I found a better one; every cloud has a silver lining.	仕事を失いましたが、より良い仕事を見つけました。悪いことの後には良いことがあるものですね。	困難な状況の中にも、必ず何かポジティブな側面があるという励ましです。	日常会話
+Shape up or ship out	-	態度を改めよ、さもなくば去れ	The new manager told the lazy employees to shape up or ship out.	新しいマネージャーは、怠慢な従業員たちに「態度を改めないなら辞めてもらう」と言いました。	仕事ぶりや素行を改善するか、さもなければ辞めるようにと迫る厳しい表現です。	一般その他
+Costs an arm and a leg	-	非常に高くつく、法外な値段だ	The repair for the laboratory equipment cost an arm and a leg.	実験器具の修理費用は、非常に高くつきました。	代償が非常に大きいこと、または価格が極めて高いことを意味します。	教育研究
+Hit the book	-	猛烈に勉強する	I need to hit the books tonight for the final exam.	期末試験のために、今夜は猛烈に勉強しなければなりません。	（通常は複数形で hit the books）試験前などに集中して勉強を開始することを指します。	教育研究
+Sit on the fence	-	優柔不断である、どっちつかずの態度をとる	You can't sit on the fence forever; you need to choose a side.	いつまでもどっちつかずの態度でいるわけにはいきません。どちらかを選ぶ必要があります。	中立を保つ、あるいは決断を避けて様子見をすることを指します。	日常会話
+A bad apple	-	組織を腐らせる一人、悪影響を及ぼす人	One bad apple can spoil the whole department's morale.	一人の不届き者が、部署全体の士気を下げてしまうことがあります。	グループの中にいて周囲に悪影響を与える人物を指します。	一般その他
+Chasing the rainbow	-	不可能なことを追い求める、夢想する	He’s just chasing the rainbow if he thinks he can win without practicing.	練習もせずに勝てると思っているなら、彼はただ不可能な夢を追いかけているだけです。	実現不可能な理想や、非現実的な目標を追いかけることを指します。	一般その他
+Find your feet	-	新しい環境に慣れる、自立する	It takes a few months to find your feet in a new job.	新しい仕事に慣れるまでには、数ヶ月かかります。	新しい状況や場所で、どう動けばよいか分かり、自信を持って行動できるようになることを指します。	日常会話
+Have a sweet tooth	-	甘党である	I have a terrible sweet tooth, so I can't resist chocolate.	私はひどい甘党なので、チョコレートには目がありません。	甘いものが大好きな性質を指します。	日常会話
+Make waves	-	波風を立てる、騒ぎを起こす	He’s new to the committee, so he doesn't want to make waves yet.	彼は委員会に入ったばかりなので、まだ波風を立てたくないと考えています。	既存の秩序を乱したり、物議を醸すようなことをしたりすることを指します。	教育研究
+Eat like a bird	-	少食である	My sister eats like a bird, so she always leaves leftovers.	妹は少食なので、いつも食べ残してしまいます。	小鳥のように、ごくわずかな量しか食べない人を指します。	日常会話
+Eat like a horse	-	大食漢である	He’s so thin, but he eats like a horse!	彼はあんなに細いのに、ものすごくたくさん食べるんですよ！	馬のように、非常にたくさんの量を食べる人を指します。	日常会話
+Million-dollar question	-	極めて重要だが難しい質問、最大の疑問点	How to implement this policy effectively is the million-dollar question.	この政策をいかに効果的に実施するかが、最大の難問です。	誰もが知りたいが、答えを出すのが非常に難しい重要な問いを指します。	教育研究
+Break the bank	-	大金を使う、破産させるほど高い	We can afford a nice dinner, but let’s not break the bank.	素敵なディナーを楽しむ余裕はありますが、あまりお金を使いすぎないようにしましょう。	（主に否定形で）非常に高価であること、または全財産を使い果たすことを指します。	日常会話
+Bread and butter	-	収入源、本業、最も基本的なこと	Teaching is his bread and butter, though he also writes novels.	彼は小説も書いていますが、教えることが主な収入源です。	生活を支えるための主要な仕事や、最も基本的で不可欠な要素を指します。	教育研究
+Sell ice to Eskimos	-	（不要なものを）誰にでも売りつける、非常に口が上手い	He’s such a talented salesman that he could sell ice to Eskimos.	彼は非常に有能なセールスマンなので、誰にでも何でも売りつけることができます。	説得力があり、不可能なことさえ成し遂げるような販売能力があることを揶揄、または称賛する表現です。	一般その他
+Cool as a cucumber	-	非常に冷静な、落ち着き払った	Even during the difficult Q&A session, she was as cool as a cucumber.	厳しい質疑応答の間でも、彼女は非常に冷静で落ち着き払っていました。	プレッシャーのかかる場面でも、全く動じない様子を指します。	教育研究
+Barking up the wrong tree	-	見当違いをしている、お門違いだ	If you think I’m responsible for this error, you’re barking up the wrong tree.	もし私がこのミスの責任者だと思っているなら、それはお門違いですよ。	原因や解決策を間違った方向で探していることを指します。	日常会話
