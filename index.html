@@ -44,7 +44,7 @@
 
 <div id="main-menu" class="container">
     <div id="sync-banner" class="hidden"></div>
-    <h2>Pepe先生の英語学習App.<span class="version-tag">v11.1</span></h2>
+    <h2>Pepe先生の英語学習App.<span class="version-tag">v11.2</span></h2>
     <div class="search-container">
         <input type="text" id="search-input" placeholder="ターゲットや和訳で検索..." oninput="handleSearch()">
         <div id="search-results" class="hidden"></div>
@@ -277,12 +277,23 @@
         }
     }
 
+    // 修正箇所：単語数判定を追加した動的ポーズ機能
     async function speakTextWithPauses(text, lang) {
         const parts = text.split(/([,.:;])/); 
+        let lastSegmentWords = 0;
+
         for (let part of parts) {
-            if (part === ',' || part === '.' || part === ':' || part === ';') {
-                await new Promise(r => setTimeout(r, 3000));
+            const isPunctuation = (part === ',' || part === '.' || part === ':' || part === ';');
+            
+            if (isPunctuation) {
+                // 直前のセグメントが3単語以上の場合のみ3秒空ける
+                if (lastSegmentWords >= 3) {
+                    await new Promise(r => setTimeout(r, 3000));
+                }
             } else if (part.trim().length > 0) {
+                // 単語数をカウント（空白で分割）
+                lastSegmentWords = part.trim().split(/\s+/).length;
+                
                 await new Promise(resolve => {
                     let ut = new SpeechSynthesisUtterance(part);
                     if (lang === 'en') setEnglishVoice(ut); else setJapaneseVoice(ut);
