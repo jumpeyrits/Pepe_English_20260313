@@ -288,11 +288,26 @@
         if (v) ut.voice = v;
     }
 
-    function setJapaneseVoice(ut) {
-        ut.lang = 'ja-JP';
-        const v = voices.find(v => v.name.includes("Google") || v.name.includes("Nanami") || v.lang === "ja-JP");
-        if (v) ut.voice = v;
+function setJapaneseVoice(ut) {
+    ut.lang = 'ja-JP';
+    
+    // 優先順位をつけて自然な声を探す
+    const targetVoice = 
+        // 1. 名前の中に「Enhanced」や「拡張」、「Premium」が含まれる日本語音声を最優先
+        voices.find(v => v.lang.startsWith("ja") && (v.name.includes("Enhanced") || v.name.includes("拡張") || v.name.includes("Premium"))) ||
+        // 2. 次に Google の高品質なクラウド音声（Chromeの場合）
+        voices.find(v => v.name.includes("Google 日本語")) ||
+        // 3. 次に Siri の声（iOS/macOSで非常に自然）
+        voices.find(v => v.name.includes("Siri")) ||
+        // 4. 特定の好まれる声のリスト
+        voices.find(v => v.name.includes("Nanami") || v.name.includes("Kyoko") || v.name.includes("Otoya")) ||
+        // 5. 最終手段として最初に見つかった日本語
+        voices.find(v => v.lang === "ja-JP");
+
+    if (targetVoice) {
+        ut.voice = targetVoice;
     }
+}
 
     function speakJapanese(text, callback) {
         let ut = new SpeechSynthesisUtterance(text);
