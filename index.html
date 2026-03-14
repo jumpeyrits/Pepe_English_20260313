@@ -13,7 +13,6 @@
         h2 { color: #2c3e50; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
         .version-tag { font-size: 0.5em; color: #bdc3c7; vertical-align: middle; margin-left: 10px; }
         
-        /* 検索・メニュー */
         .search-container { margin: 20px 0; }
         #search-input { width: 80%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em; }
         #search-results { position: absolute; width: 80%; left: 10%; background: white; border: 1px solid #ddd; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 100; max-height: 300px; overflow-y: auto; border-radius: 5px; }
@@ -23,12 +22,10 @@
         .menu-btn { width: 100%; font-size: 1.4em; padding: 20px; margin: 10px 0; background-color: #34495e; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
         .menu-btn:hover { background-color: #2c3e50; }
 
-        /* リスト表示 */
         .list-controls { margin-bottom: 15px; display: flex; justify-content: center; gap: 10px; }
         .data-list-table { width: 100%; border-collapse: collapse; text-align: left; }
         .data-list-table th, .data-list-table td { border-bottom: 1px solid #eee; padding: 12px; font-size: 0.9em; }
 
-        /* 学習画面 */
         .target-word { font-size: 2.5em; font-weight: bold; color: #e74c3c; margin-bottom: 5px; }
         .target-translation { font-size: 1.5em; color: #2980b9; margin-bottom: 15px; font-weight: bold; }
         .pronunciation { font-size: 1.2em; color: #7f8c8d; margin-bottom: 20px; }
@@ -47,13 +44,11 @@
 
 <div id="main-menu" class="container">
     <div id="sync-banner" class="hidden"></div>
-    <h2>Pepe先生の英語学習App.<span class="version-tag">v10.1</span></h2>
-    
+    <h2>Pepe先生の英語学習App.<span class="version-tag">v11.0</span></h2>
     <div class="search-container">
         <input type="text" id="search-input" placeholder="ターゲットや和訳で検索..." oninput="handleSearch()">
         <div id="search-results" class="hidden"></div>
     </div>
-
     <button class="menu-btn" onclick="showScreen('setup-screen')">学習モード (Learning)</button>
     <button class="menu-btn" onclick="showAllDataScreen()" style="background-color: #2980b9;">全データ表示 (All List)</button>
 </div>
@@ -89,8 +84,8 @@
     </div>
     <div class="setup-group" style="text-align:left; margin-bottom:20px;">
         <h3>2. 学習モード</h3>
-        <label><input type="radio" name="mode" value="reproduction" checked> (1) リプロダクション</label><br>
-        <label><input type="radio" name="mode" value="composition"> (2) 日本語=>英語</label>
+        <label><input type="radio" name="mode" value="reproduction" checked> (1) リプロダクション (聴く重視)</label><br>
+        <label><input type="radio" name="mode" value="composition"> (2) 日本語=>英語 (忘却曲線適用)</label>
     </div>
     <button class="menu-btn" style="background-color:#27ae60" onclick="startTraining()">学習を開始する</button>
 </div>
@@ -109,7 +104,7 @@
     <div class="controls-row">
         <button class="action-btn" onclick="playAudioSequence()">もう一度聴く</button>
         <button id="btn-read-eng" class="action-btn" onclick="playEnglishOnly()">英文を読む</button>
-        <button class="action-btn" onclick="playNext()">次にいく</button>
+        <button id="btn-skip" class="action-btn" onclick="playNext()">次にいく</button>
     </div>
     <div class="controls-row" id="ebbinghaus-controls" style="margin-top: 15px;">
         <button class="action-btn" style="background-color:#d35400" onclick="gradeItem(0)">Again (もう一回)</button>
@@ -128,9 +123,7 @@
     let voices = [];
     let currentMode = "reproduction";
 
-    function populateVoiceList() {
-        voices = window.speechSynthesis.getVoices();
-    }
+    function populateVoiceList() { voices = window.speechSynthesis.getVoices(); }
     window.speechSynthesis.onvoiceschanged = populateVoiceList;
 
     async function loadExternalData() {
@@ -140,7 +133,6 @@
             const text = await response.text();
             const lines = text.split('\n');
             let newCount = 0;
-            
             lines.forEach(line => {
                 const parts = line.split('\t');
                 if (parts.length >= 7) {
@@ -156,7 +148,7 @@
                             sentenceTranslation: parts[4].trim(),
                             explanation: parts[5].trim(),
                             category: parts[6].trim(),
-                            interval: 0, nextReview: Date.now()
+                            interval: 0, easeFactor: 2.5, nextReview: Date.now()
                         });
                         newCount++;
                     }
@@ -207,12 +199,10 @@
         showScreen('training-screen');
         revealData();
         document.getElementById('ebbinghaus-controls').classList.add('hidden');
+        document.getElementById('btn-skip').classList.remove('hidden'); // 詳細表示時はスキップボタンを表示
     }
 
-    function showAllDataScreen() {
-        showScreen('all-data-screen');
-        renderAllData('alphabet');
-    }
+    function showAllDataScreen() { showScreen('all-data-screen'); renderAllData('alphabet'); }
 
     function renderAllData(sortType) {
         let sorted = [...database];
@@ -232,14 +222,29 @@
         const selectedCats = Array.from(document.querySelectorAll('.category-cb:checked')).map(cb => cb.value);
         let pool = database.filter(item => selectedCats.includes(item.category));
         if (pool.length === 0) { alert("該当するデータがありません"); return; }
-        activeStock = pool.sort(() => Math.random() - 0.5);
+
+        if (currentMode === "composition") {
+            // (2) 日本語=>英語：新規20個優先 + 復習期日が来たもの
+            let news = pool.filter(i => i.interval === 0).slice(0, 20);
+            let reviews = pool.filter(i => i.interval > 0 && i.nextReview <= Date.now());
+            activeStock = [...news, ...reviews].sort(() => Math.random() - 0.5);
+            // UI調整：Again/Goodを表示、次にいく（スキップ）を隠す
+            document.getElementById('ebbinghaus-controls').classList.remove('hidden');
+            document.getElementById('btn-skip').classList.add('hidden');
+        } else {
+            // (1) リプロダクション：純粋にランダム
+            activeStock = pool.sort(() => Math.random() - 0.5);
+            // UI調整：Again/Goodを隠し、次にいくを表示
+            document.getElementById('ebbinghaus-controls').classList.add('hidden');
+            document.getElementById('btn-skip').classList.remove('hidden');
+        }
+        
         showScreen('training-screen');
-        document.getElementById('ebbinghaus-controls').classList.remove('hidden');
         playNext();
     }
 
     function playNext() {
-        if (activeStock.length === 0) { alert("今日の学習は終了です。お疲れ様でした！"); goHome(); return; }
+        if (activeStock.length === 0) { alert("このセットは終了です。お疲れ様でした！"); goHome(); return; }
         currentItem = activeStock.shift();
         playAudioSequence();
     }
@@ -265,7 +270,6 @@
         }
     }
 
-    // カンマ、ピリオド、コロン、セミコロンで3秒空ける
     async function speakTextWithPauses(text, lang) {
         const parts = text.split(/([,.:;])/); 
         for (let part of parts) {
@@ -290,14 +294,12 @@
 
     function setJapaneseVoice(ut) {
         ut.lang = 'ja-JP';
-        // 拡張音声を最優先で検索
         const targetVoice = 
             voices.find(v => v.lang.startsWith("ja") && (v.name.includes("Enhanced") || v.name.includes("拡張") || v.name.includes("Premium"))) ||
             voices.find(v => v.name.includes("Google 日本語")) ||
             voices.find(v => v.name.includes("Siri")) ||
             voices.find(v => v.name.includes("Nanami") || v.name.includes("Kyoko") || v.name.includes("Otoya")) ||
             voices.find(v => v.lang === "ja-JP");
-
         if (targetVoice) ut.voice = targetVoice;
     }
 
@@ -308,9 +310,7 @@
         window.speechSynthesis.speak(ut);
     }
 
-    function playEnglishOnly() {
-        speakTextWithPauses(currentItem.sentence, 'en');
-    }
+    function playEnglishOnly() { speakTextWithPauses(currentItem.sentence, 'en'); }
 
     function revealData() {
         document.getElementById('status-text').classList.add('hidden');
@@ -330,7 +330,24 @@
     }
 
     function gradeItem(grade) {
-        if (grade === 0) activeStock.push(currentItem);
+        if (currentMode === "composition") {
+            let dbIndex = database.findIndex(i => i.id === currentItem.id);
+            if (dbIndex !== -1) {
+                let item = database[dbIndex];
+                if (grade === 0) { // Again
+                    item.interval = 0;
+                    item.nextReview = Date.now() + (1 * 60 * 1000);
+                    activeStock.push(item);
+                } else { // Good
+                    if (item.interval === 0) item.interval = 1;
+                    else if (item.interval === 1) item.interval = 3;
+                    else item.interval = Math.round(item.interval * (item.easeFactor || 2.5));
+                    item.nextReview = Date.now() + (item.interval * 24 * 60 * 60 * 1000);
+                }
+                database[dbIndex] = item;
+                localStorage.setItem('executiveSRS_v9', JSON.stringify(database));
+            }
+        }
         playNext();
     }
 </script>
