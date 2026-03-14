@@ -2857,3 +2857,159 @@ It's music to my ears.	-	良い話じゃないか。	The funding has been approv
 I'll see what I can do.	-	できるだけのことはするよ。	Could you possibly find a spot for me in the project? —I'll see what I can do.	プロジェクトに僕の席をなんとか作れないかな？ —（約束はできないけど）何ができるかやってみるよ。	確約は避けつつ、最大限の努力をすることを伝える返事。	一般その他
 Stop giving me a hard time.	-	絡んでくるなよ。	I know I’m late, but stop giving me a hard time! I’ve already apologized.	遅れたのは分かってるけど、そんなに攻め（小言を言い）ないでよ！謝ったじゃないか。	説教や非難、あるいは無理な要求で困らせてくる相手を制す。	日常会話
 I'm rusty.	-	鈍っている。	I haven't sailed in two years, so my skills are a bit rusty.	2年もヨットに乗ってなかったから、腕が少し鈍っている（錆びついている）よ。	長期間練習していないために、以前の技能が衰えている状態。	ヨット
+ate	-	完璧にこなす	You totally ate that presentation today!	今日のあのプレゼン、完璧にやり遂げたね！	期待以上の素晴らしい成果を出した際に使うスラング。	教育研究
+before times	-	以前の時代	Things were so different in the before times.	以前の時代（パンデミック前など）は色々全く違っていた。	大きな社会変化が起きる前の時代を指す表現。	一般その他
+beige flag	-	少し気になる癖（重大ではない）	His strange habit of organizing pens is a beige flag.	彼のペンを整頓する奇妙な癖は、少し気になる点（ベージュフラグ）だ。	危険な「レッドフラグ」ではないが、少し「おや？」と思う個人の特徴。	日常会話
+bet	-	了解	A: Let's meet at 5. B: Bet.	A: 5時に会おう。 B: 了解。	同意や確認を示す軽い返事。若者同士でよく使われる。	日常会話
+boujee	-	リッチな、ハイクラスな	She prefers to stay at boujee hotels.	彼女はリッチな（ハイクラスな）ホテルに泊まるのを好む。	bourgeois（ブルジョワ）の略から派生した言葉。	一般その他
+brain rot	-	脳が腐る（過度な没入）	Scrolling short videos all day causes brain rot.	短い動画を一日中見ていると脳が腐る（ネット中毒になる）。	低俗なコンテンツの消費しすぎで思考力が落ちる状態を指す。	日常会話
+bussin	-	超ウマい、最高	This local ramen is straight bussin!	この地元のラーメン、マジで最高にウマい！	特に食べ物が極めて美味しいことを表す最上級の褒め言葉。	日常会話
+cheugy	-	チューギー（古臭い）	Using that old slang is considered a bit cheugy now.	あの古いスラングを使うのは、今では少し古臭い（ダサい）と思われている。	トレンド遅れや一昔前の流行を追っている様子を指す。	日常会話
+cringe	-	恥ずかしい、キツい、痛い	His joke during the meeting was so cringe.	会議中の彼のジョークは本当に見ていられなかった（キツかった）。	恥ずかしさで身をすくめるような、見ていて痛々しい状態。	日常会話
+Delulu	-	妄想している、現実離れしている	Stop being delulu about the situation.	その状況について妄想する（現実逃避する）のはやめなよ。	delusionalの略で、激しい妄想や非現実的な期待を抱くこと。	日常会話
+Don't trip	-	心配しないで	Don't trip over such a small error.	そんな小さなミスでくよくよ（心配）しないで。	tripを過剰反応する・つまずくという意味で使った口語表現。	日常会話
+extra	-	大げさな	She is being so extra with her reaction today.	今日の彼女の反応はとても大げさ（やりすぎ）だ。	必要以上にドラマチックに振る舞ったり騒いだりする様子。	日常会話
+Fauch	-	ファウチする（科学的根拠で論破する）	He fauched the opponent's argument with solid data.	彼は確固たるデータで相手の議論を論破した。	アンソニー・ファウチ博士の名に由来する新語。	教育研究
+flex	-	見せびらかす、ドヤる	He loves to flex his new car on social media.	彼はSNSで新しい車を見せびらかすのが大好きだ。	自慢する、自分の実力や所有物を誇示するという意味。	日常会話
+ghost	-	ゴーストする（連絡を絶つ）	I think the new client is going to ghost us.	あの新規顧客は我々との連絡を絶つつもりだと思う。	メッセージに返信せず、急に関係を断ち切ること。	一般その他
+GOAT	-	史上最高の～	That badminton player is the GOAT.	あのバドミントン選手は史上最高だ。	Greatest Of All Timeの頭文字。スポーツ等でよく使われる。	日常会話
+Hits different	-	著しく優れている、一味違う	A cold drink hits different after a long swim.	長く泳いだ後の冷たい飲み物は一味違って最高だ。	通常とは異なる、格別の良さや感情を抱くこと。	日常会話
+I feel you.	-	よく分かるよ	I feel you. Writing a thesis is really tough.	よく分かるよ。論文を書くのは本当に大変だよね。	相手の感情や苦労に強く共感する際の定番フレーズ。	教育研究
+I'm dead.	-	面白すぎ、爆笑	That story is hilarious. I'm dead.	その話、ウケる。面白すぎて死ぬ（爆笑）。	笑いすぎて息ができない、死にそうというニュアンス。	日常会話
+I'm jelly.	-	うらやましい	You are going to Hawaii? I'm so jelly.	ハワイに行くの？めっちゃうらやましい。	jealous（嫉妬・羨望）を短く可愛くした言い回し。	日常会話
+I'm shook.	-	めっちゃびっくり	I'm completely shook by the sudden announcement.	その突然の発表にひどく衝撃を受けている。	心が揺さぶられるほどの驚きやショックを表す。	一般その他
+let him/her cook	-	その人に任せて見守る	He has a unique strategy, so let him cook.	彼には独特の戦略があるから、邪魔せずに見守ろう。	「料理をさせる」＝「実力を発揮するのを黙って見届ける」。	一般その他
+lowkey	-	こっそり、大きい声ではいえないけど	I lowkey want to skip the party and stay home.	大きい声では言えないけど、パーティーをサボって家にいたい。	「控えめに言って」「実は」と本音を漏らす際の表現。	日常会話
+mid	-	普通、イマイチ	The new movie was totally mid; I expected better.	その新作映画は完全に普通（イマイチ）だった。もっと期待していたのに。	middleから派生し、特筆すべき点がない平凡さを指す。	日常会話
+no cap	-	マジで、嘘じゃない	I finished the whole task today, no cap.	今日中にタスクを全部終わらせたよ、マジで（嘘じゃない）。	cap（嘘）を否定し、本当であることを強調する表現。	日常会話
+Rent-free	-	頭から離れない	That song lives rent-free in my head.	あの曲が頭の中でずっと鳴り止まない（頭を占領している）。	家賃を払わずに住み着く＝忘れられない、という比喩表現。	日常会話
+rizz	-	魅力、口説きスキル	He used his rizz to charm the audience.	彼は持ち前の魅力（口説きスキル）で聴衆を魅了した。	charismaから派生し、人を惹きつける天性の魅力を指す。	日常会話
+Salty	-	怒っている、ふてくされている	Why are you acting so salty about losing the match?	試合に負けたからって、なんでそんなにふてくされているの？	塩辛い（salty）から転じて、イライラしている様子を表す。	日常会話
+simp	-	好きな人の言いなりになってしまう人	He bought her an expensive gift; what a simp.	彼が彼女に高価なプレゼントを買ったって？なんて尽くしすぎるやつだ。	相手によく思われようと過剰に尽くしてしまう人のこと。	日常会話
+skibidi	-	やばい、カオス（意味不明だが面白い）	The ending of that video was completely skibidi.	あの動画の結末は完全にやばかった（カオスだった）。	アルファ世代特有の言葉で、明確な意味はないがヤバい状況を指す。	日常会話
+slay	-	完璧に決める	You are going to slay the presentation tomorrow.	明日のプレゼン、君なら完璧に決められるよ。	「圧倒する」「最高にやってのける」という称賛の言葉。	教育研究
+snatched	-	イケてる	Your outfit is snatched today!	今日の君の服装、完璧にキマっている（イケている）ね！	容姿やスタイルが非常に優れていて隙がないこと。	日常会話
+sus	-	怪しい、うさんくさい	That email link looks really sus.	あのメールのリンクは本当に怪しい（うさんくさい）ね。	suspicious（疑わしい）の略語。ゲームのAmong Usから流行。	一般その他
+vibe check	-	バイブス確認、ノリの確認	Wait, we need to do a quick vibe check before the meeting.	待って、会議の前にちょっとノリ（雰囲気）を確認しよう。	その場の雰囲気や人の良し悪しを確かめること。	日常会話
+Vibing	-	良い雰囲気を楽しんでいる、ノリが合う	We were just vibing to the music all night.	私たちは一晩中、音楽に合わせて良い雰囲気を楽しんでいた。	vibe（雰囲気）を感じ取ってリラックスしたり楽しんだりする様子。	日常会話
+weak	-	爆笑、笑いすぎて力が入らない	That meme has me weak!	あのネットミームには笑い転げた（力が入らない）！	面白すぎて「膝から崩れ落ちる」「力が入らない」状態。	日常会話
+woke	-	ウォーク、社会問題に意識が高い	He considers himself very woke about environmental issues.	彼は自分自身を環境問題に対して非常に意識が高いと考えている。	社会的不正などに敏感なこと。近年は皮肉として使われることも。	一般その他
+Awesome!	[ˈɔːsəm]	すごい！、素晴らしい！	That’s an awesome idea for our next research project.	次の研究プロジェクトにとって、それは素晴らしいアイデアですね。	相手の意見や提案をポジティブに肯定する際に、学会や会議でも非常に使いやすい表現です。	一般その他
+No worries.	-	気にしないで。	No worries, I can adjust the meeting schedule to fit your availability.	お気になさらず、あなたの都合に合わせて会議のスケジュールを調整できます。	感謝された時や、ミスを謝罪された時、あるいは調整を快諾する際に使われる万能なイディオムです。	日常会話
+Chill out.	-	落ち着いて、リラックスして。	We should chill out for a bit before the final presentation.	最終プレゼンの前に、少しリラックスしましょう。	緊張している同僚を落ち着かせたり、休憩を促したりする際に使われます。	日常会話
+I'm down.	-	賛成だよ、乗った。	I’m down to join the study group this weekend.	今週末の勉強会に参加するよ。	提案に対して「自分もやりたい」「参加したい」とカジュアルに同意する際に便利です。	日常会話
+You bet!	-	もちろん！、どういたしまして。	"Can you help me with the data analysis?" "You bet!"	「データ分析を手伝ってくれる？」「もちろんだよ！」	依頼に対する力強い快諾、またはThank youに対する返答として使われます。	日常会話
+Take it easy.	-	無理しないで、気楽に。	Take it easy after the conference; you’ve worked so hard.	学会が終わった後は、無理せずゆっくりしてください。	別れ際の挨拶や、疲れている相手を労る際に非常に一般的です。	日常会話
+My bad.	-	ごめん、私のミスだ。	My bad, I sent you the wrong version of the draft.	すみません、下書きの古いバージョンを送ってしまいました。	軽いミスを認める際の口語的な表現です。	日常会話
+No biggie.	-	大したことないよ。	It's no biggie if we can’t finish the entire chapter today.	今日中に章全体が終わらなくても、大したことではありません。	No big dealの短縮形で、相手に気を遣わせないための優しい表現です。	一般その他
+Bummer.	[ˈbʌmər]	残念だね、がっかり。	It’s a bummer that the funding wasn't approved this time.	今回、資金援助が承認されなかったのは残念ですね。	期待外れのニュースを聞いた際に、共感を示す言葉として使われます。	一般その他
+Sweet!	-	いいね！、最高！	You got the internship? Sweet!	インターンが決まったの？ いいね！	素晴らしい知らせを聞いた時の感嘆詞として、非常に親しみやすい響きがあります。	日常会話
+I'm all ears.	-	話を聞くよ、詳しく教えて。	Please tell me about your new findings; I'm all ears.	新しい知見について教えてください。しっかり聞きます。	相手の話に対して深い関心があり、集中して聞く準備ができていることを示します。	教育研究
+Heads up!	-	気をつけて！、事前に知らせるよ。	Just a heads up, the laboratory will be closed for maintenance tomorrow.	事前にお知らせしますが、明日はメンテナンスのため研究室が閉鎖されます。	注意喚起や、事前の情報を共有する際に非常に頻出する表現です。	教育研究
+Piece of cake.	-	簡単だよ。	Formatting the bibliography is a piece of cake with this software.	このソフトウェアを使えば、参考文献のフォーマット作成は簡単です。	作業の難易度が低いことを強調する際に使われます。	一般その他
+Hang tight.	-	少し待ってね。	Hang tight for a second while I pull up the slides.	スライドを表示させるまで、少々お待ちください。	オンライン会議や授業で、準備が整うまで待ってもらう際に便利な表現です。	日常会話
+I'm beat.	-	疲れた、くたくただ。	I’m beat after that three-hour seminar.	3時間のセミナーの後で、もうくたくたです。	非常に疲労困憊している様子を伝えるカジュアルな言い方です。	日常会話
+Way to go!	-	よくやった！	Way to go on passing the qualifying exam!	資格試験合格おめでとう、よくやったね！	誰かの成功や成果を祝福する際の声掛けです。	一般その他
+What's up?	-	どうしたの？、調子はどう？	What's up? Do you have any questions regarding the syllabus?	どうしましたか？ シラバスに関して何か質問はありますか？	挨拶としても、相手の様子を伺う際にも使える万能フレーズです。	教育研究
+In no time.	-	すぐに、あっという間に。	We’ll be able to finalize the report in no time.	すぐに報告書を仕上げることができるでしょう。	時間がかからないことを示唆し、相手を安心させる際によく使われます。	一般その他
+Fair enough.	-	納得だね、もっともだ。	If you need more time for data collection, fair enough.	データ収集にさらに時間が必要だというなら、もっともな話ですね。	相手の意見や理由に一理あると認め、同意する際に使われます。	教育研究
+Keep it up.	-	その調子！	Your presentation skills are improving; keep it up!	プレゼン能力が向上していますね。その調子で頑張ってください！	継続的な努力を促す、ポジティブな励ましの言葉です。	教育研究
+Long story short.	-	手短に言うと。	Long story short, the experiment failed due to a power outage.	手短に言うと、停電のせいで実験は失敗しました。	詳細を省いて結論だけを述べたい時に、会議などで重宝します。	一般その他
+On point.	-	完璧！、的を射ている。	Your analysis of the current market trends was spot on point.	現在の市場動向に関するあなたの分析は、非常に的を射ていました。	意見やパフォーマンスが正確で適切であることを賞賛する際に使われます。	一般その他
+Hang in there.	-	頑張って、持ちこたえて。	The final exams are almost over, so hang in there!	期末試験もあと少しで終わりです。最後まで頑張って！	困難な状況にいる人を励ます際の定番フレーズです。	一般その他
+Hit the sack.	-	寝る。	I have an early meeting tomorrow, so I’d better hit the sack.	明日は早い時間に会議があるので、もう寝ないと。	「寝る」のカジュアルな言い換えで、親しい同僚との会話などで使われます。	日常会話
+It's on me.	-	おごるよ。	Let’s get some coffee; it's on me.	コーヒーでも飲みに行きましょう。私がおごります。	支払いを受け持つことを伝えるスマートな表現です。	日常会話
+Nailed it!	-	完璧にできた！	You nailed it! That was the best speech of the day.	完璧だったよ！ 今日一番のスピーチだった。	課題や任務を完璧に遂行した相手を称える言葉です。	一般その他
+Hang out.	-	一緒に過ごす、遊ぶ。	We should hang out and discuss our thesis ideas sometime.	いつかゆっくり会って、論文のアイデアについて話し合いましょう。	単に遊ぶだけでなく、カジュアルに時間を共有することを指します。	日常会話
+Hit me up.	-	連絡してね。	Hit me up if you need any help with the software installation.	ソフトのインストールで助けが必要なら、連絡してください。	「後で連絡をちょうだい」と軽く頼む際に便利です。	一般その他
+Take a rain check.	-	また今度にしよう。	I’d love to join the dinner, but I have to take a rain check this time.	夕食に参加したいのですが、今回はまた今度ということでお願いします。	誘いを丁寧に、かつ将来の可能性を残して断る際の上品な表現です。	日常会話
+No sweat.	-	簡単だよ、お安いく御用。	Helping you with the proofreading is no sweat at all.	校正を手伝うくらい、お安い御用ですよ。	苦労せずにできること、または感謝への返答として使われます。	一般その他
+I'm stoked.	-	ワクワクしてる。	I’m stoked about the upcoming guest lecture by Professor Smith.	スミス教授による次回の特別講義に、とてもワクワクしています。	何かを非常に楽しみにしていて、興奮している状態を表します。	教育研究
+Screw up.	-	ミスする。	I’m sorry, I screwed up the formatting on the third slide.	すみません、3枚目のスライドのフォーマットを間違えてしまいました。	失敗したことを正直に、やや自嘲気味に伝える際に使われます。	一般その他
+For real?	-	本当に？	For real? You completed the entire analysis in one day?	マジで？ あの分析を一日で全部終わらせたんですか？	驚きや疑念をカジュアルに表現する際に使われます。	日常会話
+I'm starving.	-	お腹すいた！	Is the meeting over yet? I'm starving!	会議はまだ終わりませんか？ お腹がペコペコです！	hungryよりも強い空腹感を強調する際によく使われます。	日常会話
+Let's roll.	-	始めよう、出発しよう。	We have a lot to cover today, so let's roll.	今日はやることがたくさんあるので、早速始めましょう。	活動を開始する際の合図として使われる威勢の良い表現です。	一般その他
+Can't complain.	-	文句ないよ、順調だよ。	"How is your research going?" "Can't complain."	「研究の進み具合はどう？」「順調だよ（文句はないね）。」	近況を聞かれた際、「悪くない」「まずまずだ」と答える定番の返しです。	一般その他
+Take a breather.	-	一休みしよう。	Let's take a breather for ten minutes before we continue the discussion.	議論を続ける前に、10分間一休みしましょう。	短い休憩を提案する際に、会議や授業でよく使われます。	教育研究
+Just saying.	-	ただ言ってみただけ。	It might be better to re-verify the data, just saying.	データを再確認したほうがいいかもしれません。ただの独り言ですが。	自分の意見が強くなりすぎないよう、和らげるために付け加える表現です。	一般その他
+Road trip	-	ドライブ旅行	We are planning a road trip to the coastal area after the semester ends.	学期が終わったら、沿岸部へドライブ旅行に行く計画を立てています。	単なる旅行よりも「車での旅」というニュアンスを強調する際に使われます。	日常会話
+Jet lag	-	時差ボケ	I’m still struggling with jet lag after returning from the conference in Paris.	パリでの学会から戻ったばかりで、まだ時差ボケに苦しんでいます。	海外学会への出席が多い研究者にとっては必須の表現です。	一般その他
+Pack light	-	荷物を少なくする	Since we have many transfers, it’s better to pack light for the field trip.	乗り換えが多いので、実地調査には荷物を少なくして行くのが良いでしょう。	旅行や出張の際、効率的なパッキングを促す表現です。	一般その他
+Travel bug	-	旅行好き、旅行熱	Ever since my study abroad, I’ve really caught the travel bug.	留学して以来、すっかり旅行好きになってしまいました。	何かに熱中している状態を「虫に刺された」と表現する面白い言い回しです。	日常会話
+Must-see	-	必見	The British Museum is a must-see for anyone interested in ancient history.	古代史に興味がある人にとって、大英博物館は必見の場所です。	強く推奨する場所やものに対して使われる形容詞的表現です。	教育研究
+Get along	-	仲良くする、うまくやっていく	It’s important for the team members to get along during this project.	このプロジェクト期間中、チームメンバーがうまくやっていくことは重要です。	人間関係の構築において最も基本的かつ重要な句動詞です。	一般その他
+Break the ice	-	打ち解ける、緊張をほぐす	Let’s start with a short game to break the ice before the workshop.	ワークショップの前に、緊張をほぐすための短いゲームから始めましょう。	初対面の人が集まる会議や授業の導入で非常によく使われます。	教育研究
+Get to know	-	知り合う、深く知る	The reception is a great opportunity to get to know other researchers.	レセプションは、他の研究者たちと知り合う絶好の機会です。	単に「知っている」状態ではなく、相互理解を深めるプロセスを指します。	教育研究
+Have someone's back	-	支える、後ろ盾になる	Don’t worry about the Q&A session; I’ll have your back.	質疑応答の時間は心配しないで。私が君をフォローするから。	「味方でいる」「守る」という強い信頼関係を示す表現です。	一般その他
+Keep in touch	-	連絡を保つ	Please keep in touch and let me know how your research progresses.	連絡を絶やさず、研究がどう進んでいるか教えてくださいね。	別れ際の挨拶として、学会や会議の後によく交わされる言葉です。	日常会話
+Go way back	-	昔からの知り合いだ	Professor Sato and I go way back; we were in the same lab 20 years ago.	佐藤教授と私は古い付き合いです。20年前に同じ研究室にいたんですよ。	長年の交友関係があることをスマートに伝える表現です。	教育研究
+Couch potato	-	怠け者、座ってばかりいる人	I became a bit of a couch potato during the winter break.	冬休みの間、すっかり怠け者になってしまいました。	ソファでポテトチップスを食べながらテレビを見ているようなイメージから来た表現です。	日常会話
+Out of this world	-	非常に素晴らしい、桁外れの	The resolution of this new electron microscope is out of this world.	この新しい電子顕微鏡の解像度は、桁外れに素晴らしい。	最高級の称賛を送る際に使われる、少し大げさでポジティブな表現です。	教育研究
+Rip-off	-	ぼったくり、盗作	That software is a total rip-off; you can find better free alternatives.	あのソフトは完全なぼったくりだよ。もっと良い無料の代替品がある。	価格が見合っていない時や、アイデアを盗まれた時に使われます。	一般その他
+Spill the beans	-	秘密をばらす、うっかり漏らす	Who spilled the beans about the surprise retirement party?	退職のお祝いサプライズパーティーのことを、誰がバラしたの？	隠しておかなければならない情報を漏らしてしまった際に使われます。	日常会話
+Bite the bullet	-	辛いことに立ち向かう、歯を食いしばる	I had to bite the bullet and redo the entire statistical analysis.	歯を食いしばって、統計分析を最初からやり直さなければなりませんでした。	避けられない困難を覚悟を決めて受け入れる際に使います。	一般その他
+Beat around the bush	-	遠回しに言う	Stop beating around the bush and tell me the main findings of your study.	遠回しに言うのはやめて、研究の主な知見を教えてください。	要点に触れず、周辺の話ばかりしている相手を促す際に使われます。	教育研究
+Cut to the chase	-	要点を言う、本題に入る	To cut to the chase, we need more funding to continue the experiment.	本題に入りますと、実験を続けるためにはさらなる資金が必要です。	会議などで時間を節約し、核心に触れたい時に非常に有効です。	一般その他
+Get cold feet	-	怖気づく、直前でためらう	He was going to present his paper, but he got cold feet at the last minute.	彼は論文を発表する予定でしたが、直前になって怖気づいてしまいました。	緊張や不安から、予定していた行動を躊躇することを指します。	教育研究
+Over the moon	-	とても嬉しい、大喜びで	I was over the moon when I heard that my paper was accepted.	論文が採択されたと聞いたとき、天にも昇る心地でした。	極上の幸福感や達成感を表現する際に使われます。	日常会話
+Blown away	-	圧倒される、非常に驚く	I was blown away by the depth of the discussion at the symposium.	シンポジウムでの議論の深さに、すっかり圧倒されました。	才能や技術、成果に対して深い感銘を受けた際に使います。	教育研究
+In a pickle	-	困っている、苦境に立たされている	We’re in a bit of a pickle because the primary investigator is ill.	主任研究員が病気になってしまい、少し困った状況にあります。	深刻すぎないが、どうにかしなければならない面倒な状況を指します。	日常会話
+In the zone	-	集中している、没頭している	I was so in the zone that I finished writing the whole chapter in one night.	すごく集中していたので、一晩で章全体を書き終えてしまいました。	スポーツや仕事で、最高の集中状態にあることを示します。	一般その他
+Spot on	-	的を射ている、正確な	Your assessment of the experimental error was spot on.	実験誤差に関するあなたの評価は、まさに的を射ていました。	完璧に正しい、あるいは極めて正確な指摘に対して使われます。	教育研究
+Big deal	-	大変なこと、重要なこと	It’s a big deal for our department to host this international conference.	当学科がこの国際会議を主催することは、大変重要なことです。	物事の重要性を強調する際に使われます（皮肉で「それがどうした」と使うこともあります）。	一般その他
+On the fence	-	決めかねている、中立でいる	I’m still on the fence about which statistical model to use.	どの統計モデルを使うべきか、まだ決めかねています。	二つの選択肢の間で迷っている様子を表す際によく使われます。	教育研究
+Out of line	-	やり過ぎ、不適切	His comments during the debate were clearly out of line.	討論中の彼の発言は、明らかに不適切でした。	言動が礼儀やルールから外れていることを指摘する際に使われます。	一般その他
+It's a no-brainer	-	簡単なこと、考えるまでもないこと	Choosing this efficient algorithm was a no-brainer.	この効率的なアルゴリズムを選ぶのは、考えるまでもないことでした。	迷う余地がないほど明快な判断であることを示します。	一般その他
+A game-changer	-	状況を一変させるもの	The introduction of AI-driven analysis was a real game-changer for us.	AIによる分析の導入は、我々にとって真に状況を一変させるものでした。	革新的な技術やアイデアを評価する際の定番表現です。	一般その他
+Break a leg	-	幸運を祈る（頑張って！）	I know you’ve practiced hard for the presentation. Break a leg!	プレゼンのために一生懸命練習したんだから。頑張ってね！	舞台に立つ人などに対して「幸運を祈る」という意味で使われる励ましの言葉です。	日常会話
+Burn the midnight oil	-	夜遅くまで働く、猛勉強する	We had to burn the midnight oil to meet the grant proposal deadline.	助成金の申請期限に間に合わせるため、夜遅くまで作業しなければなりませんでした。	「深夜まで灯油を燃やす」という由来から、仕事や研究に打ち込む様子を表します。	教育研究
+Crying over spilled milk	-	過ぎたことを悔やむ	The data was lost, but there's no use crying over spilled milk; let's restart.	データは消えてしまいましたが、済んだことを悔やんでも仕方ありません。再開しましょう。	変えられない過去の失敗に執着せず、前を向こうとする時に使われます。	一般その他
+Draw a blank	-	思い出せない、白紙状態になる	I drew a blank when the professor asked me about the specific methodology.	教授から具体的な手法について質問されたとき、頭が真っ白になって思い出せませんでした。	答えが全く出てこない状況を指します。	教育研究
+The ball is in your court	-	あなた次第だ、君の番だ	I've sent the draft to you, so the ball is in your court now.	下書きは送ったので、あとは君次第（君の確認待ち）だよ。	判断や行動の責任が相手に移ったことを示すビジネスでも多用される表現です。	一般その他
+Up in the air	-	未定だ、宙に浮いている	The date for the next symposium is still up in the air due to the venue booking.	会場予約の関係で、次のシンポジウムの日程はまだ未定です。	計画が確定しておらず、流動的な状況を指します。	一般その他
+Cut some slack	-	大目に見る、勘弁してやる	It's his first time presenting in English, so please cut him some slack.	彼にとって初めての英語発表なので、どうか大目に見てあげてください。	相手の事情を考慮して、厳しく追及しないよう求める際に使われます。	日常会話
+Drive someone up the wall	-	イライラさせる	The constant noise from the construction next door is driving me up the wall.	隣の工事の音が絶え間なく続いて、イライラが募ります。	非常に強い苛立ちを感じていることを表現します。	日常会話
+Go with the flow	-	流れに身を任せる	Let's not plan every minute of the field trip; it's better to go with the flow.	実地調査のスケジュールを詰めすぎず、流れに身を任せる方がいいでしょう。	状況に応じて柔軟に対応する姿勢を示します。	日常会話
+Sleep on it	-	一晩考える	That's a major decision for the lab; why don't you sleep on it?	それは研究室にとって重大な決断です。一晩じっくり考えてみてはどうですか？	即答を避け、時間をかけて冷静に判断することを提案する表現です。	一般その他
+Under the weather	-	体調が悪い	I'm feeling a bit under the weather, so I'll join the meeting via Zoom.	少し体調が優れないので、会議にはZoomで参加します。	病気というほどではないが、具合が悪い時に使われる上品な表現です。	日常会話
+Ring a bell	-	聞き覚えがある	The name of that researcher rings a bell, but I can't place her face.	その研究者の名前に聞き覚えはありますが、顔が思い出せません。	記憶の断片を刺激するような状況で使われます。	教育研究
+Stick to your guns	-	信念を貫く、自説を曲げない	You should stick to your guns if you believe your hypothesis is correct.	自分の仮説が正しいと思うなら、信念を貫くべきです。	周囲の批判に屈せず、自分の意見を持ち続けることを励ます言葉です。	教育研究
+Throw in the towel	-	降参する、諦める	After months of failed experiments, they finally decided to throw in the towel.	数ヶ月に及ぶ実験失敗の末、彼らはついに諦める決心をしました。	ボクシングの棄権が語源の、断念を意味する定番フレーズです。	一般その他
+Call it a day	-	終わりにする、切り上げる	We’ve made good progress on the slides, so let’s call it a day.	スライド作成は順調に進んだので、今日はここまでにしましょう。	その日の仕事や活動を終了する際の決まり文句です。	一般その他
+Think outside the box	-	独創的に考える、既成概念にとらわれない	To solve this complex problem, we need to think outside the box.	この複雑な問題を解決するには、既成概念にとらわれない思考が必要です。	クリエイティブなアプローチを求める際にビジネスや教育で多用されます。	一般その他
+Back to square one	-	振り出しに戻る	The simulation didn't work, so it's back to square one for us.	シミュレーションが機能しなかったので、私たちは振り出しに戻ることになりました。	計画が失敗し、最初からやり直さなければならない状況を指します。	一般その他
+Crunch time	-	忙しい時期、正念場	It’s crunch time now that the final exam is only two days away.	期末試験まであと2日となり、まさに正念場です。	重要な期限が迫り、非常に忙しく重要な局面を指します。	教育研究
+Raise the bar	-	基準を引き上げる	The latest study has really raised the bar for future research in this field.	最新の研究により、この分野の将来の研究に対する基準が大きく引き上げられました。	期待値や目標レベルを高めることを意味します。	教育研究
+Bottom line	-	最終的な結果、要点、結論	The bottom line is that we need more data to prove the theory.	結論を言えば、その理論を証明するにはもっとデータが必要です。	最も重要なポイントや、最終的な損益・結果を指す際に使われます。	一般その他
+Touch base	-	連絡を取る、現状を確認し合う	Let’s touch base next week to discuss the feedback from the reviewers.	査読者からのフィードバックを検討するため、来週また連絡を取り合いましょう。	進捗確認のために短く連絡を取り合う際によく使われるビジネス表現です。	一般その他
+Game plan	-	作戦、戦略	What’s our game plan for the upcoming international conference?	今度の国際会議に向けた、私たちの戦略（作戦）は何ですか？	目的達成のための具体的な手順や計画を指します。	一般その他
+By the book	-	規則通りに、マニュアル通りに	The ethics committee requires us to do everything strictly by the book.	倫理委員会は、私たちがすべてを厳格に規則通りに行うことを求めています。	ルールや手順を忠実に守る様子を表します。	教育研究
+Get down to business	-	本題に入る、仕事に取り掛かる	Now that everyone is here, let’s get down to business.	全員揃ったので、本題に入りましょう。	雑談を終えて、本格的に会議や作業を始める際の合図です。	一般その他
+In the pipeline	-	準備中、計画中	We have several new publications in the pipeline for this year.	今年はいくつかの新しい出版計画が進行中です。	現在準備中で、将来的に提供される予定のものを指します。	教育研究
+Stay on top of it	-	最新情報を把握する、状況をコントロールする	It's hard to stay on top of all the new literature in our field.	私たちの分野の新しい文献をすべて把握し続けるのは大変です。	状況を完全に行き届かせ、遅れをとらないようにすることを意味します。	教育研究
+On the same page	-	同じ意見で、認識を共有して	Before we move to the next topic, I want to make sure we are all on the same page.	次のトピックに移る前に、全員の認識が一致しているか確認したいです。	チームの意思疎通を確認する際のビジネス・学会での必須表現です。	一般その他
+Sit tight	-	じっと待つ、そのまま待機する	The server is rebooting, so please sit tight for a few minutes.	サーバーを再起動中ですので、数分間そのままお待ちください。	状況が動くのを静かに待つよう指示・依頼する際に使われます。	日常会話
+All bark and no bite	-	口先だけで行動が伴わない	He talks about finishing the paper, but so far it's all bark and no bite.	彼は論文を仕上げると言っていますが、今のところ口先だけで行動が伴っていません。	威勢はいいが実行力がない人を形容する際に使われます。	一般その他
+Cross your fingers	-	うまくいくよう祈る	The results will be announced tomorrow; let’s cross our fingers.	結果は明日発表されます。うまくいくように祈りましょう。	幸運を祈る際のジェスチャーを言葉にした定番表現です。	日常会話
+Down to the wire	-	最後ギリギリの瞬間まで	The negotiation went down to the wire, but we finally reached an agreement.	交渉は最後の最後までもつれ込みましたが、ようやく合意に達しました。	期限や決着が間際まで決まらない緊迫した状況を指します。	一般その他
+Fit the bill	-	条件にぴったり合う	This new software fits the bill for our data visualization needs.	この新しいソフトは、我々のデータ可視化のニーズにぴったりです。	特定の目的や要求を完全に満たしている状態を指します。	教育研究
+Lend a hand	-	手を貸す、手伝う	Could you lend a hand with setting up the equipment in the lab?	研究室の装置のセットアップを手伝っていただけますか？	helpよりも少し「具体的な作業を手伝う」というニュアンスが強まります。	日常会話
+Nip it in the bud	-	芽のうちに摘み取る、早めに解決する	We noticed a small error in the code and nipped it in the bud.	コードに小さなミスを見つけたので、問題が大きくなる前に解決しました。	トラブルを初期段階で未然に防ぐことを意味します。	一般その他
+Quick fix	-	一時しのぎの解決策	Adding more memory is just a quick fix; we need a more fundamental solution.	メモリを増やすのは一時しのぎに過ぎません。より根本的な解決策が必要です。	本質的ではない、手軽な応急処置を指します。	一般その他
+Rub elbows	-	（有名人などと）交流する	The conference is a great place to rub elbows with leading experts.	その学会は、一流の専門家たちと交流するのに絶好の場所です。	社交的な場での交流、特に目上の人とのネットワーク作りを指します。	教育研究
+Take the bull by the horns	-	果敢に難局に立ち向かう	I decided to take the bull by the horns and address the issue directly.	私は意を決して、その問題に直接立ち向かうことにしました。	困難に対して逃げずに、積極的に対処する姿勢を表します。	一般その他
+Your guess is as good as mine	-	私にもさっぱり分かりません	"When will the project be approved?" "Your guess is as good as mine."	「プロジェクトはいつ承認されるかな？」「私にもさっぱり分からないよ。」	相手と同じくらい自分も情報を持ち合わせていないことを伝える丁寧な言い回しです。	日常会話
+Against the clock	-	時間に追われて、大急ぎで	We are working against the clock to finish the manuscript by Friday.	金曜日までに原稿を仕上げるため、時間に追われながら作業しています。	締め切りが迫っており、一刻を争う状況を表現します。	教育研究
+Call the shots	-	指揮を執る、決定権を持つ	As the principal investigator, she is the one who calls the shots here.	主任研究員として、ここで決定権を持っているのは彼女です。	グループや組織でリーダーシップを発揮している状態を指します。	一般その他
+Down to earth	-	現実的な、気さくな、謙虚な	Despite his fame, the professor is very down to earth and approachable.	名声があるにもかかわらず、その教授は非常に気さくで話しやすいです。	性格が誠実で、飾らない人を褒める際のポジティブな表現です。	一般その他
+Foot in the door	-	足がかり、第一歩を踏み出す	Winning this small grant gave me a foot in the door for my research career.	この少額の助成金を得たことで、研究者としてのキャリアの足がかりを築けました。	将来の大きな成功につながる最初の機会を得ることを意味します。	教育研究
+Go for broke	-	全力を尽くす、いちかばちかやってみる	We decided to go for broke and apply for the most prestigious fellowship.	私たちはいちかばちか、最も権威のあるフェローシップに応募することにしました。	リスクを恐れず、持てるすべてを賭けて挑戦する際に使われます。	一般その他
+Hit the books	-	猛烈に勉強する	I need to hit the books this weekend for the qualifying examination.	資格試験に向けて、この週末は猛勉強しなければなりません。	単にstudyと言うよりも「本にかじりついて勉強する」という熱心さが出ます。	教育研究
+In a nutshell	-	端的に言えば、要約すると	In a nutshell, our findings suggest that the temperature has a minimal effect.	端的に言えば、我々の知見は温度の影響が最小限であることを示唆しています。	複雑な内容を簡潔にまとめるときに、プレゼン等で非常に重宝します。	教育研究
+Level playing field	-	公平な競争条件	The new regulations ensure a level playing field for all applicants.	新しい規制により、すべての応募者に公平な競争条件が保証されます。	誰に対しても同じ条件や機会が与えられている公平な状況を指します。	一般その他
+Play it safe	-	安全策を採る、慎重に行く	Let's play it safe and run the control experiment one more time.	念のため、対照実験をもう一度行って慎重に進めましょう。	リスクを避け、確実な道を選ぶ際の表現です。	教育研究
+Think on your feet	-	臨機応変に対応する、即座に判断する	You need to be able to think on your feet during the Q&A session.	質疑応答の間は、臨機応変に対応できる能力が必要です。	準備していない状況でも、その場で素早く思考し対応することを指します。	教育研究
+Zero in on	-	〜に焦点を絞る、集中する	The study zeros in on the specific protein responsible for the reaction.	その研究は、反応の原因となる特定のタンパク質に焦点を絞っています。	多くの情報の中から、特定の重要な一点を特定して集中することを指します。	教育研究
+Above and beyond	-	期待以上の、基準をはるかに超えた	Her contribution to the project went above and beyond her responsibilities.	プロジェクトに対する彼女の貢献は、彼女の職責をはるかに超えた素晴らしいものでした。	要求された以上の努力や成果を上げた人を賞賛する言葉です。	一般その他
+Eat crow	-	（自分の間違いを認めて）屈辱を味わう、非を認める	After the new data came out, he had to eat crow regarding his earlier theory.	新しいデータが出た後、彼は以前の理論について間違いを認めざるを得ませんでした。	自分の誤りを認め、謝罪や訂正をする際の少し強い表現です。	教育研究
+Wanderlust	[ˈwɑːndərlʌst]	旅行欲、放浪癖	Studying history often triggers a sense of wanderlust in students.	歴史を学ぶことは、しばしば学生たちの旅行欲を刺激します。	「あちこち旅をしたい」という強い欲求を表す名詞です。	一般その他
