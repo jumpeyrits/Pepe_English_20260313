@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Executive's SRS Platform v9</title>
+    <title>Pepe先生の英語学習App.</title>
     <style>
         body { font-family: 'Helvetica Neue', Arial, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f8f9fa; margin: 0; color: #333; }
         .container { background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); padding: 30px; width: 95%; max-width: 800px; text-align: center; position: relative; max-height: 90vh; overflow-y: auto; }
@@ -11,6 +11,7 @@
         
         .btn-home { position: absolute; top: 15px; right: 20px; font-size: 1.5em; cursor: pointer; background: none; border: none; color: #7f8c8d; z-index: 10; }
         h2 { color: #2c3e50; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .version-tag { font-size: 0.5em; color: #bdc3c7; vertical-align: middle; margin-left: 10px; }
         
         /* 検索・メニュー */
         .search-container { margin: 20px 0; }
@@ -46,15 +47,15 @@
 
 <div id="main-menu" class="container">
     <div id="sync-banner" class="hidden"></div>
-    <h2>The Executive's SRS v9</h2>
+    <h2>Pepe先生の英語学習App.<span class="version-tag">v10.0</span></h2>
     
     <div class="search-container">
-        <input type="text" id="search-input" placeholder="data.txt からターゲットや意味を検索..." oninput="handleSearch()">
+        <input type="text" id="search-input" placeholder="ターゲットや和訳で検索..." oninput="handleSearch()">
         <div id="search-results" class="hidden"></div>
     </div>
 
     <button class="menu-btn" onclick="showScreen('setup-screen')">学習モード (Learning)</button>
-    <button class="menu-btn" onclick="showAllDataScreen()" style="background-color: #2980b9;">全データ (All List)</button>
+    <button class="menu-btn" onclick="showAllDataScreen()" style="background-color: #2980b9;">全データ表示 (All List)</button>
 </div>
 
 <div id="all-data-screen" class="container hidden">
@@ -88,8 +89,8 @@
     </div>
     <div class="setup-group" style="text-align:left; margin-bottom:20px;">
         <h3>2. 学習モード</h3>
-        <label><input type="radio" name="mode" value="reproduction" checked> (1) リプロダクション (英聴->復唱)</label><br>
-        <label><input type="radio" name="mode" value="composition"> (2) 日本語=>英語 (和訳->英作)</label>
+        <label><input type="radio" name="mode" value="reproduction" checked> (1) リプロダクション</label><br>
+        <label><input type="radio" name="mode" value="composition"> (2) 日本語=>英語</label>
     </div>
     <button class="menu-btn" style="background-color:#27ae60" onclick="startTraining()">学習を開始する</button>
 </div>
@@ -108,15 +109,16 @@
     <div class="controls-row">
         <button class="action-btn" onclick="playAudioSequence()">もう一度聴く</button>
         <button id="btn-read-eng" class="action-btn" onclick="playEnglishOnly()">英文を読む</button>
-        <button class="action-btn" onclick="playNext()">スキップ</button>
+        <button class="action-btn" onclick="playNext()">次にいく</button>
     </div>
     <div class="controls-row" id="ebbinghaus-controls" style="margin-top: 15px;">
-        <button class="action-btn" style="background-color:#d35400" onclick="gradeItem(0)">Again (忘れた)</button>
-        <button class="action-btn" style="background-color:#2980b9" onclick="gradeItem(1)">Good (覚えた)</button>
+        <button class="action-btn" style="background-color:#d35400" onclick="gradeItem(0)">Again (もう一回)</button>
+        <button class="action-btn" style="background-color:#2980b9" onclick="gradeItem(1)">Good (大丈夫)</button>
     </div>
 </div>
 
 <script>
+    // 内部データベース名やIDはバグ回避のため従来のままとします
     let database = JSON.parse(localStorage.getItem('executiveSRS_v9')) || [];
     let activeStock = [];
     let currentItem = null;
@@ -139,7 +141,6 @@
             
             lines.forEach(line => {
                 const parts = line.split('\t');
-                // 7項目あるかチェック
                 if (parts.length >= 7) {
                     const target = parts[0].trim();
                     const exists = database.some(item => item.target === target && item.sentence === parts[3].trim());
@@ -148,7 +149,7 @@
                             id: Date.now() + Math.random(),
                             target: target,
                             pronunciation: parts[1].trim(),
-                            targetTranslation: parts[2].trim(), // 追加：ターゲットの和訳
+                            targetTranslation: parts[2].trim(),
                             sentence: parts[3].trim(),
                             sentenceTranslation: parts[4].trim(),
                             explanation: parts[5].trim(),
@@ -162,7 +163,7 @@
             if (newCount > 0) {
                 localStorage.setItem('executiveSRS_v9', JSON.stringify(database));
                 const banner = document.getElementById('sync-banner');
-                banner.innerText = `data.txtから ${newCount}件 の新規データを同期しました`;
+                banner.innerText = `${newCount}件の新規データを同期しました`;
                 banner.classList.remove('hidden');
                 setTimeout(() => banner.classList.add('hidden'), 4000);
             }
@@ -183,7 +184,6 @@
         document.getElementById(screenId).classList.remove('hidden');
     }
 
-    // --- 検索 ---
     function handleSearch() {
         const query = document.getElementById('search-input').value.toLowerCase();
         const resultsDiv = document.getElementById('search-results');
@@ -207,7 +207,6 @@
         document.getElementById('ebbinghaus-controls').classList.add('hidden');
     }
 
-    // --- 全リスト ---
     function showAllDataScreen() {
         showScreen('all-data-screen');
         renderAllData('alphabet');
@@ -226,7 +225,6 @@
         `).join('');
     }
 
-    // --- 学習実行 ---
     function startTraining() {
         currentMode = document.querySelector('input[name="mode"]:checked').value;
         const selectedCats = Array.from(document.querySelectorAll('.category-cb:checked')).map(cb => cb.value);
@@ -239,7 +237,7 @@
     }
 
     function playNext() {
-        if (activeStock.length === 0) { alert("すべての学習が終了しました！"); goHome(); return; }
+        if (activeStock.length === 0) { alert("今日の学習は終了です。お疲れ様でした！"); goHome(); return; }
         currentItem = activeStock.shift();
         playAudioSequence();
     }
@@ -253,15 +251,14 @@
         document.getElementById('status-text').classList.remove('hidden');
 
         if (currentMode === "reproduction") {
-            document.getElementById('status-text').innerHTML = "Listening (Sentence)...";
+            document.getElementById('status-text').innerHTML = "Listening...";
             await speakTextWithPauses(currentItem.sentence, 'en');
             setTimeout(async () => {
                 await speakTextWithPauses(currentItem.sentence, 'en');
                 revealData();
             }, 1000);
         } else {
-            document.getElementById('status-text').innerHTML = "Target Translation...";
-            // ターゲットの和訳を読み上げ
+            document.getElementById('status-text').innerHTML = "日本語を英語に...";
             speakJapanese(currentItem.targetTranslation, revealData);
         }
     }
@@ -290,23 +287,12 @@
 
 function setJapaneseVoice(ut) {
     ut.lang = 'ja-JP';
-    
-    // 優先順位をつけて自然な声を探す
-    const targetVoice = 
-        // 1. 名前の中に「Enhanced」や「拡張」、「Premium」が含まれる日本語音声を最優先
-        voices.find(v => v.lang.startsWith("ja") && (v.name.includes("Enhanced") || v.name.includes("拡張") || v.name.includes("Premium"))) ||
-        // 2. 次に Google の高品質なクラウド音声（Chromeの場合）
-        voices.find(v => v.name.includes("Google 日本語")) ||
-        // 3. 次に Siri の声（iOS/macOSで非常に自然）
-        voices.find(v => v.name.includes("Siri")) ||
-        // 4. 特定の好まれる声のリスト
-        voices.find(v => v.name.includes("Nanami") || v.name.includes("Kyoko") || v.name.includes("Otoya")) ||
-        // 5. 最終手段として最初に見つかった日本語
-        voices.find(v => v.lang === "ja-JP");
-
-    if (targetVoice) {
-        ut.voice = targetVoice;
-    }
+    // ブラウザ・OSが持っているリストから「自然な声」を優先検索
+    const v = voices.find(v => v.name.includes("Google")) 
+             || voices.find(v => v.name.includes("Nanami")) 
+             || voices.find(v => v.name.includes("Kyoko")) 
+             || voices.find(v => v.lang === "ja-JP");
+    if (v) ut.voice = v;
 }
 
     function speakJapanese(text, callback) {
@@ -338,7 +324,6 @@ function setJapaneseVoice(ut) {
     }
 
     function gradeItem(grade) {
-        // 判定ロジック（簡易版：Againは最後尾へ）
         if (grade === 0) activeStock.push(currentItem);
         playNext();
     }
