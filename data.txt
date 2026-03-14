@@ -3013,3 +3013,18 @@ Zero in on	-	〜に焦点を絞る、集中する	The study zeros in on the spec
 Above and beyond	-	期待以上の、基準をはるかに超えた	Her contribution to the project went above and beyond her responsibilities.	プロジェクトに対する彼女の貢献は、彼女の職責をはるかに超えた素晴らしいものでした。	要求された以上の努力や成果を上げた人を賞賛する言葉です。	一般その他
 Eat crow	-	（自分の間違いを認めて）屈辱を味わう、非を認める	After the new data came out, he had to eat crow regarding his earlier theory.	新しいデータが出た後、彼は以前の理論について間違いを認めざるを得ませんでした。	自分の誤りを認め、謝罪や訂正をする際の少し強い表現です。	教育研究
 Wanderlust	[ˈwɑːndərlʌst]	旅行欲、放浪癖	Studying history often triggers a sense of wanderlust in students.	歴史を学ぶことは、しばしば学生たちの旅行欲を刺激します。	「あちこち旅をしたい」という強い欲求を表す名詞です。	一般その他
+Vibe check	-	雰囲気確認、ノリが合うかどうかの確認	We did a vibe check before starting the collaborative project.	共同プロジェクトを始める前に、お互いのノリが合うか確認しました。	その場の雰囲気や、人の性格が周囲と調和しているかを確認するイディオムです。	日常会話
+I’m dead	-	（笑いすぎて）死ぬ、超ウケる	Did you see that blooper? I’m dead!	今のNGシーン見た？ 面白すぎて死ぬ！	面白いものを見た時に、SNSやチャットで非常に多用される誇張表現です。	日常会話
+Flex	[fleks]	自慢する、見せびらかす	It’s a weird flex, but he’s proud of having never used a smartphone.	妙な自慢だけど、彼はスマホを一度も使ったことがないのを誇りにしている。	自分の持ち物や能力を誇示することを指します。「Weird flex but OK」というフレーズも有名です。	日常会話
+Slay	[sleɪ]	最高、イケてる、完璧にこなす	Your presentation was amazing! You totally slayed it.	プレゼン最高だったよ！ 完全に決まってたね。	誰かが何かを完璧にやり遂げた時や、格好いい時に使われる称賛の言葉です。	一般その他
+Period.	-	以上。、それでおしまい。	This is the best ramen in town. Period.	これが街で一番のラーメンだ。異論は認めない（以上）。	自分の意見の後に付けて、これ以上の議論は不要だという強調をする際に使います。	日常会話
+Extra	[ˈekstrə]	大げさな、やりすぎな	She’s always so extra when it comes to organizing birthday parties.	彼女、誕生日の計画となるといつもすごく大げさ（気合いが入りすぎ）なんだよね。	必要以上に派手だったり、過剰な反応をしたりする様子を指します。	日常会話
+No cap	-	ガチで、嘘なしで	No cap, that was the hardest exam I’ve ever taken.	マジで、あれは今まで受けた中で一番難しい試験だった。	「嘘（Cap）」がない、つまり「本当だよ」「ガチだよ」という意味の若者言葉です。	日常会話
+Goat	-	史上最高（Greatest Of All Time）	When it comes to linguistics, Professor Miller is the GOAT.	言語学といえば、ミラー教授は史上最高（最高峰）の存在です。	G.O.A.T.（Greatest of All Time）の略で、特定の分野の天才を指します。	教育研究
+Rent-free	-	（頭の中に）居座り続ける	That catchy melody has been living in my head rent-free all day.	あのキャッチーなメロディが、一日中頭から離れないんだ。	「家賃を払わずに住み着く」＝「忘れようとしても思い出してしまう」という意味の現代的な表現です。	日常会話
+Main character energy	-	主人公感、自信に満ちたオーラ	She walked into the conference room with major main character energy.	彼女は、まさに「主人公」のような圧倒的なオーラを放って会議室に入ってきた。	自分が人生の主役であるかのように自信満々に振る舞うポジティブな様子を指します。	一般その他
+Understood the assignment	-	期待以上の仕事をした、空気を読んだ	He really understood the assignment with that creative presentation.	あの独創的なプレゼン、彼はまさに求められている以上のことを完璧にやってのけた。	期待された役割を完璧に、あるいはそれ以上にこなした人を褒める表現です。	教育研究
+Tea	[tiː]	ゴシップ、噂話	What’s the tea on the new department restructuring?	新しい部署再編のウワサ、何か聞いてる？	「Spill the tea（秘密を話す）」から派生した言葉で、学会の裏話や職場のゴシップを指す際によく使われます。	日常会話
+Bet	[bet]	了解、もちろん、受けて立つ	"Can you send me the link later?" "Bet."	「あとでリンク送ってくれる？」「了解（もちろん）。」	相手の提案や依頼に対して、短く力強く「いいよ」「分かった」と同意する時に使われます。	日常会話
+Vibing	[ˈvaɪbɪŋ]	リラックスして楽しんでいる、波長が合っている	We were just vibing in the lounge and talking about our research.	ラウンジでリラックスしながら、自分たちの研究について楽しく話していました。	特に何をするでもなく、その場の雰囲気や会話を心地よく楽しんでいる状態です。	日常会話
+Ghost	[ɡoʊst]	（連絡を断って）消える、音信不通になる	He was supposed to collaborate with us, but he ghosted the whole team.	彼は協力してくれるはずだったのに、チーム全員に対して音信不通になってしまった。	メールや返信を突然やめて、幽霊のように消えてしまうことを指します。	一般その他
