@@ -40,11 +40,11 @@
         #sync-banner { background-color: #27ae60; color: white; padding: 8px; font-size: 0.9em; position: absolute; top: 0; left: 0; right: 0; border-radius: 8px 8px 0 0; }
     </style>
 </head>
-<body>
+<body id="app-body" class="hidden">
 
 <div id="main-menu" class="container">
     <div id="sync-banner" class="hidden"></div>
-    <h2>Pepe先生の英語学習App.<span class="version-tag">v11.0</span></h2>
+    <h2>Pepe先生の英語学習App.<span class="version-tag">v11.1</span></h2>
     <div class="search-container">
         <input type="text" id="search-input" placeholder="ターゲットや和訳で検索..." oninput="handleSearch()">
         <div id="search-results" class="hidden"></div>
@@ -116,6 +116,19 @@
 </div>
 
 <script>
+    const AUTH_PASS = "pepe@rits";
+    function authenticate() {
+        const userInput = prompt("Pepe先生、パスワードを入力してください:");
+        if (userInput === AUTH_PASS) {
+            document.getElementById('app-body').classList.remove('hidden');
+            loadExternalData();
+        } else {
+            alert("パスワードが違います。");
+            window.location.reload();
+        }
+    }
+    window.onload = authenticate;
+
     let database = JSON.parse(localStorage.getItem('executiveSRS_v9')) || [];
     let activeStock = [];
     let currentItem = null;
@@ -163,7 +176,6 @@
             }
         } catch (e) { console.error("Sync Error:", e); }
     }
-    window.addEventListener('load', loadExternalData);
 
     function goHome() {
         window.speechSynthesis.cancel();
@@ -199,7 +211,7 @@
         showScreen('training-screen');
         revealData();
         document.getElementById('ebbinghaus-controls').classList.add('hidden');
-        document.getElementById('btn-skip').classList.remove('hidden'); // 詳細表示時はスキップボタンを表示
+        document.getElementById('btn-skip').classList.remove('hidden');
     }
 
     function showAllDataScreen() { showScreen('all-data-screen'); renderAllData('alphabet'); }
@@ -224,21 +236,16 @@
         if (pool.length === 0) { alert("該当するデータがありません"); return; }
 
         if (currentMode === "composition") {
-            // (2) 日本語=>英語：新規20個優先 + 復習期日が来たもの
             let news = pool.filter(i => i.interval === 0).slice(0, 20);
             let reviews = pool.filter(i => i.interval > 0 && i.nextReview <= Date.now());
             activeStock = [...news, ...reviews].sort(() => Math.random() - 0.5);
-            // UI調整：Again/Goodを表示、次にいく（スキップ）を隠す
             document.getElementById('ebbinghaus-controls').classList.remove('hidden');
             document.getElementById('btn-skip').classList.add('hidden');
         } else {
-            // (1) リプロダクション：純粋にランダム
             activeStock = pool.sort(() => Math.random() - 0.5);
-            // UI調整：Again/Goodを隠し、次にいくを表示
             document.getElementById('ebbinghaus-controls').classList.add('hidden');
             document.getElementById('btn-skip').classList.remove('hidden');
         }
-        
         showScreen('training-screen');
         playNext();
     }
@@ -334,11 +341,11 @@
             let dbIndex = database.findIndex(i => i.id === currentItem.id);
             if (dbIndex !== -1) {
                 let item = database[dbIndex];
-                if (grade === 0) { // Again
+                if (grade === 0) {
                     item.interval = 0;
                     item.nextReview = Date.now() + (1 * 60 * 1000);
                     activeStock.push(item);
-                } else { // Good
+                } else {
                     if (item.interval === 0) item.interval = 1;
                     else if (item.interval === 1) item.interval = 3;
                     else item.interval = Math.round(item.interval * (item.easeFactor || 2.5));
