@@ -44,3 +44,503 @@ Faith will move mountains.	-	信念は山をも動かす	It seems impossible, bu
 Nothing seek, nothing find.	-	求めなければ得られない	You should apply for that scholarship; nothing seek, nothing find.	その奨学金に応募してみるべきですよ。求めなければ得られません。	「探さなければ見つからない」。行動しないと結果は出ないという意味。	一般その他
 Every cloud has a silver lining.	-	どの苦労にも希望の兆しはある	I lost my job, but it gave me time to start my own business. Every cloud has a silver lining.	失業しましたが、起業する時間ができました。どの苦労にも希望の兆しはあります。	「どの雲も裏側は銀色に光っている」。逆境にも必ず良い側面がある。	一般その他
 give a man a fish	-	魚を一匹与える（その場しのぎの援助）	It's better to teach someone how to code than just doing it for them; give a man a fish and you feed him for a day.	単に代わりにやってあげるよりプログラミングを教える方が良い。魚を一匹与えれば一日の糧になるが…。	「人に魚を与えれば一日食べていけるが、釣り方を教えれば一生食べていける」の導入。	一般その他
+absolutely necessary	/ˌæbsəˈluːtli ˈnesəseri/	絶対に必要な	It is absolutely necessary to finalize the budget before the fiscal year ends.	年度末までに予算を確定させることが絶対必要です。	極めて重要で欠かせないことを強調する表現。	一般その他
+accept the offer	/əkˈsept ði ˈɔːfər/	申し出を受ける	I am pleased to inform you that we have decided to accept the offer.	その申し出をお受けすることに決定したことをお知らせいたします。	内定や提案を承諾する際に使います。	日常会話
+act so strange these days	/ækt soʊ streɪndʒ ðiːz deɪz/	最近様子がおかしい	The network system has been acting so strange these days; we need a checkup.	最近ネットワークの調子がおかしいので、点検が必要です。	人や機械の挙動が不審な場合に使われます。	日常会話
+add something (Let me)	-	一言付け加えさせてください	Let me add something to the discussion regarding the potential risks.	潜在的なリスクに関して、議論に一言付け加えさせてください。	会議で補足をする際の丁寧な切り出しです。	一般その他
+agent	/ˈeɪdʒənt/	代理人・代理店	Our local agent in Singapore will handle the logistics for this shipment.	シンガポールの現地代理店がこの出荷の物流を担当します。	業務を代行する人や組織を指します。	一般その他
+all your help (thanks for)	-	いろいろと助けていただきありがとうございます	Thanks for all your help during the transition period last month.	先月の移行期間中は、いろいろと助けていただきありがとうございました。	広範囲な支援に対する感謝の言葉。	日常会話
+analyze competitors' products and learn from them	/ˈænəlaɪz kəmˈpetɪtərz ˈprɒdʌkts ænd lɜːrn frəm ðem/	他社製品を分析し、それらから学ぶ	We need to analyze competitors' products and learn from them to stay competitive.	競争力を維持するために、他社製品を分析し、そこから学ぶ必要があります。	市場調査の基本戦略を指します。	教育研究
+answer your question this way (Let me)	-	このようにお答えさせてください	Let me answer your question this way to clarify our position.	我々の立場を明確にするために、このようにお答えさせてください。	回答を論理的に構成する際の枕詞です。	一般その他
+any inconvenience this may cause (I apologize for)	-	ご不便をおかけすることをお詫び申し上げます	I apologize for any inconvenience this may cause during the office renovation.	オフィス改装中、ご不便をおかけすることをお詫び申し上げます。	将来起こる不都合への事前謝罪。	一般その他
+any inconvenience this may have caused (I apologize for)	-	ご不便をおかけしたことをお詫び申し上げます	I apologize for any inconvenience this may have caused your department.	貴部署にご不便をおかけしたことをお詫び申し上げます。	既に発生した不都合への事後謝罪。	一般その他
+appreciated (be)	/bi əˈpriːʃieɪtɪd/	感謝される・ありがたく思われる	Your prompt attention to this matter would be greatly appreciated.	この件に迅速にご対応いただければ大変助かります。	It would be appreciated... の形で丁寧な依頼になります。	一般その他
+arrange a meeting with a client	/əˈreɪndʒ ə ˈmiːtɪŋ wɪð ə ˈklaɪənt/	顧客との会議を設定する	Could you please arrange a meeting with a client for next Wednesday?	来週の水曜日に、クライアントとの会議を設定していただけますか？	スケジュール調整を依頼する表現。	一般その他
+arriving so late (I apologize for)	-	遅れて到着したことをお詫びします	I apologize for arriving so late; the flight was delayed by two hours.	到着が遅くなり申し訳ありません。フライトが2時間遅延しました。	遅刻に対する謝罪。	日常会話
+ask for specific details	/æsk fər spəˈsɪfɪk ˈdiːteɪlz/	詳細を尋ねる	I’ll ask for specific details about the contract before we sign it.	署名する前に、契約に関する詳細な点について尋ねてみます。	具体的な情報を求める行為。	一般その他
+ask your boss to help you	/æsk jər bɒs tu help ju/	上司に助けを求める	Don't hesitate to ask your boss to help you if the workload is too heavy.	仕事量が多すぎる場合は、遠慮なく上司に助けを求めてください。	支援の要請。	一般その他
+at the department meeting next week	/æt ðə dɪˈpɑːrtmənt ˈmiːtɪŋ nekst wiːk/	来週の部会で	The issue will be addressed at the department meeting next week.	その問題は来週の部門会議で取り上げられます。	時期と場所の指定。	一般その他
+attend the meeting	/əˈreɪndʒ ə ˈmiːtɪŋ wɪð ə ˈklaɪənt/	会議に出席する	All faculty members are required to attend the meeting this afternoon.	本日の午後の会議には、全教員が出席する必要があります。	参加の標準的な表現。	教育研究
+authorized signer is out of town (their)	-	（先方の）権限を持つ署名者が不在である	Their authorized signer is out of town, so the approval will take longer.	先方の署名権限者が不在のため、承認に時間がかかる見込みです。	事務手続き上の遅延理由。	一般その他
+back in the office by 2:00 pm	-	午後2時までに戻る	I’m visiting a site now, but I’ll be back in the office by 2:00 pm.	現在現場を訪問中ですが、午後2時までにはオフィスに戻ります。	帰社時間を伝える表現。	日常会話
+be at my client's office at 3:00 pm	-	3時に顧客のオフィスにいる	I need to leave now to be at my client's office at 3:00 pm.	3時にクライアントのオフィスに着いている必要があるので、今出なければなりません。	訪問予定の伝達。	一般その他
+be handling this	/bi ˈhændlɪŋ ðɪs/	これに対応している	Our legal team will be handling this dispute moving forward.	今後は弊社の法務チームがこの紛争に対応いたします。	担当責任の所在。	一般その他
+be proactive to prevent problems	/bi proʊˈæktɪv tu prɪˈvent ˈprɒbləmz/	問題を防ぐために先手で動く	We must be proactive to prevent problems before they escalate.	問題が悪化する前に、先手で動いて防がなければなりません。	攻めの姿勢。	一般その他
+be so negative (Let's not)	-	そんなに否定的に考えないようにしましょう	Let's not be so negative; there are plenty of opportunities here.	そんなに否定的に考えるのはやめましょう。ここには多くのチャンスがあります。	前向きな思考を促す。	日常会話
+be so pessimistic (Let's not)	-	そんなに悲観的にならないようにしましょう	Let's not be so pessimistic about the research outcome just yet.	研究結果について、まだそんなに悲観的にならないようにしましょう。	悲観論を制止する。	教育研究
+be trusted (be)	/bi ˈtrʌstɪd/	信頼される	He has proven over the years that he can be trusted with any task.	彼は長年にわたり、どんな仕事も任せられる信頼に足る人物であることを証明してきました。	信頼性の評価。	一般その他
+before March 3rd	/bɪˈfɔːr mɑːrtʃ θɜːrd/	3月3日より前に	Please submit your application before March 3rd to be considered.	選考対象となるよう、3月3日までに申請書を提出してください。	期限の指定。	教育研究
+being candid (thanks for)	-	率直に意見を言ってくれてありがとう	Thanks for being candid; we need honest feedback to improve.	率直に言ってくれてありがとう。改善には正直な意見が必要です。	本音への感謝。	日常会話
+being honest about it (thanks for)	-	正直に話してくれてありがとう	Thanks for being honest about it; it helps us solve the problem faster.	正直に話してくれてありがとう。おかげで問題解決が早まります。	誠実さへの感謝。	日常会話
+being open-minded (thanks for)	-	柔軟な考えを持ってくれてありがとう	Thanks for being open-minded about these new experimental methods.	これらの新しい実験手法に対して柔軟に考えていただき、ありがとうございます。	受容性への感謝。	教育研究
+bother him with this (Let's not)	-	この件で彼を煩わせないようにしましょう	Let's not bother him with this small issue while he's on vacation.	彼が休暇中の間は、こんな些細なことで彼を煩わせないようにしましょう。	配慮。	日常会話
+by 2 pm next Wednesday	-	来週水曜日の午後2時までに	The final draft needs to be on my desk by 2 pm next Wednesday.	最終稿は来週水曜日の午後2時までに私のデスクに置いてください。	期限。	一般その他
+by 3:00 pm tomorrow	-	明日の午後3時までに	I will have the financial report ready by 3:00 pm tomorrow.	明日の午後3時までに財務報告書を準備しておきます。	期限。	一般その他
+by Friday before noon	-	金曜の正午までに	We need your confirmation by Friday before noon at the latest.	遅くとも金曜の正午までにご確認をお願いします。	期限。	一般その他
+by the end of the day	-	今日中に	I'll make sure to email you the summary by the end of the day.	今日中に要約をメールでお送りするようにいたします。	期限。	一般その他
+by the end of the day tomorrow	-	明日の終わり（終業）までに	Could you send the invoice by the end of the day tomorrow?	明日の終業時までに請求書を送っていただけますか？	期限。	一般その他
+by Thursday, the 19th	-	19日の木曜日までに	The shipment is scheduled to arrive by Thursday, the 19th.	荷物は19日の木曜日までに到着する予定です。	期限。	一般その他
+Can I verify...?	/kæn aɪ ˈverɪfaɪ/	…を確認してもいいですか？	Can I verify the spelling of your name for our records?	記録のために、お名前の綴りを確認してもよろしいでしょうか？	正確な確認を求める丁寧な表現。	日常会話
+cancelling our meeting on such short notice (I apologize for)	-	急な会議のキャンセルをお詫びします	I apologize for cancelling our meeting on such short notice due to an emergency.	緊急事態により、直前の会議キャンセルとなりましたこと、お詫び申し上げます。	直前の変更への謝罪。	一般その他
+check with Tokyo first (Let me)	-	まず東京（本社）に確認させてください	Let me check with Tokyo first before I give you a final answer.	最終的な回答をする前に、まず東京の本社に確認させてください。	本社への確認が必要な際の定型句。	一般その他
+come back by 2:30	-	2時半までに戻る	I have a quick errand, but I’ll come back by 2:30 for the session.	用事がありますが、セッションのために2時半までには戻ります。	戻り時間の申告。	日常会話
+come see me right away	-	すぐに私のところに来てください	When you arrive at the office, please come see me right away.	出社したら、すぐに私のところへ来てください。	招集。	日常会話
+come to work on time	-	時間通りに出勤する	It is essential for all team members to come to work on time.	全チームメンバーが時間通りに出勤することは不可欠です。	規律。	日常会話
+coming today (thanks for)	-	今日は来てくれてありがとう	Thanks for coming today; it was great to have your input.	今日は来てくれてありがとう。ご意見をいただけて良かったです。	来訪・出席への感謝。	日常会話
+committed to this project (be)	/bi kəˈmɪtɪd tu ðɪs ˈprɒdʒekt/	このプロジェクトに全力を注ぐ	We are fully committed to this project and will ensure its success.	我々はこのプロジェクトに全力で取り組んでおり、必ず成功させます。	強い決意。	一般その他
+complete the assignment sooner	/kəmˈpliːt ði əˈsaɪnmənt ˈsuːnər/	課題をもっと早く終わらせる	I will try my best to complete the assignment sooner than expected.	課題を予想より早く終わらせられるよう最善を尽くします。	作業の迅速化。	教育研究
+consider all options before making a decision	/kənˈsɪdər ɔːl ˈɒpʃənz bɪˈfɔːr ˈmeɪkɪŋ ə dɪˈsɪʒən/	決定前にあらゆる選択肢を検討する	It’s better to consider all options before making a decision on the vendor.	業者を決定する前に、あらゆる選択肢を検討するのが賢明です。	慎重な判断。	一般その他
+contract terms	/ˈkɒntrækt tɜːrmz/	契約条件	We need to review the contract terms carefully before signing.	署名する前に、契約条件を注意深く確認する必要があります。	法務・取引用語。	一般その他
+correct the mistakes by tomorrow	-	明日までに間違いを正す	I will correct the mistakes in the presentation by tomorrow morning.	プレゼン資料の間違いを明日朝までに修正しておきます。	修正の約束。	一般その他
+create a better employee recognition program	-	より良い従業員表彰制度を作る	We aim to create a better employee recognition program to boost morale.	士気を高めるために、より良い従業員表彰制度を作ることを目指しています。	人事制度の改善。	一般その他
+create a payment voucher	/kriˈeɪt ə ˈpeɪmənt ˈvaʊtʃər/	支払伝票を作成する	Please create a payment voucher for the travel expenses by Friday.	金曜日までに旅費の支払伝票を作成してください。	経理事務。	一般その他
+create a product roadmap	/kriˈeɪt ə ˈprɒdʌkt ˈroʊdmæp/	製品ロードマップを作成する	The development team needs to create a product roadmap for the next two years.	開発チームは今後2年間の製品ロードマップを作成する必要があります。	製品企画。	一般その他
+create the implementation plan for structured OJT	-	体系的なOJTの実施計画を作成する	We need to create the implementation plan for structured OJT for new hires.	新人のための体系的なOJT実施計画を作成する必要があります。	社員教育。	一般その他
+critical	/ˈkrɪtɪkəl/	重大な・危機的な	This is a critical stage of the experiment, so we must be very careful.	これは実験の極めて重要な段階ですので、細心の注意を払わねばなりません。	重要度の強調。	教育研究
+customers aren't paying them (their)	-	（先方の）顧客が支払っていない	The company is struggling because their customers aren't paying them on time.	顧客が期限通りに支払っていないため、その会社は苦境に立たされています。	債権回収の問題。	一般その他
+deal falls through (the)	-	取引が破談になる	If we can't agree on the price, the deal falls through.	価格で合意できなければ、取引は破談になります。	交渉決裂。	一般その他
+deal with difficult clients	-	難しい顧客に対応する	It takes a lot of patience to deal with difficult clients every day.	難しい顧客に毎日対応するには、多大な忍耐が必要です。	対人対応。	日常会話
+decide what to do next	/dɪˈsaɪd wɒt tu du nekst/	次に何をすべきか決める	After we get the test results, we will decide what to do next.	テスト結果が出た後で、次に何をすべきか決めます。	方針決定。	一般その他
+decline the offer	/dɪˈklaɪn ði ˈɔːfər/	申し出を断る	Unfortunately, we have to decline the offer due to budget constraints.	あいにくですが、予算の都合によりその申し出はお断りしなければなりません。	丁寧な拒絶。	一般その他
+delivery is not on time (the)	-	配送が遅れている	We need to contact the carrier if the delivery is not on time.	配送が時間通りでない場合は、運送業者に連絡する必要があります。	物流のトラブル。	一般その他
+delivery schedule	/dɪˈlɪvəri ˈskedʒuːl/	配送スケジュール	Please send me the delivery schedule for the upcoming month.	来月の配送スケジュールを送ってください。	物流用語。	一般その他
+determined to win the contract (be)	-	契約を勝ち取ると決意している	The whole team is determined to win the contract this time.	チーム全体が、今度こそ契約を勝ち取ると決意しています。	強い意欲。	一般その他
+develop and introduce a new line of high-end products	-	高級路線の新製品を開発・導入する	We plan to develop and introduce a new line of high-end products next year.	来年、高級路線の新ラインナップを開発・導入する計画です。	戦略立案。	一般その他
+develop new market channels	-	新しい市場販路を開拓する	We are looking for ways to develop new market channels in Southeast Asia.	東南アジアで新しい市場販路を開拓する方法を探しています。	市場拡大。	一般その他
+develop new products and services to target middle-income customers	-	中間層をターゲットにした新製品・サービスを開発する	Our goal is to develop new products and services to target middle-income customers.	我々の目標は、中間層をターゲットにした新製品やサービスを開発することです。	マーケティング戦略。	一般その他
+differentiate our products in the existing markets	-	既存市場で製品を差別化する	To survive, we must differentiate our products in the existing markets.	生き残るためには、既存市場で製品を差別化しなければなりません。	戦略的競争。	教育研究
+discuss this in more detail	/dɪˈskʌs ðɪs ɪn mɔːr ˈdiːteɪl/	これをもっと詳しく話し合う	Let's schedule another meeting to discuss this in more detail.	これをもっと詳しく話し合うために、別の会議を設定しましょう。	詳細協議。	一般その他
+discuss this in private	/dɪˈskʌs ðɪs ɪn ˈpraɪvət/	これを個人的に（内密に）話し合う	I would like to discuss this in private if you have a moment later.	後でお時間があれば、この件を内密にお話ししたいのですが。	秘密保持や個別対応。	日常会話
+discuss this inside	-	これについて中で（内部で）話し合う	We should discuss this inside before making any public statements.	公表する前に、まず内部でこれを話し合うべきです。	内部協議。	一般その他
+discuss this now (Let's not)	-	これについては今は話さないようにしましょう	Let's not discuss this now as we have a tight schedule today.	今日は予定が詰まっているので、これについては今は話さないようにしましょう。	話題の後回し。	一般その他
+discuss this some more	-	これについてもう少し話し合う	I think we need to discuss this some more before we reach a conclusion.	結論を出す前に、これについてもう少し話し合う必要があると思います。	検討継続。	一般その他
+discuss this some other time	-	これについていつか別の時に話し合う	If you're busy now, we can discuss this some other time.	今お忙しいなら、これについてはいつか別の時にお話ししましょう。	延期。	日常会話
+discuss this tomorrow	-	これについて明日話し合う	Let's discuss this tomorrow morning when we are both fresh.	お互い頭が冴えている明日の朝に、これについて話し合いましょう。	延期。	日常会話
+discuss this with me before you talk to him	-	彼に話す前に私に相談して	Please discuss this with me before you talk to him about the changes.	変更について彼に話す前に、私に相談してください。	根回しの指示。	一般その他
+distribution center	/ˌdɪstrɪˈbjuːʃən ˈsentər/	配送センター	The new distribution center will be operational by the end of the month.	新しい配送センターは今月末までに稼働予定です。	物流用語。	一般その他
+diversify our products	/daɪˈvɜːrsɪfaɪ ˈaʊər ˈprɒdʌkts/	製品を多様化する	We need to diversify our products to reach a broader customer base.	より広い顧客層にリーチするため、製品を多様化する必要があります。	経営戦略。	教育研究
+do a better job	-	もっと良い仕事をする	I’m sure you can do a better job on the next project.	次のプロジェクトでは、君ならもっと良い仕事ができると確信しているよ。	励まし・期待。	日常会話
+do some market research and create niche products	-	市場調査を行い、ニッチ製品を作る	We should do some market research and create niche products for collectors.	市場調査を行い、コレクター向けのニッチな製品を作るべきです。	特定市場戦略。	一般その他
+do some research on potential new markets	-	潜在的な新市場について調査する	I'd like you to do some research on potential new markets in Europe.	欧州の潜在的な新市場について、いくつか調査をしてほしい。	市場開発。	一般その他
+do things right the first time	-	最初から物事を正しく行う	It saves time and resources to do things right the first time.	最初から物事を正しく行うことは、時間と資源の節約になります。	効率重視の姿勢。	一般その他
+double-check his email address	-	彼のメールアドレスを再確認する	Please double-check his email address before you send the confidential files.	機密ファイルを送る前に、彼のメールアドレスを再確認してください。	ミス防止。	一般その他
+double-check these numbers to make sure they're correct	-	数値が正しいか再確認する	Double-check these numbers to make sure they're correct before the meeting starts.	会議が始まる前に、これらの数値が正しいか再確認してください。	正確性の追求。	一般その他
+e-mail it to me	-	それをメールで送って	Once you finish the draft, please e-mail it to me for review.	下書きができたら、確認のためにメールで送ってください。	日常的な指示。	日常会話
+email me a brief outline of your proposal	-	提案の概要をメールで送ってください	Could you email me a brief outline of your proposal by EOD?	今日中に、提案の簡単な概要をメールで送っていただけますか？	概要提出の依頼。	一般その他
+enter into new market segments	-	新しい市場セグメントに参入する	The company is planning to enter into new market segments this year.	その会社は今年、新しい市場セグメントへの参入を計画しています。	事業拡大。	一般その他
+enter the low-income market with competitive prices	-	競争力のある価格で低所得者層市場に参入する	We aim to enter the low-income market with competitive prices and simple designs.	競争力のある価格とシンプルなデザインで、低所得層市場への参入を目指します。	価格戦略。	一般その他
+essential	/ɪˈsenʃəl/	不可欠な・本質的な	Good communication is essential for successful teamwork.	良好なコミュニケーションは、チームワークを成功させるために不可欠です。	重要性の強調。	教育研究
+every day before you leave work	-	毎日仕事を終えて帰る前に	Please turn off all the lights every day before you leave work.	毎日仕事を終えて帰る前に、すべての照明を消してください。	習慣的な指示。	日常会話
+everything (thanks for)	-	いろいろと（すべてに）ありがとう	Thanks for everything you’ve done for the department this year.	今年、部署のために尽力してくれたすべてのことに感謝します。	包括的な感謝。	日常会話
+exactly what I told him	-	私が彼に言った通り（のこと）	He did exactly what I told him, but the results were still unexpected.	彼はまさに私が言った通りにしましたが、結果はやはり予想外でした。	正確な伝達。	日常会話
+exactly what I was thinking about	-	まさに私が考えていたこと	That is exactly what I was thinking about regarding the new design.	それはまさに新しいデザインに関して私が考えていたことです。	同意・共感。	日常会話
+exactly what's going on	-	何が起きているのか正確に	Could you tell me exactly what's going on with the server?	サーバーで一体何が起きているのか、正確に教えていただけますか？	状況把握。	一般その他
+exactly why you want to do business with them	-	なぜ彼らとビジネスをしたいのかという正確な理由	Explain exactly why you want to do business with them in your report.	なぜ彼らと取引したいのか、その正確な理由を報告書で説明してください。	動機の説明。	一般その他
+exhibit at trade shows	/ɪɡˈzɪbɪt æt treɪd ʃoʊz/	展示会に出展する	We plan to exhibit at trade shows to increase our brand visibility.	ブランド認知度を高めるために、展示会に出展する予定です。	販促活動。	一般その他
+expand our market	/ɪkˈspænd aʊər ˈmɑːrkɪt/	市場を拡大する	We need to find new ways to expand our market globally.	世界的に市場を拡大するための新しい方法を見つける必要があります。	成長戦略。	一般その他
+expedite the shipment	/ˈekspədaɪt ðə ˈʃɪpmənt/	発送を早める（急がせる）	We requested the supplier to expedite the shipment due to high demand.	需要が高まっているため、サプライヤーに発送を早めるよう依頼しました。	納期短縮の依頼。	一般その他
+explain what happened	/ɪkˈspleɪn wɒt ˈhæpənd/	何が起きたか説明する	Please explain what happened during the testing phase.	テスト段階で何が起きたか説明してください。	状況報告。	一般その他
+extend product warranties	/ɪkˈstend ˈprɒdʌkt ˈwɔːrəntiz/	製品保証を延長する	We are considering whether to extend product warranties to three years.	製品保証を3年に延長するかどうかを検討しています。	顧客サービス。	一般その他
+feel the same way	-	同じように感じる（同感である）	I feel the same way about the proposal; it needs more refinement.	提案については私も同感です。もっと洗練させる必要があります。	共感・同意。	日常会話
+fill out the order form	-	注文書に記入する	Please fill out the order form and send it back to us.	注文書に記入して、こちらに送り返してください。	事務手続き。	日常会話
+financial report	/faɪˈnænʃəl rɪˈpɔːrt/	財務報告書	The financial report for the last quarter will be released on Friday.	前四半期の財務報告書が金曜日に公開されます。	会計用語。	一般その他
+find new customers	-	新規顧客を見つける	Our main goal this month is to find new customers in the tech sector.	今月の主な目標は、テック分野で新規顧客を見つけることです。	営業活動。	一般その他
+find out and get back to you (Let me)	-	調べてからまた連絡させてください	I'm not sure about the date, so let me find out and get back to you.	日付が不確かなので、調べてからまたご連絡させてください。	保留の返答。	日常会話
+find reputable agents to do all the sales work	-	販売業務をすべて行う信頼できる代理店を見つける	We need to find reputable agents to do all the sales work in Europe.	欧州での販売業務をすべて任せられる、信頼できる代理店を見つける必要があります。	販路委託。	一般その他
+find the right candidate for this job	-	この仕事に最適な候補者を見つける	It took three months to find the right candidate for this job.	この仕事に最適な候補者を見つけるのに3ヶ月かかりました。	採用活動。	一般その他
+finish this report tomorrow	-	明日このレポートを終える	I promise to finish this report tomorrow before the meeting starts.	会議が始まる前の明日中に、このレポートを仕上げることを約束します。	期限の約束。	一般その他
+first thing in the morning	-	朝一番に	I'll take care of those emails first thing in the morning.	朝一番でそれらのメールに対応します。	時間の優先順位。	日常会話
+focus on the key issues	/ˈfoʊkəs ɒn ðə kiː ˈɪʃuːz/	主要な問題に集中する	We should focus on the key issues rather than minor details.	細かいことよりも、主要な問題に集中すべきです。	議論の焦点化。	教育研究
+follow 5S guidance	-	5S指針（整理・整頓・清掃・清潔・しつけ）に従う	Every employee must follow 5S guidance to maintain a safe workplace.	安全な職場を維持するため、全従業員が5S指針に従わなければなりません。	現場管理。	一般その他
+follow the proper procedure	/ˈfɒloʊ ðə ˈprɒpər prəˈsiːdʒər/	適切な手順に従う	Make sure to follow the proper procedure when applying for a grant.	助成金を申請する際は、必ず適切な手順に従ってください。	規則遵守。	教育研究
+forward the mail to me	-	そのメールを私に転送して	If you receive any updates from the client, please forward the mail to me.	クライアントから更新情報が届いたら、そのメールを私に転送してください。	情報共有。	日常会話
+frustrated with (be)	/bi ˈfrʌstreɪtɪd wɪð/	…に不満を感じている（イライラしている）	The users are frustrated with the slow loading time of the app.	ユーザーはアプリの読み込みの遅さに不満を感じています。	感情の状態。	一般その他
+further differentiate our products	-	さらに製品を差別化する	We need to further differentiate our products to stay ahead of the curve.	一歩先を行くために、製品をさらに差別化する必要があります。	競争戦略。	教育研究
+gain customers from our competitors	-	競合他社から顧客を獲得する	Our new marketing campaign is designed to gain customers from our competitors.	新しいマーケティングキャンペーンは、競合から顧客を奪うように設計されています。	市場シェア獲得。	一般その他
+gather information on our competitors	-	競合他社の情報を集める	The research team will gather information on our competitors' new features.	調査チームが、競合の新機能に関する情報を収集します。	情報収集。	一般その他
+get an answer from Osaka	-	大阪から回答を得る	We expect to get an answer from Osaka by the end of the week.	週末までに大阪から回答が得られる見込みです。	拠点確認。	一般その他
+get back to me at your earliest convenience	-	都合がつき次第、返事をください	Please get back to me at your earliest convenience regarding this proposal.	この提案について、ご都合がつき次第お返事いただけますでしょうか。	丁寧な催促。	一般その他
+get back to me by this coming Friday	-	今週の金曜日までに返事をください	I’d appreciate it if you could get back to me by this coming Friday.	今週の金曜日までにお返事いただければ幸いです。	期限付きの依頼。	一般その他
+get back to me right away	-	すぐに返事をください	If there are any urgent changes, please get back to me right away.	緊急の変更がある場合は、すぐに連絡をください。	至急の依頼。	日常会話
+get back to me within a week or so	-	1週間かそこらで返事をください	Take your time and get back to me within a week or so.	ゆっくり考えて、1週間かそこらでお返事ください。	余裕を持った依頼。	日常会話
+get ideas from our competitors	-	競合からアイデアを得る	We can get ideas from our competitors to improve our customer service.	顧客サービスを改善するために、競合からアイデアを得ることもできます。	参考・模倣。	一般その他
+get into that right now (Let's not)	-	今その話に入るのはやめましょう	Let's not get into that right now; we need to stick to the agenda.	今はその話に入るのはやめましょう。アジェンダに従う必要があります。	話題の逸脱を避ける。	一般その他
+get to the bottom of a problem	-	問題の原因を突き止める	We need to conduct a thorough investigation to get to the bottom of a problem.	問題の真相を突き止めるために、徹底的な調査を行う必要があります。	根本解決。	一般その他
+get too excited (Let's not)	-	あまり興奮（期待）しすぎないようにしましょう	Let's not get too excited until the contract is officially signed.	契約が正式に結ばれるまでは、あまり期待しすぎないようにしましょう。	冷静な判断。	日常会話
+get you something to drink while you wait	-	お待ちの間に何か飲み物をお持ちします	Let me get you something to drink while you wait for the director.	ディレクターをお待ちの間に、何か飲み物をお持ちしましょう。	来客対応。	日常会話
+getting back to me (thanks for)	-	連絡をくれてありがとう	Thanks for getting back to me so quickly; I really appreciate it.	早速お返事をいただき、ありがとうございます。助かります。	返信への感謝。	日常会話
+getting enough support (be)	-	十分なサポートを受けている	Please let me know if you are not getting enough support from the IT team.	ITチームから十分なサポートを受けられていない場合は、知らせてください。	支援状況の確認。	一般その他
+give a status update at the weekly staff meeting	-	週例スタッフ会議で状況を報告する	I will give a status update at the weekly staff meeting this Friday.	今週金曜日の週例スタッフ会議で、進捗状況を報告します。	進捗報告。	一般その他
+give me a rundown of the meeting	-	会議の概要を教えて	I couldn't attend, so could you give me a rundown of the meeting?	出席できなかったので、会議の概要を教えてもらえますか？	要約の依頼。	日常会話
+give me an update on Wednesday	-	水曜日に最新情報を教えて	Please give me an update on Wednesday regarding the recruitment process.	採用プロセスの進捗について、水曜日に報告してください。	定期報告の指示。	一般その他
+give me some advice	-	アドバイスをください	Could you give me some advice on how to handle this difficult situation?	この困難な状況をどう切り抜けるか、アドバイスをいただけますか？	助言の要請。	日常会話
+give our boss a ride to the airport	-	上司を車で空港まで送る	I offered to give our boss a ride to the airport tomorrow morning.	明日の朝、上司を空港まで車で送ると申し出ました。	送迎。	日常会話
+give our employees more career opportunities	-	従業員にさらなるキャリアの機会を与える	We need to give our employees more career opportunities to retain talent.	才能を引き留めるために、従業員にさらなるキャリアの機会を与える必要があります。	人材開発。	一般その他
+give some freebies	/ɡɪv sʌm ˈfriːbiz/	おまけ（景品）をあげる	We can give some freebies to the first 100 customers to create buzz.	話題作りのために、先着100名の顧客に景品を差し上げることができます。	販促。	一般その他
+give them opportunities to attend training in Japan	-	日本での研修に参加する機会を与える	We should give them opportunities to attend training in Japan next year.	来年、彼らに日本での研修に参加する機会を与えるべきです。	能力開発。	一般その他
+give you an example (Let me)	-	例を挙げさせてください	Let me give you an example of how this software can save us time.	このソフトがいかに時間を節約できるか、例を挙げさせてください。	説明の補足。	一般その他
+go off on a tangent (Let's not)	-	横道に逸れないようにしましょう	Let's not go off on a tangent; we must finish this topic first.	横道に逸れないようにしましょう。まずこのトピックを終わらせねばなりません。	会議の脱線防止。	一般その他
+go over this article and write a summary	-	この記事をよく読んで要約を書く	Please go over this article and write a summary for the next seminar.	この記事をしっかり読んで、次のセミナー用の要約を書いてください。	学習・作業指示。	教育研究
+go there now (Let's not)	-	今そこへ行く（その話をする）のはやめましょう	Let's not go there now; it's a complicated issue that needs more time.	今はその話はやめましょう。もっと時間が必要な複雑な問題ですから。	話題の回避。	日常会話
+grasp the situation	/ɡræsp ðə ˌsɪtʃuˈeɪʃən/	状況を把握する	It took a few minutes for the manager to fully grasp the situation.	マネージャーが状況を完全に把握するのに数分かかりました。	理解。	一般その他
+handle these utility bills	-	これらの公共料金（の支払い）を処理する	Could you please handle these utility bills by the end of the week?	週末までにこれらの公共料金の支払いを処理していただけますか？	事務。	一般その他
+having to cancel our meeting for this Wednesday (I apologize for)	-	今週水曜日の会議をキャンセルしなければならないことをお詫びします	I apologize for having to cancel our meeting for this Wednesday.	今週水曜日の会議をキャンセルせざるを得ないことをお詫び申し上げます。	会議中止の謝罪。	一般その他
+he can't make it to the meeting	-	彼は会議に出席できない	He can't make it to the meeting because his flight was cancelled.	フライトがキャンセルされたため、彼は会議に出席できません。	欠席。	日常会話
+he had no issue with that	-	彼はそれについて全く問題ないと言っていた	I spoke with the manager, and he had no issue with that proposal.	マネージャーと話しましたが、彼はその提案について何ら問題ないとのことでした。	合意・承諾。	日常会話
+headhunt from our competition	/ˈhedhʌnt frəm aʊər ˌkɒmpəˈtɪʃən/	競合他社から引き抜く（ヘッドハントする）	They decided to headhunt from our competition to get expert knowledge.	彼らは専門知識を得るために、我々の競合から引き抜きを行うことにしました。	採用戦略。	一般その他
+hear back from him	-	彼から返信をもらう	I hope to hear back from him regarding the job interview results soon.	面接結果について、彼から早く返事がもらえることを願っています。	連絡待ち。	日常会話
+hear from Tokyo today	-	今日東京（本社）から連絡がある	We expect to hear from Tokyo today about the project approval.	プロジェクトの承認について、今日東京から連絡がある見込みです。	連絡待ち。	一般その他
+hearing me out (thanks for)	-	最後まで話を聞いてくれてありがとう	Thanks for hearing me out even though we have different opinions.	意見が違うにもかかわらず、最後まで話を聞いてくれてありがとう。	傾聴への感謝。	日常会話
+help me with this file	-	このファイルを手伝って	Could you help me with this file? I’m having trouble with the formatting.	このファイルを手伝ってくれますか？書式設定で困っているんです。	援助の依頼。	日常会話
+help me with this translation	-	この翻訳を手伝って	I need someone to help me with this translation for the abstract.	要旨の翻訳を手伝ってくれる人が必要です。	援助の依頼。	教育研究
+high-performers are not properly evaluated	-	成績優秀者が適切に評価されていない	Some employees feel that high-performers are not properly evaluated here.	成績優秀者がここでは適切に評価されていないと感じている従業員もいます。	評価の不満。	一般その他
+hire more sales reps	-	営業担当をもっと雇う	We need to hire more sales reps to cover the new territory.	新しい地域をカバーするために、営業担当をもっと雇う必要があります。	人員補充。	一般その他
+how he came to work today	-	彼が今日どうやって出勤したか	Do you know how he came to work today during the train strike?	電車のストライキの中、彼が今日どうやって出勤したか知っていますか？	手段。	日常会話
+how he found out about it	-	彼がどうやってそれを知ったか	I'm curious how he found out about it before the official announcement.	公式発表の前に、彼がどうやってそれを知ったのか気になります。	経緯。	日常会話
+how he will take this news	-	彼がこのニュースをどう受け止めるか	I’m worried about how he will take this news about the reorganization.	再編に関するこのニュースを、彼がどう受け止めるか心配です。	反応の予想。	日常会話
+how I can help	-	私がどう助けられるか	Please let me know how I can help with the upcoming conference.	今度のカンファレンスで、私がどのようにお手伝いできるか教えてください。	申し出。	日常会話
+how I found out about it	-	私がどうやってそれを知ったか	I'll tell you later how I found out about it; it’s a long story.	どうやってそれを知ったかは後で話します。長くなるので。	経緯。	日常会話
+how I look at it	-	私の見方（考え方）	That's not exactly how I look at it, but I see your point.	それは私の見方とは少し違いますが、おっしゃることはわかります。	意見の提示。	日常会話
+how it goes	-	どうなるか（成り行き）	Let's try this new method and see how it goes for a week.	この新しい方法を試してみて、1週間様子を見ましょう。	経過観察。	日常会話
+how long it will take them to solve this issue	-	彼らがこの問題を解決するのにどれくらい時間がかかるか	We are waiting to see how long it will take them to solve this issue.	彼らがこの問題を解決するのにどれくらいかかるか、状況を見ています。	時間の見積もり。	一般その他
+how quickly you want to see the results	-	どれくらい早く結果を見たいか	It depends on how quickly you want to see the results of the study.	それは、あなたがどれくらい早く研究の結果を見たいかによります。	期限の確認。	教育研究
+how she found out about it	-	彼女がどうやってそれを知ったか	Does anybody know how she found out about it so quickly?	彼女がどうしてそんなに早くそれを知ったのか、誰か知っていますか？	経緯。	日常会話
+How should we approach it?	-	それをどうアプローチすべきか？	How should we approach it to minimize the potential risks?	潜在的リスクを最小限にするために、どうアプローチすべきでしょうか？	手法の検討。	一般その他
+How should we proceed?	-	どう進めるべきか？	Since we hit a dead end, how should we proceed with the project?	行き詰まってしまったので、プロジェクトをどう進めるべきでしょうか？	方針の検討。	一般その他
+how they got their business	-	彼らがどうやってその商売を（顧客を）得たか	We should research how they got their business in such a short time.	彼らがどうやって短期間でその商売を成功させたのか調査すべきです。	成功要因の分析。	一般その他
+how they will react	-	彼らがどう反応するか	It’s hard to predict how they will react to the price increase.	値上げに対して彼らがどう反応するか予測するのは難しいです。	反応の予想。	一般その他
+how they're going to solve this issue	-	彼らがこの問題をどう解決しようとしているか	I’m interested to see how they're going to solve this issue.	彼らがこの問題をどう解決するつもりなのか興味があります。	解決策の注視。	一般その他
+how to address this issue	-	この問題にどう対処すべきか	We had a long discussion on how to address this issue effectively.	この問題に効果的にどう対処すべきか、長い議論を行いました。	対処法。	教育研究
+how to deal with this case	-	この件をどう扱うか	The manual provides instructions on how to deal with this case.	マニュアルにこの件の扱い方が載っています。	対応策。	一般その他
+how to expedite an order	-	注文を早める方法	Could you show me how to expedite an order in the new system?	新システムで注文を早める方法を教えていただけますか？	操作・手順。	一般その他
+how to go about that	-	それをどう進めるか（取り組むか）	If you want to apply for a visa, here is how to go about that.	ビザを申請したいなら、その進め方はこうです。	手順。	日常会話
+how to proceed with this case	-	この件をどう進めるか	We are still waiting for legal advice on how to proceed with this case.	この件をどう進めるか、まだ法的助言を待っている状態です。	方針の決定。	一般その他
+how to use the project management software	-	プロジェクト管理ソフトの使い方	The training session will cover how to use the project management software.	研修セッションで、プロジェクト管理ソフトの使い方を説明します。	操作。	一般その他
+I agree with you almost entirely.	-	ほとんど全面的にあなたに同意します。	I agree with you almost entirely, except for the budget allocation.	予算配分を除けば、ほとんど全面的にあなたに同意します。	強い同意。	一般その他
+I agree with you basically.	-	基本的にはあなたに同意します。	I agree with you basically, but we need to check the local regulations.	基本的には同意しますが、現地の規制を確認する必要があります。	大枠での同意。	一般その他
+I agree with you except for one thing about the delivery method.	-	配送方法に関する一点を除いて、あなたに同意します。	I agree with you except for one thing about the delivery method; air freight is too expensive.	配送方法の一点を除けば同意です。空輸は高すぎます。	条件付き同意。	一般その他
+I agree with you except for one thing regarding the delivery method.	-	配送方法に関して一点を除いて、あなたに同意します。	I agree with you except for one thing regarding the delivery method.	（上記とほぼ同じ意味で、よりフォーマルな表現）	条件付き同意。	一般その他
+I agree with you except for one thing.	-	一点を除いて、あなたに同意します。	I agree with you except for one thing: the starting date.	開始日を除けば、あなたに同意します。	条件付き同意。	一般その他
+I agree with you except for two points.	-	二点を除いて、あなたに同意します。	I agree with you except for two points that I’ve noted in the margin.	余白に記した二点を除いて、あなたに同意します。	条件付き同意。	一般その他
+I agree with you on the whole.	-	概してあなたに同意します。	I agree with you on the whole, although the timeline is a bit tight.	期間が少し厳しいですが、概ねあなたに同意します。	全体の同意。	一般その他
+I agree with you partly.	-	部分的にあなたに同意します。	I agree with you partly, but I think we need more evidence.	部分的には同意しますが、もっと証拠が必要だと思います。	限定的な同意。	教育研究
+I agree with you up to a point.	-	ある程度まではあなたに同意します。	I agree with you up to a point, but your conclusion seems a bit extreme.	ある程度までは同意しますが、結論が少し極端な気がします。	部分的同意。	一般その他
+I apologize for the inconvenience.	-	ご不便をおかけして申し訳ありません。	I apologize for the inconvenience caused by the system outage.	システム停止によりご不便をおかけしたことをお詫びいたします。	定型謝罪。	一般その他
+I can't accept those conditions	-	それらの条件は受け入れられません。	I’m afraid I can't accept those conditions as they are too restrictive.	制約が多すぎるため、残念ながらそれらの条件は受け入れられません。	拒絶。	一般その他
+I couldn't attend the meeting (I'm sorry)	-	会議に出席できず申し訳ありません。	I'm sorry I couldn't attend the meeting yesterday; I was feeling unwell.	昨日の会議に出席できず申し訳ありません。体調が悪かったのです。	事後謝罪。	日常会話
+I didn't get back to you sooner (I'm sorry)	-	もっと早く返信できず申し訳ありません。	I'm sorry I didn't get back to you sooner; I was away on business.	出張に出ていたため、もっと早くお返事できず申し訳ありません。	遅れた謝罪。	日常会話
+I didn't reply sooner (I'm sorry)	-	もっと早く返信（返答）できず申し訳ありません。	I'm sorry I didn't reply sooner; your email was buried in my inbox.	メールが埋もれてしまっており、早く返信できず申し訳ありません。	遅れた謝罪。	日常会話
+I don't agree with you on that point.	-	その点についてはあなたに同意しません。	I don't agree with you on that point, and here’s why.	その点については同意しかねます。理由は以下の通りです。	不同意の表明。	一般その他
+I have a completely different view on this matter.	-	この件に関しては全く異なる見解を持っています。	I have a completely different view on this matter based on the latest data.	最新のデータに基づくと、この件に関しては全く異なる見解を持っています。	強い異論。	教育研究
+I have a different opinion.	-	私は違う意見を持っています。	I have a different opinion regarding the cause of the problem.	問題の原因については、私は違う意見を持っています。	異論の表明。	教育研究
+I have a different view on this.	-	これについては違う見方をしています。	I have a different view on this; I think we should focus on the quality.	これについては違う見方をしています。品質に重点を置くべきだと思います。	異論。	一般その他
+I have kept you waiting (I'm sorry)	-	お待たせして申し訳ありません。	I'm sorry I have kept you waiting; the previous meeting ran over.	前の会議が長引いてしまい、お待たせして申し訳ありません。	待機への謝罪。	日常会話
+I have to be leaving now.	-	もう失礼しなければなりません。	I have to be leaving now to catch my train.	電車に乗るために、もう失礼しなければなりません。	退出の挨拶。	日常会話
+I have to cancel our meeting on Thursday because something unexpected has come up.	-	急用ができたため、木曜日の会議をキャンセルしなければなりません。	I have to cancel our meeting on Thursday because something unexpected has come up at home.	家庭で急用ができたため、木曜日の会議をキャンセルせねばなりません。	急なキャンセルの連絡。	日常会話
+I haven't finished the report yet.	-	まだレポートが終わっていません。	I haven't finished the report yet, but I will send it by 5 PM.	まだレポートが終わっていませんが、午後5時までには送ります。	未完了の報告。	一般その他
+I missed your call (I'm sorry)	-	お電話に出られず申し訳ありません。	I'm sorry I missed your call; I was in a session all afternoon.	午後はセッションに出ていたため、お電話に出られず申し訳ありません。	不在の謝罪。	日常会話
+I need to remind them of...	-	彼らに…を思い出させる（念押しする）必要がある。	I need to remind them of the deadline for the project proposal.	彼らにプロジェクト提案書の締め切りを念押しする必要があります。	注意喚起。	一般その他
+I will be late.	-	遅れます。	I will be late for the dinner due to the heavy rain.	大雨のため、夕食に遅れます。	遅刻の連絡。	日常会話
+I won't be able to attend the meeting.	-	会議に出席できません。	I won't be able to attend the meeting because I have a conflict.	予定が重なっているため、会議に出席できません。	欠席の連絡。	一般その他
+I won't be able to cover for you tomorrow.	-	明日は君の代わりを務めることができません。	I'm sorry, I won't be able to cover for you tomorrow as I'll be off-site.	明日は外出しているため、君の代わりを務めることはできません。	代理不可の連絡。	日常会話
+I won't be able to help you.	-	お役に立てません（助けることができません）。	I won't be able to help you with the move this weekend.	今週末の引っ越しのお手伝いはできません。	拒絶・不可。	日常会話
+I won't be able to join the project.	-	プロジェクトに参加できません。	I won't be able to join the project due to my current workload.	現在の仕事量のため、プロジェクトには参加できません。	不参加の連絡。	一般その他
+I won't be available until 3:30 tomorrow.	-	明日の3時半まで時間が取れません（不在です）。	I won't be available until 3:30 tomorrow because of a workshop.	ワークショップがあるため、明日の3時半まで時間が取れません。	都合の連絡。	日常会話
+I'm concerned about	-	…を懸念しています。	I'm concerned about the lack of communication between the two departments.	二つの部署間のコミュニケーション不足を懸念しています。	心配・懸念。	一般その他
+I'm still not convinced by your argument.	-	あなたの主張にはまだ納得していません。	I'm still not convinced by your argument; we need more evidence.	あなたの主張にはまだ納得していません。もっと証拠が必要です。	納得していない旨の表明。	教育研究
+I'm still not convinced by your explanation.	-	あなたの説明にはまだ納得していません。	I'm still not convinced by your explanation of why the costs increased.	なぜコストが増えたのかというあなたの説明には、まだ納得していません。	不信・疑問。	一般その他
+I'm upset about	-	…に腹を立てている（動揺している）。	I'm upset about the way the feedback was handled.	フィードバックの扱われ方に腹を立てています。	不快感の表明。	日常会話
+if he can handle it	-	彼がそれをこなせるかどうか。	I'm not sure if he can handle it given his limited experience.	経験が浅いので、彼がそれをこなせるかどうか分かりません。	能力の確認。	一般その他
+if he's coming to the company party	-	彼が社内パーティーに来るかどうか。	Does anyone know if he's coming to the company party tonight?	今夜の社内パーティーに彼が来るかどうか、誰か知っていますか？	出席確認。	日常会話
+if I ask you a personal question	-	個人的な質問をしてもいいなら。	If I ask you a personal question, what is your motivation for this job?	個人的な質問をしてもよろしければ、この仕事の動機は何ですか？	遠慮がちな質問。	日常会話
+if I excuse myself	-	（中座して）失礼してもいいなら。	Would it be okay if I excuse myself for a quick phone call?	電話のために少し中座してもよろしいでしょうか？	中座の許可。	日常会話
+if I understand your question	-	もし私があなたの質問を理解しているなら。	If I understand your question correctly, you are asking about the timeline.	もしあなたの質問を正しく理解しているなら、期間について聞いていますね。	確認。	教育研究
+if it will matter	-	それが重要（問題）になるかどうか。	I don't think if it will matter in the long run.	長期的に見れば、それが問題になるとは思いません。	重要性の判断。	一般その他
+if she needs anything from us	-	彼女が我々に何か必要なものがあるかどうか。	Please ask her if she needs anything from us for the presentation.	プレゼンのために、彼女が我々に何か必要なものがあるか聞いてください。	支援の申し出。	日常会話
+if that will work	-	それでうまくいく（都合がいい）かどうか。	Check with the manager if that will work for the team.	それでチームがうまくいくか、マネージャーに確認してください。	可否の確認。	一般その他
+if that works for you	-	もしそれであなたの都合が良ければ。	I can meet at 4 PM if that works for you.	もしご都合がよろしければ、午後4時にお会いできます。	提案。	日常会話
+if there are any new developments	-	何か新しい進展があれば。	Please let me know if there are any new developments regarding the case.	その件に関して何か新しい進展があれば、知らせてください。	情報共有の依頼。	一般その他
+if there are any problems with our proposal.	-	我々の提案に何か問題があれば。	Let us know if there are any problems with our proposal.	我々の提案に何か問題があれば、お知らせください。	フィードバック依頼。	一般その他
+if there is any change	-	何か変更があれば。	I will inform you immediately if there is any change in the schedule.	スケジュールに変更があれば、すぐにお知らせします。	情報共有。	一般その他
+if there're any problems	-	何か問題があれば。	Feel free to call me if there're any problems with the installation.	設置に関して何か問題があれば、遠慮なく電話してください。	支援の申し出。	日常会話
+if you have any questions	-	もし質問があれば。	If you have any questions, please don't hesitate to ask.	もし質問があれば、遠慮なくお尋ねください。	定型句。	教育研究
+if you need anything	-	もし何か必要なら。	Let me know if you need anything for your trip.	旅行で何か必要なものがあれば言ってください。	申し出。	日常会話
+ignored (be)	/bi ɪɡˈnɔːrd/	無視される	She felt that her suggestions were being ignored during the meeting.	彼女は、会議中に自分の提案が無視されていると感じました。	不遇。	一般その他
+implement a more structured OJT	-	より体系的なOJTを実施する	We need to implement a more structured OJT program for new staff.	新人スタッフのために、より体系的なOJTプログラムを実施する必要があります。	教育体制。	一般その他
+improve our Employee Suggestion Program	-	従業員提案制度を改善する	We should improve our Employee Suggestion Program to get more ideas.	より多くのアイデアを得るために、従業員提案制度を改善すべきです。	社内改善。	一般その他
+improve our follow-up system	-	フォローアップ体制を改善する	We need to improve our follow-up system to increase customer loyalty.	顧客ロイヤリティを高めるために、フォローアップ体制を改善する必要があります。	顧客管理。	一般その他
+improve the quality of our customer service	-	カスタマーサービスの質を向上させる	Training is essential to improve the quality of our customer service.	カスタマーサービスの質を向上させるためには、研修が不可欠です。	品質向上。	一般その他
+in a bad mood lately (be)	-	最近機嫌が悪い	The boss has been in a bad mood lately, so be careful.	最近ボスは機嫌が悪いので、気をつけて。	状態。	日常会話
+increase brand recognition	/ɪnˈkriːs brænd ˌrekəɡˈnɪʃən/	ブランド認知度を高める	Our main goal this year is to increase brand recognition in the US.	今年の主な目標は、米国でのブランド認知度を高めることです。	マーケティング。	一般その他
+increase employee involvement	-	従業員の関与（参画）を高める	The company is trying to increase employee involvement in decision making.	会社は意思決定への従業員の参画を高めようとしています。	組織活性化。	一般その他
+increase job satisfaction	-	仕事の満足度を高める	Flexible working hours can help increase job satisfaction.	フレックスタイム制は仕事の満足度を高めるのに役立ちます。	人事。	教育研究
+increase the number of inquiries	-	問い合わせ数を増やす	We need a better website to increase the number of inquiries.	問い合わせ数を増やすために、より良いウェブサイトが必要です。	マーケティング。	一般その他
+increase their motivation	-	彼らのモチベーションを高める	The new bonus system is designed to increase their motivation.	新しいボーナス制度は、彼らのモチベーションを高めるために設計されています。	人事。	一般その他
+installation schedule	/ˌɪnstəˈleɪʃən ˈskedʒuːl/	設置スケジュール	Please confirm the installation schedule with the technician.	技術者と設置スケジュールを確認してください。	工事・設営。	一般その他
+instructions from Tokyo	-	東京（本社）からの指示	We are following the instructions from Tokyo regarding the budget.	予算に関しては、東京（本社）からの指示に従っています。	指示。	一般その他
+interrupt (Let me)	/ˌɪntəˈrʌpt/	（話を）遮らせてください	Let me interrupt for a second to clarify that point.	その点を明確にするために、少し話を遮らせてください。	発言の割り込み。	一般その他
+interrupt for a minute (Let me)	-	ちょっと話を遮らせてください	Let me interrupt for a minute; I have an urgent update.	ちょっと失礼。至急の報告があります。	緊急の割り込み。	日常会話
+inviting me (thanks for)	-	誘ってくれてありがとう	Thanks for inviting me to the seminar; it was very informative.	セミナーに誘ってくれてありがとう。とても勉強になりました。	招待への感謝。	日常会話
+issue an invoice	/ˈɪʃuː æn ˈɪnvɔɪs/	請求書を発行する	The accounting department will issue an invoice by tomorrow.	経理部が明日までに請求書を発行します。	事務。	一般その他
+It can hurt the brand image.	-	それはブランドイメージを損なう可能性がある。	We should avoid this advertisement as it can hurt the brand image.	ブランドイメージを損なう可能性があるので、この広告は避けるべきです。	リスク管理。	一般その他
+it will happen	-	それは起こる（だろう）	Don't worry about minor mistakes; it will happen from time to time.	些細なミスは気にしないで。時々起こることですから。	慰め・予測。	日常会話
+It will improve our corporate image if we can help the lives or those at the BOP.	-	BOP層の生活を支援できれば、企業のイメージが向上する。	It will improve our corporate image if we can help the lives of those at the BOP.	BOP（貧困層）の生活を助けることは、企業イメージ向上に繋がります。	CSR活動。	教育研究
+It will lead to low-margin high-volume business.	-	それは薄利多売のビジネスに繋がるだろう。	Reducing the price too much will lead to low-margin high-volume business.	価格を下げすぎると、薄利多売のビジネスになってしまいます。	経営判断。	一般その他
+It will lead to more brand recognition in this country.	-	それはこの国でのさらなるブランド認知に繋がるだろう。	The new campaign will lead to more brand recognition in this country.	新しいキャンペーンはこの国でのブランド認知度向上に繋がります。	効果の予測。	一般その他
+It will probably increase overall sales and profits.	-	それはおそらく全体の売上と利益を増加させるだろう。	The new product line will probably increase overall sales and profits.	新製品ラインはおそらく全体の売上と利益を増加させるでしょう。	予測。	一般その他
+it will probably take time to convince them	-	彼らを説得するにはおそらく時間がかかるだろう。	It will probably take time to convince them to change the policy.	方針を変えるよう彼らを説得するには、おそらく時間がかかるでしょう。	見通し。	一般その他
+It's not likely...	-	…の可能性は低い。	It's not likely that the project will be finished by Friday.	プロジェクトが金曜日までに終わる可能性は低いです。	可能性の否定。	一般その他
+It's not very likely...	-	…の可能性はあまり高くない。	It's not very likely that they will accept our first offer.	彼らが我々の最初の提示を受け入れる可能性はあまり高くありません。	可能性の否定。	一般その他
+it's risky to single out a few employees for big promotions	-	数名の従業員だけを抜擢して昇進させるのはリスクがある。	Some managers believe it's risky to single out a few employees for big promotions.	数名だけを大抜擢するのはリスクがあると考えるマネージャーもいます。	人事管理。	一般その他
+it's not a good idea to start a monthly MVP award	-	月間MVP賞を始めるのはあまり良い考えではない。	I think it's not a good idea to start a monthly MVP award right now.	今月間MVP賞を始めるのは、あまり良い考えではないと思います。	慎重な意見。	一般その他
+jump in here (Let me)	-	ここで（話に）割って入らせてください	Let me jump in here and share some relevant data.	ここで割って入って、関連するデータを共有させてください。	議論への参加。	一般その他
+keep employees motivated	-	従業員のモチベーションを維持する	The company offers various perks to keep employees motivated.	会社は従業員の意欲を維持するために様々な特典を提供しています。	人事。	一般その他
+keep everyone informed	-	全員に情報を共有し続ける	Please send weekly updates to keep everyone informed of the progress.	進捗を全員が把握できるよう、毎週更新情報を送ってください。	情報共有。	一般その他
+keep everyone on the loop	-	全員を情報の輪に入れておく	Make sure to keep everyone on the loop regarding the client's feedback.	クライアントのフィードバックについて、全員が常に把握できるようにしてください。	情報共有。	一般その他
+keep everyone on the same page	-	全員の認識を一致させておく	Let's have a quick huddle to keep everyone on the same page.	全員の認識を一致させるために、短い打ち合わせをしましょう。	認識共有。	一般その他
+keep me posted	-	随時報告して（状況を知らせて）	Please keep me posted on any changes in the schedule.	スケジュールに変更があれば、随時知らせてください。	継続的な報告依頼。	日常会話
+keep me updated	-	最新情報を知らせ続けて	Keep me updated on the results of the laboratory tests.	ラボのテスト結果について、最新情報を知らせ続けてください。	継続的な報告。	教育研究
+keep our hopes too high (Let's not)	-	あまり期待しすぎないようにしましょう	Let's not keep our hopes too high until we see the final numbers.	最終的な数字を見るまでは、あまり期待しすぎないようにしましょう。	冷静な対応。	日常会話
+let me know the results	-	結果を教えてください	Once the survey is finished, please let me know the results.	調査が終わったら、結果を教えてください。	報告依頼。	一般その他
+letting me know (thanks for)	-	知らせてくれてありがとう	Thanks for letting me know about the meeting change.	会議の変更を知らせてくれてありがとう。	感謝。	日常会話
+listening to me (thanks for)	-	話を聞いてくれてありがとう	Thanks for listening to me today; I feel much better now.	今日は話を聞いてくれてありがとう。少し気持ちが楽になりました。	感謝。	日常会話
+look at the big picture first	-	まず全体像を見る	We should look at the big picture first before discussing the details.	詳細を話し合う前に、まず全体像を見るべきです。	戦略的視点。	教育研究
+lose our focus (Let's not)	-	焦点を失わないようにしましょう	Let's not lose our focus on the core objective of this research.	この研究の核心的な目的から焦点を失わないようにしましょう。	議論の維持。	教育研究
+make a reservation at a restaurant	-	レストランの予約をする	Could you make a reservation at a restaurant for the welcome party?	歓迎会のためにレストランの予約をしていただけますか？	事務・手配。	日常会話
+make more sales in the existing high-end market	-	既存の高級市場でより多くの売上を上げる	We aim to make more sales in the existing high-end market this quarter.	今四半期は、既存の高級市場でより多くの売上を上げることを目指します。	営業目標。	一般その他
+make our packaging more attractive	-	パッケージをより魅力的にする	We need to make our packaging more attractive to appeal to younger consumers.	若い消費者に訴求するために、パッケージをより魅力的にする必要があります。	マーケティング。	一般その他
+manage the project	/ˈmænɪdʒ ðə ˈprɒdʒekt/	プロジェクトを管理する	He was appointed to manage the project due to his extensive experience.	豊富な経験を買われ、彼はプロジェクトの管理に任命されました。	管理業務。	一般その他
+manufacturing facility	/ˌmænjuˈfæktʃərɪŋ fəˈsɪlɪti/	製造施設（工場）	The manufacturing facility will be closed for maintenance next week.	来週、製造施設はメンテナンスのために閉鎖されます。	工場・設備。	一般その他
+meet deadlines	/miːt ˈdedlaɪnz/	締め切りを守る	It is crucial for all team members to meet deadlines.	全チームメンバーが締め切りを守ることが極めて重要です。	規律。	一般その他
+micromanaged (be)	/bi ˈmaɪkroʊˌmænɪdʒd/	細かく管理（干渉）される	Most employees don't like to be micromanaged by their supervisors.	ほとんどの従業員は、上司に細かく管理されることを嫌います。	管理スタイル。	一般その他
+missing the conference call (I apologize for)	-	電話会議に出られなかったことをお詫びします	I apologize for missing the conference call; I had an internet outage.	ネット接続が切れてしまい、電話会議に出られず申し訳ありませんでした。	事後謝罪。	一般その他
+modify the existing middle-end products to target low-income customers	-	既存の中価格帯製品を低所得層向けに修正する	We can modify the existing middle-end products to target low-income customers.	既存の中価格帯製品を修正して、低所得層をターゲットにすることができます。	戦略。	一般その他
+monitor the new Employee Recognition Program	-	新しい従業員表彰制度を監視（追跡）する	HR will monitor the new Employee Recognition Program to see its impact.	人事部が新しい従業員表彰制度を監視し、その影響を確認します。	管理。	一般その他
+negotiate a better deal	/nɪˈɡoʊʃieɪt ə ˈbetər diːl/	より良い取引条件を交渉する	I will try to negotiate a better deal with the supplier.	サプライヤーとより良い取引条件を交渉してみます。	交渉。	一般その他
+new account	/njuː əˈkaʊnt/	新規口座・新規顧客　	We managed to land a major new account in the retail sector.	小売部門で主要な新規顧客を獲得することができました。	営業。	一般その他
+new client	/njuː ˈklaɪənt/	新しいクライアント	I have a meeting with a new client at 10:00 AM.	午前10時に新しいクライアントとの打ち合わせがあります。	営業。	日常会話
+new employees (the)	-	新入社員（たち）	The new employees will start their orientation on Monday.	新入社員たちは月曜日にオリエンテーションを開始します。	人事。	一般その他
+no later than noon this coming Friday	-	今週金曜の正午までに（遅くとも）	Please submit the report no later than noon this coming Friday.	レポートは遅くとも今週金曜日の正午までに提出してください。	期限。	一般その他
+not being able to attend tomorrow's meeting (I apologize for)	-	明日の会議に出席できないことをお詫びします	I apologize for not being able to attend tomorrow's meeting.	明日の会議に出席できないことをお詫び申し上げます。	事前謝罪。	一般その他
+not responding sooner (I apologize for)	-	もっと早く返信できなかったことをお詫びします	I apologize for not responding sooner; I was out of the office.	不在にしていたため、もっと早く返信できず申し訳ありません。	遅延の謝罪。	一般その他
+on Tuesday, the 17th	-	17日の火曜日に	The workshop will be held on Tuesday, the 17th.	ワークショップは17日の火曜日に開催されます。	日程。	教育研究
+order new supplies	-	新しい備品を注文する	Could you please order new supplies for the printer?	プリンターの新しい備品を注文していただけますか？	事務。	日常会話
+organize employee records	-	従業員記録を整理する	It is important to organize employee records for the upcoming audit.	次回の監査に備えて、従業員の記録を整理しておくことが重要です。	事務・管理。	一般その他
+our appraisal and promotion system is not transparent	-	我々の評価・昇進制度は透明ではない	Some staff members feel that our appraisal and promotion system is not transparent.	評価・昇進制度が透明ではないと感じているスタッフもいます。	人事への不満。	一般その他
+our managers are not well-trained to give effective feedback	-	当社のマネージャーは効果的なフィードバックをする訓練を十分に受けていない	We realized our managers are not well-trained to give effective feedback.	当社のマネージャーが効果的なフィードバックを行うための訓練を十分に受けていないことが分かりました。	教育課題。	一般その他
+overwhelmed with the workload (be)	-	仕事量に圧倒されている（手一杯だ）	The team is overwhelmed with the workload since three people left.	3人辞めて以来、チームは仕事量に圧倒されています。	状態。	一般その他
+overwhelmed with work (be)	-	仕事で手一杯だ	I'm sorry, I'm a bit overwhelmed with work right now.	すみません、今ちょっと仕事で手一杯なんです。	状態。	日常会話
+pay attention to details	/peɪ əˈtenʃən tu ˈdiːteɪlz/	細部に注意を払う	You must pay attention to details when preparing a legal contract.	法的契約書を準備する際は、細部に注意を払わなければなりません。	注意喚起。	一般その他
+payment (a)	/ə ˈpeɪmənt/	支払い	The first payment is due within thirty days of the invoice date.	最初の支払期限は、請求書の日付から30日以内です。	会計。	一般その他
+receipt (a)	/ə rɪˈsiːt/	領収書	Please keep the receipt if you want to be reimbursed for your expenses.	経費の精算を希望する場合は、領収書を保管しておいてください。	事務。	日常会話
+payment schedule	/ˈpeɪmənt ˈskedʒuːl/	支払いスケジュール	We need to agree on a payment schedule before we start the project.	プロジェクトを始める前に、支払いスケジュールに合意する必要があります。	会計。	一般その他
+payment terms	/ˈpeɪmənt tɜːrmz/	支払い条件	The payment terms are net 30 days.	支払い条件は、30日以内現金払いです。	会計。	一般その他
+pick up a client at the airport	-	空港でクライアントを迎えに行く	I have to go pick up a client at the airport at 5 PM.	午後5時に空港へクライアントを迎えに行かなければなりません。	送迎。	日常会話
+place an order	/pleɪs æn ˈɔːrdər/	注文する	I would like to place an order for 500 units of the new model.	新型モデルを500台注文したいと思います。	商取引。	一般その他
+point me in the right direction	-	正しい方向に導く（教えてくれる）	I'm new here; could you point me in the right direction to the HR office?	こちらに来たばかりなのですが、人事部の場所を教えていただけますか？	案内の依頼。	日常会話
+poor employees get away with sub-par performances	-	仕事のできない従業員が低いパフォーマンスで済まされている（見逃されている）	It’s frustrating that poor employees get away with sub-par performances.	仕事のできない従業員が、低い成果で済まされているのは納得がいきません。	組織の課題。	一般その他
+positive about this deal (be)	-	この取引に対して前向きだ	Both sides are very positive about this deal.	双方がこの取引に対して非常に前向きです。	意欲。	一般その他
+preoccupied with achieving weekly sales goals (be)	-	週の売上目標を達成することに頭がいっぱいだ	They are so preoccupied with achieving weekly sales goals that they forget the long-term plan.	彼らは週の売上目標達成に必死で、長期計画を忘れています。	状態。	一般その他
+prepare a report on the customer satisfaction survey	-	顧客満足度調査に関する報告書を準備する	I’d like you to prepare a report on the customer satisfaction survey by Monday.	月曜日までに、顧客満足度調査に関する報告書を準備してほしい。	作業指示。	一般その他
+prioritize issues	/praɪˈɒrɪtaɪz ˈɪʃuːz/	問題に優先順位をつける	We need to prioritize issues based on their urgency and impact.	緊急性と影響度に基づいて、問題に優先順位をつける必要があります。	管理。	一般その他
+processing facility	/ˈprəʊsesɪŋ fəˈsɪlɪti/	加工施設	The new processing facility will increase our production capacity.	新しい加工施設により、生産能力が向上します。	設備。	一般その他
+promote someone internally	-	誰かを内部で昇進させる	We decided to promote someone internally rather than hiring from outside.	外部から雇うのではなく、内部の人間を昇進させることにしました。	人事。	一般その他
+provide incentives for better performance	-	より良い成果に対してインセンティブ（報奨）を与える	The company should provide incentives for better performance to boost morale.	士気を高めるために、会社はより良い成果に対してインセンティブを与えるべきです。	人事。	一般その他
+provide some feedback	-	フィードバックを与える	Could you provide some feedback on my presentation draft?	プレゼンの下書きにフィードバックをいただけますか？	依頼。	教育研究
+pursue this any further (Let's not)	-	これ以上これを追求しないようにしましょう	Let's not pursue this any further; we have reached a dead end.	これ以上これを追求するのはやめましょう。行き詰まってしまいました。	打ち切り。	一般その他
+put it this way (Let me)	-	こういう風に言わせてください	Let me put it this way: if we don't act now, we'll lose the market.	こう言わせてください。今動かなければ、市場を失うことになります。	言い換え・強調。	日常会話
+quite excited to hear the news (be)	-	そのニュースを聞いてかなり興奮している（喜んでいる）	We were quite excited to hear the news about the merger.	合併のニュースを聞いて、我々はかなり喜びました。	感情。	日常会話
+quite firm on the price (be)	-	価格についてかなり強気（妥協しない姿勢）だ	The supplier is quite firm on the price and won't give a discount.	サプライヤーは価格について非常に強気で、値引きに応じません。	交渉。	一般その他
+quite upset about this (be)	-	これについてかなり怒っている（動揺している）	He was quite upset about this error in the final report.	彼は最終報告書のこのミスについて、かなり腹を立てていました。	感情。	日常会話
+quote (a)	/ə kwoʊt/	見積もり	Could you provide a quote for the annual maintenance service?	年間のメンテナンスサービスの見積もりを出していただけますか？	商取引。	一般その他
+Rajiv will leave our company	-	ラジブは退職するだろう	It's unfortunate, but Rajiv will leave our company at the end of the month.	残念ですが、ラジブは今月末で退職します。	人事。	日常会話
+Rajiv will stay with us	-	ラジブは残ってくれるだろう	I'm glad to announce that Rajiv will stay with us for another year.	ラジブがもう一年、我々と共に働いてくれることになり嬉しいです。	人事。	日常会話
+rather confused about this (be)	-	これについてかなり混乱している	I'm rather confused about this new policy change.	この新しい方針変更について、かなり混乱しています。	状態。	日常会話
+recommend a good place to eat	-	美味しい食事場所を勧める	Could you recommend a good place to eat near the hotel?	ホテルの近くで、どこか美味しい食事場所を勧めていただけますか？	依頼。	日常会話
+recommned a good place to stay	-	良い宿泊場所を勧める	Can you recommend a good place to stay in Kyoto?	京都でどこか良い宿泊場所を勧めてもらえますか？	依頼。	日常会話
+recruit using social media tools	-	ソーシャルメディアを使って採用活動をする	We are planning to recruit using social media tools like LinkedIn.	LinkedInのようなソーシャルメディアを使って採用活動をする予定です。	採用。	一般その他
+reduce our retail prices	-	小売価格を下げる	We may need to reduce our retail prices to stay competitive.	競争力を維持するために、小売価格を下げる必要があるかもしれません。	戦略。	一般その他
+reduce the time needed for training new employees	-	新入社員の研修に必要な時間を短縮する	Structured OJT can help reduce the time needed for training new employees.	体系的なOJTは、新入社員の研修時間を短縮するのに役立ちます。	効率化。	一般その他
+reluctant about advertising on social media (be)	-	ソーシャルメディアでの広告に気が進まない	The CEO is still reluctant about advertising on social media.	CEOは依然としてソーシャルメディアへの広告に気が進まない様子です。	態度。	一般その他
+rename or redesign our products	-	製品の名前を変えるか、デザインし直す	We should either rename or redesign our products to attract more customers.	より多くの顧客を惹きつけるために、製品名を変更するかデザインし直すべきです。	戦略。	一般その他
+replace the toner cartridge	-	トナーカートリッジを交換する	Do you know how to replace the toner cartridge in this printer?	このプリンターのトナーカートリッジの交換方法を知っていますか？	事務。	日常会話
+report any problem immediately	-	どんな問題もすぐに報告する	Please report any problem immediately to the supervisor.	どんな問題もすぐに上司に報告してください。	規則。	一般その他
+reposition our company in the market	-	市場における会社の立ち位置を変える（リポジショニング）	We need a new strategy to reposition our company in the market.	市場での立ち位置を変えるために、新しい戦略が必要です。	戦略。	教育研究
+reschedule my lunch meeting with Mr.Cheng	-	チェン氏との昼食会議を予定変更する	Could you please reschedule my lunch meeting with Mr. Cheng to Friday?	チェン氏とのランチミーティングを金曜日に変更していただけますか？	予定変更。	日常会話
+reserve a table for five at an upscale restaurant	-	高級レストランで5人分のテーブルを予約する	I'd like to reserve a table for five at an upscale restaurant for our guests.	来客のために、高級レストランで5人分のテーブルを予約したい。	接待。	一般その他
+reserve a table for five for tonight at the Four Seasons restaurant	-	今夜、フォーシーズンズ・レストランで5人分のテーブルを予約する	I need to reserve a table for five for tonight at the Four Seasons restaurant.	今夜、フォーシーズンズ・レストランで5人分の予約をする必要があります。	手配。	日常会話
+respected (be)	/bi rɪˈspektɪd/	尊敬される	He is highly respected by his colleagues for his technical expertise.	彼はその技術的専門知識により、同僚から非常に尊敬されています。	評価。	一般その他
+respond to our customers right away	-	顧客にすぐに返答する	It's our policy to respond to our customers right away.	顧客にはすぐに返答するのが我々の方針です。	カスタマーサービス。	一般その他
+retain our better performing employees	-	成績の良い従業員を引き留める	We need better benefits to retain our better performing employees.	成績の良い従業員を引き留めるためには、より良い福利厚生が必要です。	人事。	一般その他
+revenue forecast for the next quarter	-	次四半期の収益予測	The revenue forecast for the next quarter looks very promising.	次四半期の収益予測は非常に有望そうです。	会計。	一般その他
+revise the Employee Manual	-	従業員マニュアルを改訂する	HR will revise the Employee Manual to include the new remote work policy.	人事部は、新しいリモートワーク規定を盛り込むためにマニュアルを改訂します。	事務。	一般その他
+revise the Operation Manual	-	操作マニュアルを改訂する	The engineering team needs to revise the Operation Manual for the new machine.	エンジニアチームは、新しい機械のために操作マニュアルを改訂する必要があります。	技術。	一般その他
+run a report and identify the top 50 customers	-	レポートを作成し、上位50名の顧客を特定する	Could you run a report and identify the top 50 customers by sales volume?	レポートを出して、売上上位50名の顧客を特定してくれますか？	分析。	一般その他
+run an online marketing campaign	-	オンラインマーケティングキャンペーンを実施する	We are going to run an online marketing campaign starting next month.	来月からオンラインマーケティングキャンペーンを実施する予定です。	マーケティング。	一般その他
+run this by my boss (Let me)	-	これを上司に相談させて（確認させて）ください	Let me run this by my boss before I give you a final answer.	最終的な回答をする前に、これを上司に確認させてください。	確認。	日常会話
+sales estimate	/seɪlz ˈestɪmeɪt/	売上予測（見積もり）	The sales estimate for this month was slightly higher than the actual results.	今月の売上予測は、実際の結果よりわずかに高かったです。	会計。	一般その他
+sales figure	/seɪlz ˈfɪɡjər/	売上数値	We need to analyze the sales figure for each region.	各地域ごとの売上数値を分析する必要があります。	会計。	一般その他
+sales order (a)	/ə seɪlz ˈɔːrdər/	受注書	Please process this sales order as soon as possible.	この受注書をできるだけ早く処理してください。	商取引。	一般その他
+say no	-	断る（ノーと言う）	It's sometimes difficult to say no to a client's request.	クライアントの依頼にノーと言うのは、時に難しいものです。	意思表示。	日常会話
+schedule an all-employee meeting	-	全従業員会議を予定する	The CEO wants to schedule an all-employee meeting to discuss the merger.	CEOは合併について話し合うため、全従業員会議を予定したいと考えています。	管理。	一般その他
+send me a daily report by mail	-	日報をメールで送って	Please send me a daily report by mail every evening.	毎晩、日報をメールで送ってください。	指示。	一般その他
+send us a new version by Wednesday	-	水曜日までに新しいバージョンを送って	Could you send us a new version of the software by Wednesday?	水曜日までに、ソフトの新しいバージョンを送っていただけますか？	依頼。	一般その他
+set the machines correctly	-	機械を正しく設定する	The technicians need to set the machines correctly to avoid defects.	欠陥を避けるために、技術者は機械を正しく設定する必要があります。	技術。	一般その他
+set up regional offices and branches	-	地域事務所や支店を開設する	The company is planning to set up regional offices and branches in Asia.	その会社はアジアに地域事務所や支店を開設することを計画しています。	事業拡大。	一般その他
+share this information with others	-	この情報を他者と共有する	Please feel free to share this information with others in your department.	部署内の他の人たちと、この情報を自由に共有してください。	情報共有。	一般その他
+share this information with us	-	この情報を我々と共有する	Thank you for agreeing to share this information with us.	この情報を我々と共有することに同意していただき、ありがとうございます。	情報共有。	一般その他
+share your thoughts on this	-	これについて考え（意見）を聞かせて	I’d like you to share your thoughts on this new marketing strategy.	この新しいマーケティング戦略について、あなたの考えを聞かせてほしい。	意見募集。	教育研究
+sharing that information (thanks for)	-	情報を共有してくれてありがとう	Thanks for sharing that information; it’s very helpful for our research.	情報を共有してくれてありがとう。我々の研究にとても役立ちます。	感謝。	教育研究
+She needs to realize...	-	彼女は…を悟る（理解する）必要がある。	She needs to realize that her actions affect the entire team.	彼女は、自分の行動がチーム全体に影響することを悟る必要があります。	指摘。	一般その他
+She wouldn't tell me...	-	彼女はどうしても教えてくれなかった…。	She wouldn't tell me the reason why she resigned.	彼女は辞職した理由をどうしても教えてくれませんでした。	拒絶の報告。	日常会話
+ship the/an order	-	注文品を発送する	We will ship the order within 24 hours of receiving payment.	支払いを受けてから24時間以内に注文品を発送します。	物流。	一般その他
+shipment (a)	/ə ˈʃɪpmənt/	積み荷・発送品	The shipment of electronic parts is expected to arrive on Friday.	電子部品の荷物は金曜日に到着する予定です。	物流。	一般その他
+sign the/an agreement	-	合意書（契約書）に署名する	Both parties are ready to sign the agreement tomorrow.	双方が明日、合意書に署名する準備ができています。	契約。	一般その他
+signed contract (a)	/ə saɪnd ˈkɒntrækt/	署名済みの契約書	Please return the signed contract to us by mail.	署名済みの契約書を郵送で返送してください。	契約。	一般その他
+single out the best candidate from within our company	-	社内から最高の候補者を一人選び出す	We want to single out the best candidate from within our company for this role.	この役割のために、社内から最高の候補者を一人選び出したいと考えています。	抜擢。	一般その他
+start an online store	-	オンラインショップを始める	Many small businesses decided to start an online store during the pandemic.	パンデミックの間、多くの小規模事業者がオンラインショップを始めることにしました。	事業。	一般その他
+stop by my office	-	私のオフィスに立ち寄って	If you have a moment, please stop by my office this afternoon.	時間があれば、今日の午後に私のオフィスに立ち寄ってください。	招集。	日常会話
+supplier	/səˈplaɪər/	供給業者（サプライヤー）	We are looking for a new supplier for our raw materials.	原材料の新しいサプライヤーを探しています。	取引。	一般その他
+supportive of one's colleagues (be)	-	同僚に対して協力的だ	It’s important to be supportive of one's colleagues during busy periods.	繁忙期には、同僚に対して協力的であることが重要です。	態度。	一般その他
+swamped with work (be)	/swɒmpt wɪð wɜːrk/	仕事に忙殺されている	I’m completely swamped with work today; can we talk tomorrow?	今日は完全に仕事に忙殺されています。明日話せますか？	非常に忙しい状態。	日常会話
+take a customer survey and find out what they want	-	顧客アンケートを実施して彼らが何を求めているか探る	We should take a customer survey and find out what they want from us.	顧客アンケートを実施して、彼らが我々に何を求めているか探るべきです。	調査。	一般その他
+take a day off tomorrow	-	明日一日休みを取る	I’m going to take a day off tomorrow to attend my daughter's graduation.	娘の卒業式に出席するため、明日一日休みを取ります。	休暇。	日常会話
+take care of that	-	それを処理する（引き受ける）	Don't worry about the booking; I’ll take care of that.	予約のことは心配しないで。私がやっておきます。	引き受け。	日常会話
+take care of this expense report for me	-	この経費精算書を私の代わりに処理して	Could you please take care of this expense report for me?	私の代わりにこの経費精算書を処理していただけますか？	依頼。	日常会話
+take them to a karaoke bar	-	彼らをカラオケに連れて行く	After dinner, we usually take them to a karaoke bar for some fun.	夕食後、私たちはいつも彼らをカラオケに連れて行って楽しみます。	接待。	日常会話
+talk about it now	-	それについて今話す	I’m afraid I don't have enough information to talk about it now.	あいにく、今それについて話すための十分な情報を持っていません。	対話。	日常会話
+talk about this tomorrow	-	これについて明日話す	Let's talk about this tomorrow after we've had some sleep.	少し寝てから、明日これについて話しましょう。	延期。	日常会話
+talk to them first to get their input	-	まず彼らに話して意見を聞く	We should talk to them first to get their input on the design.	デザインについて意見を聞くために、まず彼らに話すべきです。	根回し。	一般その他
+tell me more about it	-	それについてもっと詳しく教えて	That sounds interesting; could you tell me more about it?	それは面白そうですね。もっと詳しく教えていただけますか？	興味。	日常会話
+tell me what's going on	-	何が起きているか教えて	Can someone please tell me what's going on with the server?	誰か、サーバーで何が起きているのか教えてくれませんか？	状況把握。	一般その他
+tell you not to do that	-	そんなことをしないように（あなたに）言う	Didn't the manager tell you not to do that without supervision?	上司に、監督なしでそんなことをしないように言われませんでしたか？	忠告。	日常会話
+tell you something (Let me)	-	ちょっと言わせて（教えて）ください	Let me tell you something: this opportunity won't last forever.	ちょっと言わせてください。このチャンスは永遠には続きませんよ。	強調。	日常会話
+the 1st payment is due on May 1	-	第1回目の支払いは5月1日が期限です	Please remember that the 1st payment is due on May 1.	第1回目の支払期限は5月1日であることを覚えておいてください。	会計。	一般その他
+The chances are not so good...	-	見込みはあまり良くない…。	The chances are not so good that we will win the tender.	我々が入札に勝つ見込みはあまり良くありません。	可能性。	一般その他
+The chances are...	-	おそらく…だろう（見込みは…だ）。	The chances are that the interest rates will rise next year.	おそらく来年、金利が上がるでしょう。	可能性。	一般その他
+The report isn't ready yet.	-	レポートはまだ準備できていません。	I'm sorry, the report isn't ready yet due to a data error.	申し訳ありません、データエラーのためレポートがまだ準備できていません。	未完了。	一般その他
+the situation at the warehouse	-	倉庫の状況	We need to check the situation at the warehouse after the storm.	嵐の後の倉庫の状況を確認する必要があります。	物流。	一般その他
+the situation between us and our vendor	-	我々と業者の間の状況	The situation between us and our vendor has improved lately.	我々と業者の間の状況は最近改善しました。	取引関係。	一般その他
+the situation in the Purchasing Department	-	購買部の状況	The situation in the Purchasing Department is quite hectic right now.	現在、購買部の状況は非常に慌ただしいです。	組織。	一般その他
+the situation with our carrier	-	運送業者の状況	We are monitoring the situation with our carrier regarding the strike.	ストライキに関する運送業者の状況を注視しています。	物流。	一般その他
+the situation with our supplier	-	サプライヤーの状況　	We are concerned about the financial situation with our supplier.	サプライヤーの財務状況を懸念しています。	取引。	一般その他
+the situation with the municipal government	-	市役所（自治体）との状況	We are negotiating the permit situation with the municipal government.	自治体と許可の状況について交渉しています。	公的対応。	一般その他
+There's a big chance...	-	…の可能性が高い。	There's a big chance that the project will be approved.	プロジェクトが承認される可能性は高いです。	可能性。	一般その他
+There's a fifty-fifty chance...	-	可能性は五分五分だ…。	There's a fifty-fifty chance that he will accept the offer.	彼が申し出を受ける可能性は五分五分です。	可能性。	一般その他
+There's a good chance...	-	かなりの可能性がある…。	There's a good chance that we will finish the task by noon.	正午までにタスクを終えられる可能性は十分にあります。	可能性。	一般その他
+There's almost no chance...	-	…の可能性はほとんどない。	There's almost no chance of recovering the lost data.	失われたデータを復旧できる可能性はほとんどありません。	可能性。	一般その他
+There's only slight chance...	-	ほんのわずかな可能性しかない…。	There's only a slight chance that the flight will be on time.	飛行機が時間通りに到着する可能性は、ほんのわずかしかありません。	可能性。	一般その他
+they cancel the order	-	彼らが注文をキャンセルする	If they cancel the order now, we will charge a fee.	もし彼らが今注文をキャンセルしたら、手数料を請求します。	トラブル。	一般その他
+they don't renew the contract	-	彼らが契約を更新しない	What will happen if they don't renew the contract next year?	もし来年彼らが契約を更新しなかったら、どうなりますか？	契約。	一般その他
+They got to understand...	-	彼らは…を理解しなければならない。	They got to understand that we have a limited budget.	彼らは、我々の予算が限られていることを理解せねばなりません。	必要性。	日常会話
+they had already paid	-	彼らは既に支払っていた	They claimed that they had already paid the invoice last week.	彼らは先週既に請求書の支払いを済ませたと主張しました。	会計。	一般その他
+they had not received our invoice	-	彼らは我々の請求書を受け取っていなかった	It turned out that they had not received our invoice due to a typo.	入力ミスにより、彼らが請求書を受け取っていなかったことが判明しました。	会計。	一般その他
+they run into trouble	-	彼らがトラブルに見舞われる	We should be ready to help them if they run into trouble.	彼らがトラブルに見舞われたら助けられるよう、準備しておくべきです。	支援。	日常会話
+they were having poor cash flow	-	彼らはキャッシュフローが悪化していた	The project was delayed because they were having poor cash flow.	彼らのキャッシュフローが悪化していたため、プロジェクトは遅れました。	経営。	一般その他
+they will renew the distribution agreement	-	彼らは販売店契約を更新するだろう	We are confident that they will renew the distribution agreement.	彼らが販売店契約を更新してくれると確信しています。	取引。	一般その他
+they would like to return our goods	-	彼らは我々の商品を返品したいと思っている	They informed us that they would like to return our goods.	彼らは、我々の商品を返品したいと伝えてきました。	トラブル。	一般その他
+think about that for a minute (Let me)	-	それについてちょっと考えさせてください	That’s a tough question; let me think about that for a minute.	難しい質問ですね。それについて少し考えさせてください。	保留。	日常会話
+this needs to be kept confidential	-	これは機密にしておく必要がある	Please remember that this needs to be kept confidential within the team.	これはチーム内で機密にしておく必要があることを覚えておいてください。	機密。	一般その他
+tie up with other companies	/taɪ ʌp wɪð ˈʌðər ˈkʌmpəniz/	他社と提携する	We are looking for opportunities to tie up with other companies in the industry.	業界の他社と提携する機会を探しています。	提携。	一般その他
+to do nothing	-	何もしないこと　	Sometimes the best strategy is to do nothing and wait.	時には、何もしないで待つことが最良の戦略であることもあります。	判断。	一般その他
+to have kept you waiting (I'm sorry)	-	お待たせして（いたことを）申し訳なく思う	I’m sorry to have kept you waiting for so long.	長い間お待たせしてしまい、申し訳ありません。	謝罪。	日常会話
+to hear about what happened (I'm sorry)	-	何が起きたか聞いてお気の毒に思う	I’m so sorry to hear about what happened to your car.	あなたの車に起きたこと（事故など）を聞いて、大変お気の毒に思います。	同情。	日常会話
+to hear about your sick mother (I'm sorry)	-	お母様のご病気について聞いてお気の毒に思う	I’m sorry to hear about your sick mother; I hope she gets well soon.	お母様のご病気のこと、お見舞い申し上げます。早く良くなられるといいですね。	お見舞い。	日常会話
+to keep you waiting (I'm sorry)	-	お待たせして申し訳ありません（現在待たせている場合）	I'm sorry to keep you waiting; the doctor will see you now.	お待たせして申し訳ありません。先生が今お呼びです。	謝罪。	日常会話
+Tokyo won't approve the plan	-	東京（本社）はその計画を承認しないだろう	If the costs are too high, Tokyo won't approve the plan.	コストが高すぎれば、東京（本社）はその計画を承認しないでしょう。	予測。	一般その他
+train our distributors to provide better after sales service	-	より良いアフターサービスを提供できるよう代理店を訓練する	We need to train our distributors to provide better after sales service.	より良いアフターサービスを提供できるよう、代理店を訓練する必要があります。	教育。	一般その他
+try to find well-established distributors in each region	-	各地域で実績のある販売店を探すようにする	We should try to find well-established distributors in each region.	各地域で実績のある（確立された）販売店を探すべきです。	戦略。	一般その他
+undecided about advertising on social media (be)	-	ソーシャルメディアでの広告について未決定だ	We are still undecided about advertising on social media this year.	今年のソーシャルメディア広告については、まだ決めていません。	状態。	一般その他
+use a vacation day this Friday	-	今週の金曜日に有給休暇を使う	I plan to use a vacation day this Friday to go on a trip.	旅行に行くため、今週の金曜日に有給休暇を使う予定です。	休暇。	日常会話
+use customer surveys to find out what they're thinking	-	顧客アンケートを使って彼らが何を考えているか探る	We can use customer surveys to find out what they're thinking about the new logo.	新しいロゴについて彼らがどう考えているか、アンケートを使って調べられます。	調査。	一般その他
+use more agents and give them more incentives	-	より多くの代理店を使い、より多くのインセンティブを与える	We should use more agents and give them more incentives to increase sales.	売上を増やすために、より多くの代理店を使い、報奨を増やすべきです。	戦略。	一般その他
+vendor	/ˈvendər/	業者・売り手	We need to select a reliable vendor for the IT infrastructure.	ITインフラのために、信頼できる業者を選ぶ必要があります。	取引。	一般その他
+very frustrated about this (be)	-	これについて非常に不満を感じている	The client is very frustrated about this delay.	クライアントはこの遅延について非常に不満を感じています。	感情。	一般その他
+waiting (thanks for)	-	待ってくれてありがとう	Thanks for waiting; I’m ready to start the meeting now.	待ってくれてありがとう。会議を始める準備ができました。	感謝。	日常会話
+warehouse	/ˈwerhaʊs/	倉庫	The finished goods are stored in the warehouse near the port.	完成品は港の近くの倉庫に保管されています。	物流。	一般その他
+We all need to remind ourselves...	-	我々は皆、自らに言い聞かせる（再確認する）必要がある。	We all need to remind ourselves of our core values.	我々は皆、自分たちの核心的な価値観を再確認する必要があります。	意識。	一般その他
+We are likely to enter into price competition.	-	我々は価格競争に陥る可能性が高い。	Without differentiation, we are likely to enter into price competition.	差別化がなければ、価格競争に陥る可能性が高いです。	予測。	一般その他
+We can't accept those terms.	-	それらの条件は受け入れられません。	We can't accept those terms because they are not fair to us.	我々にとって公平ではないため、それらの条件は受け入れられません。	拒絶。	一般その他
+We can't accept your offer.	-	あなたの申し出は受け入れられません。	I'm sorry, but we can't accept your offer at this time.	申し訳ありませんが、現時点ではあなたの申し出を受け入れることはできません。	拒絶。	一般その他
+we don't have an effective performance appraisal system	-	我々には効果的な人事評価制度がない	The survey showed we don't have an effective performance appraisal system.	調査の結果、我々には効果的な人事評価制度がないことが示されました。	課題。	一般その他
+we have to be cautious not to make it into a popularity contest	-	それが人気投票にならないよう注意しなければならない	When introducing rewards, we have to be cautious not to make it into a popularity contest.	報酬制度を導入する際、それが単なる人気投票にならないよう注意せねばなりません。	注意点。	一般その他
+We might lose the loyal customers in the long run.	-	長期的には、ロイヤルカスタマーを失うかもしれない。	If we lower the quality, we might lose the loyal customers in the long run.	品質を下げれば、長期的にはロイヤルカスタマーを失うかもしれません。	予測。	一般その他
+We must remember	-	我々は覚えておかなければならない（忘れてはならない）。	We must remember that our customers' needs are always changing.	顧客のニーズは常に変化していることを忘れてはなりません。	強調。	一般その他
+we need a system which leads to better performance and productivity	-	より良い業績と生産性に繋がるシステムが必要だ	To grow, we need a system which leads to better performance and productivity.	成長のためには、より良い業績と生産性に繋がるシステムが必要です。	目標。	教育研究
+we need to create a transparent appraisal and promotion system	-	透明性のある評価・昇進制度を作る必要がある	To motivate staff, we need to create a transparent appraisal and promotion system.	やる気を引き出すため、透明性のある評価・昇進制度を作る必要があります。	人事。	一般その他
+we want a new performance appraisal system to weed out poor	-	不適格な者を取り除くための新しい人事評価制度が欲しい	We want a new performance appraisal system to weed out poor performers.	不適格な（成績の悪い）者を取り除くための新しい人事評価制度を求めています。	人事。	一般その他
+We will get new customers.	-	新しい顧客を獲得するだろう。	With this campaign, we will get new customers from the younger generation.	このキャンペーンにより、若い世代の新規顧客を獲得できるでしょう。	予測。	一般その他
+we will land that big contract	-	その大きな契約を勝ち取れるだろう	I believe we will land that big contract if we work together.	協力し合えば、あの大きな契約を勝ち取れると信じています。	意欲。	一般その他
+what course of action to take	-	どのような行動をとるべきか	The board is still deciding what course of action to take.	取締役会は、どのような行動をとるべきか、まだ検討中です。	方針。	一般その他
+what he wants	-	彼が何を求めているか	We need to find out exactly what he wants from this deal.	彼がこの取引に何を求めているのか、正確に突き止める必要があります。	把握。	日常会話
+what kind of food they like	-	彼らがどんな食べ物が好きか	Do you know what kind of food they like for the welcome dinner?	歓迎夕食会で、彼らがどんな食べ物を好むか知っていますか？	接待。	日常会話
+what kind of results you want	-	どんな結果を求めているか	Please specify what kind of results you want from this experiment.	この実験からどのような結果を求めているのか、明記してください。	指示。	教育研究
+what she needs	-	彼女が何を必要としているか	I’ll ask her what she needs for the presentation tomorrow.	明日のプレゼンのために、彼女が何を必要としているか聞いてみます。	支援。	日常会話
+what she's looking for	-	彼女が何を探しているか（求めているか）	I’m not sure what she's looking for in a new assistant.	彼女が新しい助手に何を求めているのか、よく分かりません。	把握。	日常会話
+what she's talking about	-	彼女が何の話をしているか	I honestly have no idea what she's talking about.	正直なところ、彼女が何の話をしているのかさっぱり分かりません。	理解。	日常会話
+What should we do about it?	-	それについてどうすべきか？	Now that the error is found, what should we do about it?	エラーが見つかった今、それについてどうすべきでしょうか？	相談。	日常会話
+what they're going to do	-	彼らが何をしようとしているか	We are waiting to see what they're going to do next.	彼らが次に何をしようとしているのか、様子を見ています。	注視。	日常会話
+what to do to prevent this from happening again	-	これを再発させないために何をすべきか	We must discuss what to do to prevent this from happening again.	これを再発させないために何をすべきか、話し合わねばなりません。	対策。	一般その他
+what to look for in an inspection	-	検査で何を見るべきか（チェックポイント）	The manual explains what to look for in an inspection.	マニュアルに、検査で何をチェックすべきかが説明されています。	手順。	一般その他
+what to tell you	-	あなたに何と言うべきか	I'm not sure what to tell you after hearing that news.	そのニュースを聞いて、あなたに何と言えばいいのか分かりません。	困惑。	日常会話
+what we are up against	-	我々が何に立ち向かっているか（直面している困難）	We need to understand exactly what we are up against in this market.	この市場で我々が何に立ち向かっているのかを、正確に理解する必要があります。	把握。	一般その他
+what we need to do	-	我々がすべきこと	Now that we have the data, what we need to do is clear.	データが得られた今、我々がすべきことは明白です。	方針。	一般その他
+what we're trying to accomplish	-	我々が何を達成しようとしているか	Let's remember what we're trying to accomplish with this study.	この研究で何を達成しようとしているのか、再確認しましょう。	目的。	教育研究
+what we're trying to fix	-	我々が何を直そうとしているか	We need to identify exactly what we're trying to fix in the software.	ソフトの何を直そうとしているのか、正確に特定する必要があります。	目的。	一般その他
+What will do to fix this issue?	-	この問題を解決するために何をするか？	What will you do to fix this issue before the deadline?	締め切り前にこの問題を解決するために、あなたは何をしますか？	（原文ママ：What will you do...が自然）	対策。	一般その他
+what you find	-	あなたが見つけたこと（発見）	Please report back to me with what you find in the archives.	アーカイブで何を見つけたか、私に報告してください。	報告依頼。	教育研究
+what's bothering her	-	何が彼女を悩ませているか　	Does anyone know what's bothering her today? She looks sad.	今日、何が彼女を悩ませているのか誰か知っていますか？悲しそうですよ。	懸念。	日常会話
+what's going on in this country	-	この国で何が起きているか	It is important to keep up with what's going on in this country.	この国で何が起きているかを常に把握しておくことは重要です。	情勢。	一般その他
+what's so great about this product	-	この製品の何がそんなにすごいのか	Can you explain to me what's so great about this product?	この製品の何がそんなに素晴らしいのか、説明してくれますか？	質問。	日常会話
+what's the matter with her	-	彼女はどうしたのか（何が問題か）	What's the matter with her lately? She seems very tired.	最近彼女はどうしたのでしょうか？とても疲れているようです。	心配。	日常会話
+what's wrong with her	-	彼女のどこが悪いのか（どうしたのか）	I don't know what's wrong with her; she hasn't spoken to me all day.	彼女はどうしたのでしょう。一日中私と口をきいてくれません。	心配。	日常会話
+when and where the problem started	-	いつ、どこで問題が始まったか	We need to track down when and where the problem started.	いつ、どこで問題が始まったのかを突き止める必要があります。	調査。	一般その他
+when he arrives	-	彼が到着した時に	Please give him these documents when he arrives.	彼が到着したら、これらの書類を渡してください。	指示。	日常会話
+when she realized there was something wrong	-	何かがおかしいと彼女が気づいた時に	She called me when she realized there was something wrong with the car.	車の調子がおかしいと気づいた時、彼女は私に電話してきました。	経緯。	日常会話
+when she'll be back	-	彼女がいつ戻るか	Do you know when she'll be back from her business trip?	彼女がいつ出張から戻るか知っていますか？	確認。	日常会話
+when she'll be done	-	彼女がいつ終わるか	I’m not sure when she'll be done with the experiment.	彼女がいつ実験を終えるか分かりません。	確認。	教育研究
+when she'll be here	-	彼女がいつここに来るか	Did she say when she'll be here for the meeting?	彼女は会議のためにいつここに来ると言っていましたか？	確認。	日常会話
+when they realized there was something wrong	-	何かがおかしいと彼らが気づいた時に	When they realized there was something wrong, it was already too late.	彼らがおかしいと気づいた時には、既に手遅れでした。	経緯。	一般その他
+when things started to move fast	-	事態が急速に動き始めた時に	Everything changed when things started to move fast last summer.	去年の夏、事態が急速に動き始めてからすべてが変わりました。	経緯。	一般その他
+when Tokyo will get back to us	-	いつ東京（本社）から返事があるか	We are still waiting to hear when Tokyo will get back to us.	いつ東京から返事があるか、まだ待っているところです。	連絡待ち。	一般その他
+When will that happen?	-	それはいつ起こりますか？	When will that happen? We need a specific timeline.	それはいつ実施されますか？具体的なタイムラインが必要です。	質問。	一般その他
+when you're done	-	終わったら	Please turn off the computer when you're done.	終わったらコンピュータの電源を切ってください。	指示。	日常会話
+when you're ready	-	準備ができたら	We can start the presentation whenever you're ready.	準備ができ次第、プレゼンを始めて結構です。	合図。	一般その他
+where I took my clients to dinner	-	私がクライアントを夕食に連れて行った場所	That Italian restaurant is where I took my clients to dinner yesterday.	あのイタリアンレストランは、昨日クライアントを夕食に連れて行った場所です。	接待の報告。	日常会話
+where the problem lies	-	問題がどこにあるか	After a long investigation, we finally found where the problem lies.	長い調査の末、ようやく問題がどこにあるか見つけました。	特定。	教育研究
+where the problem started	-	問題がどこで始まったか	We need to go back to the beginning to see where the problem started.	どこで問題が始まったかを確認するために、最初に戻る必要があります。	調査。	一般その他
+where to find you	-	あなたをどこで見つければいいか（どこにいるか）	If I need more help, where can I find you later?	さらなる助けが必要な場合、後でどこへ行けばあなたに会えますか？	連絡先。	日常会話
+where to store the tools	-	道具をどこに保管すべきか	Please tell the new workers where to store the tools after use.	新しい作業員に、使用後の道具をどこに片付けるべきか教えてください。	指示。	一般その他
+Where will this leave us?	-	（その結果）我々はどういう立場（状況）になりますか？	If we lose this client, where will this leave us?	もしこのクライアントを失ったら、我々はどういう状況に追い込まれますか？	影響。	一般その他
+Where will this take us?	-	これが我々をどこへ連れて行きますか（どういう結末になりますか）？	This is a risky strategy; where will this take us in five years?	これは危険な戦略です。5年後、我々はどうなっているでしょうか？	影響。	一般その他
+where you want to take your prospective clients to dinner	-	見込み客を夕食に連れて行きたい場所	Do you have a specific place where you want to take your prospective clients?	見込み客を連れて行きたい特定の場所はありますか？	接待。	日常会話
+where you're taking your clients to dinner	-	あなたがクライアントを夕食に連れて行く場所	I need to know where you're taking your clients to dinner for the records.	記録のために、クライアントをどこへ夕食に連れて行くか知っておく必要があります。	管理。	一般その他
+whether or not there're any new developments	-	新しい進展があるかどうか	I will check whether or not there're any new developments tomorrow.	明日、新しい進展があるかどうか確認します。	確認。	一般その他
+which options to chose	-	どの選択肢を選ぶべきか	It's difficult to decide which options to choose with such a limited budget.	限られた予算で、どの選択肢を選ぶべきか決めるのは難しい。	判断。	教育研究
+which supplier you work with	-	どのサプライヤー（業者）と仕事をするか	It depends on which supplier you work with for this project.	このプロジェクトでどの業者と組むかによります。	条件。	一般その他
+which supplies to order and when to do so	-	どの備品をいつ注文すべきか	The inventory list shows which supplies to order and when to do so.	在庫リストに、どの備品をいつ注文すべきかが出ています。	管理。	一般その他
+which way to go	-	どちらの道（方法）へ進むべきか	We are at a crossroads and need to decide which way to go.	我々は岐路に立っており、どちらへ進むべきか決める必要があります。	判断。	一般その他
+who I should contact	-	誰に連絡すべきか	Could you tell me who I should contact regarding the invoice?	請求書については誰に連絡すべきか教えていただけますか？	質問。	日常会話
+who she has contacted so far	-	彼女がこれまでに誰に連絡したか	We need a list of who she has contacted so far for this project.	彼女がこのプロジェクトでこれまでに誰に連絡したかのリストが必要です。	把握。	一般その他
+who to contact in case of emergency	-	緊急時に誰に連絡すべきか	Please make sure everyone knows who to contact in case of emergency.	緊急時に誰に連絡すべきか、全員が把握しているようにしてください。	安全管理。	日常会話
+who to discuss this problem with	-	この問題を誰と話し合うべきか	I’m not sure who to discuss this problem with in the legal department.	法務部の誰とこの問題を話し合うべきか分かりません。	相談。	一般その他
+who to talk to about this	-	これについて誰に話すべきか	If you have a complaint, you know who to talk to about this.	苦情があるなら、誰に話すべきか分かっていますね。	指示。	日常会話
+who will be in charge	-	誰が担当（責任者）になるか	The director will decide who will be in charge of the new branch.	ディレクターが誰を新しい支店の責任者にするか決めます。	人事。	一般その他
+who's in charge	-	誰が担当か（責任者か）	Can you tell me who's in charge of the laboratory today?	今日のラボの責任者は誰か教えてもらえますか？	確認。	教育研究
+why he's having a problem with that assignment	-	なぜ彼がその課題で問題を抱えているのか	I want to understand why he's having a problem with that assignment.	なぜ彼がその課題で行き詰まっているのか理解したい。	把握。	教育研究
+why he's so upset	-	なぜ彼がそんなに怒っているのか（動揺しているのか）	I have no idea why he's so upset about the meeting's postponement.	会議の延期について、なぜ彼がそんなに怒っているのかさっぱり分かりません。	把握。	日常会話
+why Lan is often late for work these days	-	なぜ最近ランが仕事によく遅刻するのか	The manager wants to know why Lan is often late for work these days.	マネージャーは、なぜ最近ランが仕事によく遅刻するのか知りたがっています。	人事。	日常会話
+why she didn't finish the job	-	なぜ彼女が仕事を終えなかったのか	We need to find out why she didn't finish the job on time.	なぜ彼女が期限内に仕事を終えなかったのか、突き止める必要があります。	調査。	一般その他
+why she is so concerned	-	なぜ彼女がそんなに懸念しているのか	I understand why she is so concerned about the safety regulations.	安全規制について、なぜ彼女がそんなに懸念しているのか理解できます。	理解。	一般その他
+why they're doing so great	-	なぜ彼らはそんなに絶好調（成功）なのか	We should analyze their strategy to see why they're doing so great.	なぜ彼らがそんなに成功しているのか、戦略を分析すべきです。	分析。	一般その他
+why Tokyo hasn't gotten back to us	-	なぜ東京（本社）から返事がないのか	I’m wondering why Tokyo hasn't gotten back to us on the proposal yet.	提案に対して、なぜ東京からまだ返事がないのか不思議です。	懸念。	一般その他
+Why will they do that?	-	なぜ彼らはそんなことをするのでしょうか？	Why will they do that? It seems like a waste of resources.	なぜ彼らはそんなことをするのでしょう？資源の無駄に思えます。	疑問。	日常会話
+work on the sales forecast	-	売上予測に取り組む	I need to work on the sales forecast for the next fiscal year.	次年度の売上予測に取り組む必要があります。	会計。	一般その他
+work overtime for weeks	-	数週間にわたって残業する	The whole team had to work overtime for weeks to meet the deadline.	締め切りに間に合わせるため、チーム全員が数週間にわたって残業せねばなりませんでした。	労務。	一般その他
+worried about (be)	/bi ˈwʌrid əˈbaʊt/	…を心配している	The stakeholders are worried about the recent drop in stock prices.	ステークホルダーは最近の株価下落を心配しています。	感情。	一般その他
+worry too much (Let's not)	-	あまり心配しすぎないようにしましょう	Let's not worry too much; everything is under control.	あまり心配しすぎないようにしましょう。すべて順調です。	慰め。	日常会話
+write a daily report	-	日報を書く	It is mandatory for all interns to write a daily report.	すべてのインターンは日報を書くことが義務付けられています。	指示。	一般その他
+your consideration (thanks for)	-	ご検討ありがとうございます	Thanks for your consideration of our proposal.	我々の提案をご検討いただき、ありがとうございます。	感謝。	一般その他
+your kind words (thanks for)	-	優しいお言葉をありがとうございます	Thanks for your kind words; they mean a lot to me during this time.	優しいお言葉をありがとうございます。今の私にとって大きな励みになります。	感謝。	日常会話
+your quick response (thanks for)	-	迅速なご返答をありがとうございます	Thanks for your quick response; it helped us stay on schedule.	迅速なご返答ありがとうございます。おかげで予定通りに進められました。	感謝。	一般その他
+your understanding (thanks for)	-	ご理解ありがとうございます	Thanks for your understanding regarding the delay in shipment.	発送の遅延について、ご理解いただきありがとうございます。	感謝。	一般その他
