@@ -2,11 +2,11 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-width=1.0">
-    <title>The Executive's SRS Platform v7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Executive's SRS Platform v8</title>
     <style>
         body { font-family: 'Helvetica Neue', Arial, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f8f9fa; margin: 0; color: #333; }
-        .container { background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); padding: 40px; width: 90%; max-width: 750px; text-align: center; position: relative; max-height: 90vh; overflow-y: auto; }
+        .container { background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); padding: 30px; width: 90%; max-width: 750px; text-align: center; position: relative; max-height: 90vh; overflow-y: auto; }
         .hidden { display: none !important; }
         
         .btn-home { position: absolute; top: 15px; right: 20px; font-size: 1.5em; cursor: pointer; background: none; border: none; color: #7f8c8d; }
@@ -14,70 +14,66 @@
 
         h2 { color: #2c3e50; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
         
-        .menu-btn { width: 100%; font-size: 1.4em; padding: 20px; margin: 15px 0; background-color: #34495e; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        .menu-btn { width: 100%; font-size: 1.4em; padding: 20px; margin: 10px 0; background-color: #34495e; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
         .menu-btn:hover { background-color: #2c3e50; }
-        .menu-btn.create { background-color: #8e44ad; }
-        .menu-btn.create:hover { background-color: #732d91; }
+
+        /* 検索窓スタイル */
+        .search-container { margin: 20px 0; display: flex; gap: 5px; }
+        #search-input { flex: 1; padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em; }
+        .search-result-item { text-align: left; padding: 10px; border-bottom: 1px solid #eee; cursor: pointer; }
+        .search-result-item:hover { background: #f1f2f6; }
+
+        /* 全データリストスタイル */
+        .list-controls { margin-bottom: 15px; display: flex; justify-content: center; gap: 10px; }
+        .data-list-table { width: 100%; border-collapse: collapse; text-align: left; margin-top: 10px; }
+        .data-list-table th, .data-list-table td { border-bottom: 1px solid #eee; padding: 10px; font-size: 0.9em; }
 
         .setup-group { margin-bottom: 25px; text-align: left; }
         .setup-group label { display: inline-block; margin: 8px 15px 8px 0; font-size: 1.1em; cursor: pointer; }
         .action-btn-large { width: 100%; font-size: 1.2em; padding: 15px; background-color: #27ae60; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; margin-top: 10px; }
-        .action-btn-large:hover { background-color: #219653; }
         
-        .sync-row { display: flex; gap: 10px; margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px; }
-        .btn-sync { flex: 1; padding: 10px; font-size: 1em; background-color: #f39c12; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
-        .btn-sync:hover { background-color: #e67e22; }
-
-        textarea { width: 100%; padding: 10px; font-size: 0.9em; border: 1px solid #ccc; border-radius: 4px; margin-top: 10px; height: 180px; resize: vertical; font-family: monospace; white-space: pre; overflow-wrap: normal; overflow-x: auto;}
-        .format-guide { font-size: 0.85em; color: #666; background: #f1f2f6; padding: 10px; border-radius: 4px; margin-top: 5px; text-align: left;}
-
         .target-word { font-size: 2.2em; font-weight: bold; color: #e74c3c; margin-bottom: 5px; }
-        .pronunciation { font-size: 1.2em; color: #7f8c8d; margin-bottom: 20px; font-family: "Lucida Sans Unicode", sans-serif; }
+        .pronunciation { font-size: 1.2em; color: #7f8c8d; margin-bottom: 20px; }
         .sentence { font-size: 1.6em; font-weight: bold; margin-bottom: 15px; line-height: 1.4; color: #1a252f; }
         .translation { font-size: 1.3em; color: #34495e; margin-bottom: 20px; }
         .explanation { font-size: 1.1em; color: #555; line-height: 1.6; border-top: 1px solid #eee; padding-top: 20px; text-align: left;}
         
         .controls-row { margin-top: 20px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
         button.action-btn { font-size: 1.1em; padding: 12px 20px; cursor: pointer; border: none; border-radius: 5px; background-color: #7f8c8d; color: white; font-weight: bold; flex: 1; min-width: 120px; }
-        button.action-btn:hover { background-color: #95a5a6; }
-        button.action-btn:disabled { background-color: #bdc3c7; cursor: not-allowed; }
         
-        button.btn-ebbing-good { background-color: #2980b9; }
-        button.btn-ebbing-good:hover { background-color: #3498db; }
-        button.btn-ebbing-again { background-color: #d35400; }
-        button.btn-ebbing-again:hover { background-color: #e67e22; }
-
         #status-text { font-size: 1.3em; color: #8e44ad; font-weight: bold; min-height: 150px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px;}
-        .status-sub { font-size: 0.8em; color: #7f8c8d; font-weight: normal; }
-        
-        /* Auto Sync Banner */
         #sync-banner { background-color: #27ae60; color: white; padding: 8px; font-size: 0.9em; position: absolute; top: 0; left: 0; right: 0; border-radius: 8px 8px 0 0; }
     </style>
 </head>
 <body>
 
 <div id="main-menu" class="container">
-    <div id="sync-banner" class="hidden">外部データベース(data.txt)から新規データを同期しました</div>
+    <div id="sync-banner" class="hidden">同期完了</div>
     <h2>The Executive's SRS</h2>
+    
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="data.txt から検索..." oninput="handleSearch()">
+    </div>
+    <div id="search-results" class="hidden"></div>
+
     <button class="menu-btn" onclick="showScreen('setup-screen')">学習モード (Learning)</button>
-    <button class="menu-btn create" onclick="showScreen('create-screen')">作業モード (Create & Sync)</button>
+    <button class="menu-btn" onclick="showAllDataScreen()" style="background-color: #2980b9;">全データ (All List)</button>
 </div>
 
-<div id="create-screen" class="container hidden">
+<div id="all-data-screen" class="container hidden">
     <button class="btn-home" onclick="goHome()">🏠</button>
-    <h2>Create & Sync (作業モード)</h2>
-    <div class="setup-group">
-        <div class="format-guide">
-            <strong>【端末単体での追加】</strong>（タブ区切り6項目）<br>
-            ※PCで一括管理する場合は、GitHubの <code>data.txt</code> を直接編集してください。アプリ起動時に自動同期されます。
-        </div>
-        <textarea id="bulk-input" placeholder="pressure-test	/préʃɚ test/	We need to pressure-test this.	これをプレッシャーテストする必要がある。	【動詞】実戦で試す	専門用語"></textarea>
+    <h2>全データリスト</h2>
+    <div class="list-controls">
+        <button onclick="renderAllData('alphabet')">アルファベット順</button>
+        <button onclick="renderAllData('category')">区分順</button>
     </div>
-    <button class="action-btn-large" onclick="saveData()">この端末に追加する</button>
-    
-    <div class="sync-row">
-        <button class="btn-sync" onclick="exportData()">📤 データを書き出す (Export)</button>
-        <button class="btn-sync" onclick="importData()">📥 データを復元する (Import)</button>
+    <div style="overflow-y: auto; max-height: 60vh;">
+        <table class="data-list-table">
+            <thead>
+                <tr><th>ターゲット</th><th>意味</th><th>区分</th></tr>
+            </thead>
+            <tbody id="all-data-body"></tbody>
+        </table>
     </div>
 </div>
 
@@ -86,15 +82,13 @@
     <h2>Learning Setup</h2>
     <div class="setup-group">
         <h3>1. 区分選択</h3>
-        <label><input type="checkbox" class="category-cb" value="日常会話" checked> 日常会話</label>
-        <label><input type="checkbox" class="category-cb" value="専門用語" checked> 専門用語</label>
-        <label><input type="checkbox" class="category-cb" value="ヨット用語" checked> ヨット用語</label>
-        <label><input type="checkbox" class="category-cb" value="一般その他" checked> 一般その他</label>
+        <div id="category-selectors">
+            </div>
     </div>
     <div class="setup-group">
         <h3>2. 学習モード</h3>
         <label><input type="radio" name="mode" value="reproduction" checked> (1) リプロダクション</label><br>
-        <label><input type="radio" name="mode" value="composition"> (2) 英作文</label>
+        <label><input type="radio" name="mode" value="composition"> (2) 日本語=>英語</label>
     </div>
     <button class="action-btn-large" onclick="startTraining()">学習を開始する</button>
 </div>
@@ -111,12 +105,12 @@
     </div>
     <div class="controls-row">
         <button id="btn-repeat" class="action-btn" onclick="playAudioSequence()">もう一度</button>
-        <button id="btn-read-eng" class="action-btn hidden" onclick="playEnglishOnly()">英文を読む</button>
-        <button id="btn-skip" class="action-btn" onclick="playNext()">次にいく(スキップ)</button>
+        <button id="btn-read-eng" class="action-btn" onclick="playEnglishOnly()">英文を読む</button>
+        <button id="btn-skip" class="action-btn" onclick="playNext()">次にいく</button>
     </div>
     <div class="controls-row" id="ebbinghaus-controls" style="margin-top: 15px;">
-        <button class="action-btn btn-ebbing-again" onclick="gradeItem(0)">もう一回かな (Again)</button>
-        <button class="action-btn btn-ebbing-good" onclick="gradeItem(1)">大丈夫でしょ (Good)</button>
+        <button class="action-btn" style="background-color:#d35400" onclick="gradeItem(0)">Again</button>
+        <button class="action-btn" style="background-color:#2980b9" onclick="gradeItem(1)">Good</button>
     </div>
 </div>
 
@@ -125,65 +119,64 @@
     let activeStock = [];
     let currentItem = null;
     let isSpeaking = false;
-    let currentMode = "reproduction";
     let voices = [];
 
-    // --- 自動同期（Auto Fetch）機能 ---
+    // --- 音声エンジンの準備 ---
+    function populateVoiceList() {
+        voices = window.speechSynthesis.getVoices();
+    }
+    window.speechSynthesis.onvoiceschanged = populateVoiceList;
+    populateVoiceList();
+
+    // --- データ同期 ---
     async function loadExternalData() {
         try {
-            // キャッシュを防ぐために現在時刻を付与してdata.txtを取得
             const response = await fetch('data.txt?nocache=' + new Date().getTime());
-            if (!response.ok) return; // ファイルがない場合はスキップ
+            if (!response.ok) return;
             const text = await response.text();
             const lines = text.split('\n');
             let newCount = 0;
-
             lines.forEach(line => {
                 const parts = line.split('\t');
                 if (parts.length >= 6) {
-                    const targetWord = parts[0].trim();
-                    const targetSentence = parts[2].trim();
-                    // 既に記憶データに存在するかチェック（重複防止）
-                    const exists = database.some(item => item.target === targetWord && item.sentence === targetSentence);
+                    const exists = database.some(item => item.target === parts[0].trim() && item.sentence === parts[2].trim());
                     if (!exists) {
                         database.push({
                             id: Date.now() + Math.random(),
-                            target: targetWord,
-                            pronunciation: parts[1].trim(),
-                            sentence: targetSentence,
-                            translation: parts[3].trim(),
-                            explanation: parts[4].trim(),
-                            category: parts[5].trim(),
+                            target: parts[0].trim(), pronunciation: parts[1].trim(),
+                            sentence: parts[2].trim(), translation: parts[3].trim(),
+                            explanation: parts[4].trim(), category: parts[5].trim(),
                             interval: 0, easeFactor: 2.5, nextReview: Date.now()
                         });
                         newCount++;
                     }
                 }
             });
-
             if (newCount > 0) {
                 localStorage.setItem('executiveSRS', JSON.stringify(database));
                 const banner = document.getElementById('sync-banner');
-                banner.innerText = `GitHub(data.txt)から ${newCount}件 の新規データを自動同期しました`;
+                banner.innerText = `${newCount}件のデータを自動同期しました`;
                 banner.classList.remove('hidden');
-                setTimeout(() => banner.classList.add('hidden'), 5000);
+                setTimeout(() => banner.classList.add('hidden'), 3000);
             }
-        } catch (e) {
-            console.log("外部データの読み込みを行いませんでした");
-        }
+            updateCategoryCheckboxes();
+        } catch (e) { console.error(e); }
     }
-    // アプリ起動時に自動同期を実行
     window.addEventListener('load', loadExternalData);
-    // --------------------------------
 
-    function populateVoiceList() { voices = window.speechSynthesis.getVoices(); }
-    populateVoiceList();
-    if (speechSynthesis.onvoiceschanged !== undefined) { speechSynthesis.onvoiceschanged = populateVoiceList; }
+    function updateCategoryCheckboxes() {
+        const cats = [...new Set(database.map(item => item.category))];
+        const container = document.getElementById('category-selectors');
+        container.innerHTML = cats.map(c => `<label><input type="checkbox" class="category-cb" value="${c}" checked> ${c}</label>`).join('');
+    }
 
+    // --- 画面遷移 ---
     function goHome() {
         window.speechSynthesis.cancel();
         document.querySelectorAll('.container').forEach(c => c.classList.add('hidden'));
         document.getElementById('main-menu').classList.remove('hidden');
+        document.getElementById('search-results').classList.add('hidden');
+        document.getElementById('search-input').value = "";
     }
 
     function showScreen(screenId) {
@@ -191,154 +184,170 @@
         document.getElementById(screenId).classList.remove('hidden');
     }
 
-    function saveData() {
-        const text = document.getElementById('bulk-input').value.trim();
-        if (!text) { alert("データが入力されていません。"); return; }
-        const lines = text.split('\n');
-        let addedCount = 0;
-        lines.forEach(line => {
-            const parts = line.split('\t');
-            if (parts.length >= 6) {
-                database.push({
-                    id: Date.now() + Math.random(), target: parts[0].trim(), pronunciation: parts[1].trim(),
-                    sentence: parts[2].trim(), translation: parts[3].trim(), explanation: parts[4].trim(), category: parts[5].trim(),
-                    interval: 0, easeFactor: 2.5, nextReview: Date.now()
-                });
-                addedCount++;
-            }
-        });
-        if (addedCount > 0) {
-            localStorage.setItem('executiveSRS', JSON.stringify(database));
-            alert(`${addedCount}件のデータを追加しました。`);
-            document.getElementById('bulk-input').value = "";
+    // --- 検索機能 ---
+    function handleSearch() {
+        const query = document.getElementById('search-input').value.toLowerCase();
+        const resultsDiv = document.getElementById('search-results');
+        if (!query) { resultsDiv.classList.add('hidden'); return; }
+        const matched = database.filter(i => i.target.toLowerCase().includes(query) || i.translation.includes(query));
+        if (matched.length > 0) {
+            resultsDiv.innerHTML = matched.slice(0, 10).map(item => `
+                <div class="search-result-item" onclick="viewSpecificItem('${item.id}')">
+                    <strong>${item.target}</strong> - ${item.translation}
+                </div>
+            `).join('');
+            resultsDiv.classList.remove('hidden');
         } else {
-            alert("フォーマットエラーです。");
+            resultsDiv.classList.add('hidden');
         }
     }
 
-    function exportData() {
-        const dataStr = localStorage.getItem('executiveSRS');
-        if (!dataStr || dataStr === "[]") { alert("書き出すデータがありません。"); return; }
-        navigator.clipboard.writeText(dataStr).then(() => {
-            alert("全データをコピーしました（バックアップ用）。");
-        }).catch(err => {
-            document.getElementById('bulk-input').value = dataStr;
-        });
+    function viewSpecificItem(id) {
+        currentItem = database.find(i => String(i.id) === String(id));
+        showScreen('training-screen');
+        revealData();
+        // 検索からの閲覧時は判定ボタンを隠す（学習外のため）
+        document.getElementById('ebbinghaus-controls').classList.add('hidden');
     }
 
-    function importData() {
-        const dataStr = prompt("バックアップ用データを貼り付けてください:");
-        if (!dataStr) return;
-        try {
-            const parsed = JSON.parse(dataStr);
-            if (Array.isArray(parsed)) {
-                database = parsed;
-                localStorage.setItem('executiveSRS', JSON.stringify(database));
-                alert("データの復元に成功しました！");
-            } else { alert("データ形式が正しくありません。"); }
-        } catch (e) { alert("データの読み込みに失敗しました。"); }
+    // --- 全データ表示 ---
+    function showAllDataScreen() {
+        showScreen('all-data-screen');
+        renderAllData('alphabet');
     }
 
+    function renderAllData(sortType) {
+        let sorted = [...database];
+        if (sortType === 'alphabet') sorted.sort((a, b) => a.target.localeCompare(b.target));
+        else sorted.sort((a, b) => a.category.localeCompare(b.category));
+        
+        document.getElementById('all-data-body').innerHTML = sorted.map(i => `
+            <tr onclick="viewSpecificItem('${i.id}')" style="cursor:pointer">
+                <td>${i.target}</td>
+                <td>${i.translation}</td>
+                <td>${i.category}</td>
+            </tr>
+        `).join('');
+    }
+
+    // --- 学習ロジック ---
     function startTraining() {
-        currentMode = document.querySelector('input[name="mode"]:checked').value;
-        const selectedCategories = Array.from(document.querySelectorAll('.category-cb:checked')).map(cb => cb.value);
-        if(database.length === 0) { alert("データがありません。"); return; }
-        let pool = database.filter(item => selectedCategories.includes(item.category));
-        if (pool.length === 0) { alert("選択した区分にデータがありません。"); return; }
-        const now = Date.now();
-        let dueItems = pool.filter(item => item.nextReview <= now);
-        if (dueItems.length > 0) {
-            activeStock = dueItems.sort(() => Math.random() - 0.5);
-            alert(`復習期日のデータが ${activeStock.length} 件あります。優先出題します。`);
-        } else {
-            activeStock = pool.sort(() => Math.random() - 0.5);
-        }
-        document.getElementById('btn-read-eng').classList.toggle('hidden', currentMode !== 'composition');
+        const selectedMode = document.querySelector('input[name="mode"]:checked').value;
+        const selectedCats = Array.from(document.querySelectorAll('.category-cb:checked')).map(cb => cb.value);
+        let pool = database.filter(item => selectedCats.includes(item.category));
+        if (pool.length === 0) { alert("データがありません"); return; }
+        activeStock = pool.sort(() => Math.random() - 0.5);
+        currentMode = selectedMode;
+        document.getElementById('ebbinghaus-controls').classList.remove('hidden');
         showScreen('training-screen');
         playNext();
     }
 
     function playNext() {
-        if (activeStock.length === 0) {
-            alert("キューが空になりました。ホームに戻ります。");
-            goHome(); return;
-        }
+        if (activeStock.length === 0) { alert("完了！"); goHome(); return; }
         currentItem = activeStock.shift();
         playAudioSequence();
     }
 
-    function playAudioSequence() {
+    async function playAudioSequence() {
         if (isSpeaking) return;
         isSpeaking = true;
         window.speechSynthesis.cancel();
-        document.querySelectorAll('#training-screen button:not(.btn-home)').forEach(b => b.disabled = true);
+        toggleButtons(true);
         document.getElementById('text-container').classList.add('hidden');
         document.getElementById('status-text').classList.remove('hidden');
 
         if (currentMode === "reproduction") {
-            document.getElementById('status-text').innerHTML = "Listening...<br><span class='status-sub'>英語を2回読み上げます</span>";
-            speakEnglish(currentItem.sentence, () => {
-                setTimeout(() => { speakEnglish(currentItem.sentence, revealData); }, 1000);
-            });
+            document.getElementById('status-text').innerHTML = "Listening...";
+            await speakTextWithPauses(currentItem.sentence, 'en');
+            setTimeout(async () => {
+                await speakTextWithPauses(currentItem.sentence, 'en');
+                revealData();
+            }, 1000);
         } else {
-            document.getElementById('status-text').innerHTML = "Translate to English!<br><span class='status-sub'>英作してください</span>";
-            speakJapanese(currentItem.translation, revealData);
+            // 英作文モード：日本語ターゲットのみ読み上げ
+            document.getElementById('status-text').innerHTML = "日本語 => 英語";
+            speakJapanese(currentItem.translation.split('（')[0], revealData);
         }
     }
 
-    function speakEnglish(text, callback) {
-        let utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = 'en-US'; utterance.rate = 0.9;
-        const premiumVoices = ["Evan", "Samantha", "Alex", "Daniel"];
-        const bestVoice = voices.find(v => premiumVoices.some(name => v.name.includes(name))) || voices.find(v => v.lang === 'en-US');
-        if (bestVoice) utterance.voice = bestVoice;
-        utterance.onend = callback;
-        window.speechSynthesis.speak(utterance);
+    // カンマ、ピリオドで3秒空ける関数
+    async function speakTextWithPauses(text, lang) {
+        const parts = text.split(/([,.])/); 
+        for (let i = 0; i < parts.length; i++) {
+            if (parts[i] === ',' || parts[i] === '.') {
+                await new Promise(resolve => setTimeout(resolve, 3000));
+            } else if (parts[i].trim().length > 0) {
+                await new Promise(resolve => {
+                    let ut = new SpeechSynthesisUtterance(parts[i]);
+                    if (lang === 'en') setEnglishVoice(ut); else setJapaneseVoice(ut);
+                    ut.onend = resolve;
+                    window.speechSynthesis.speak(ut);
+                });
+            }
+        }
+    }
+
+    function setEnglishVoice(utterance) {
+        utterance.lang = 'en-US';
+        utterance.rate = 0.9;
+        // Evan(拡張)を最優先、なければGoogle系
+        const targetVoice = voices.find(v => v.name.includes("Evan") || v.name.includes("Enhanced")) 
+                         || voices.find(v => v.name.includes("Google US English"))
+                         || voices.find(v => v.lang.startsWith("en"));
+        if (targetVoice) utterance.voice = targetVoice;
+    }
+
+    function setJapaneseVoice(utterance) {
+        utterance.lang = 'ja-JP';
+        // 自然な日本語Voiceを選択
+        const targetVoice = voices.find(v => v.name.includes("Google 日本語")) 
+                         || voices.find(v => v.name.includes("Nanami"))
+                         || voices.find(v => v.name.includes("Kyoko"))
+                         || voices.find(v => v.lang === "ja-JP");
+        if (targetVoice) utterance.voice = targetVoice;
     }
 
     function speakJapanese(text, callback) {
-        let utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = 'ja-JP'; utterance.rate = 1.0;
-        const bestVoice = voices.find(v => v.name.includes("Kyoko") || v.lang === "ja-JP");
-        if (bestVoice) utterance.voice = bestVoice;
-        utterance.onend = callback;
-        window.speechSynthesis.speak(utterance);
+        let ut = new SpeechSynthesisUtterance(text);
+        setJapaneseVoice(ut);
+        ut.onend = callback;
+        window.speechSynthesis.speak(ut);
     }
 
     function playEnglishOnly() {
-        document.querySelectorAll('#training-screen button:not(.btn-home)').forEach(b => b.disabled = true);
-        speakEnglish(currentItem.sentence, () => {
-            document.querySelectorAll('#training-screen button:not(.btn-home)').forEach(b => b.disabled = false);
-        });
+        speakTextWithPauses(currentItem.sentence, 'en');
     }
 
     function revealData() {
         document.getElementById('status-text').classList.add('hidden');
         document.getElementById('target-display').innerText = currentItem.target;
-        document.getElementById('pronunciation-display').innerText = (currentItem.pronunciation && currentItem.pronunciation !== "-") ? currentItem.pronunciation : "";
+        document.getElementById('pronunciation-display').innerText = currentItem.pronunciation;
         document.getElementById('sentence-display').innerText = currentItem.sentence;
         document.getElementById('translation-display').innerText = currentItem.translation;
         document.getElementById('explanation-display').innerHTML = currentItem.explanation;
         document.getElementById('text-container').classList.remove('hidden');
-        document.querySelectorAll('#training-screen button:not(.btn-home)').forEach(b => b.disabled = false);
+        toggleButtons(false);
         isSpeaking = false;
     }
 
+    function toggleButtons(disabled) {
+        document.querySelectorAll('#training-screen button:not(.btn-home)').forEach(b => b.disabled = disabled);
+    }
+
     function gradeItem(grade) {
+        // 判定ロジックは既存のものを維持
         let dbIndex = database.findIndex(i => i.id === currentItem.id);
-        if (dbIndex === -1) return;
-        let item = database[dbIndex];
-        if (grade === 0) {
-            item.interval = 0; item.nextReview = Date.now() + (1 * 60 * 1000);
-            activeStock.push(item);
-        } else if (grade === 1) {
-            if (item.interval === 0) item.interval = 1;
-            else if (item.interval === 1) item.interval = 3;
-            else item.interval = Math.round(item.interval * item.easeFactor);
-            item.nextReview = Date.now() + (item.interval * 24 * 60 * 60 * 1000);
+        if (dbIndex !== -1) {
+            if (grade === 0) {
+                database[dbIndex].nextReview = Date.now() + 60000;
+                activeStock.push(database[dbIndex]);
+            } else {
+                database[dbIndex].interval = Math.max(1, database[dbIndex].interval * 2);
+                database[dbIndex].nextReview = Date.now() + (database[dbIndex].interval * 86400000);
+            }
+            localStorage.setItem('executiveSRS', JSON.stringify(database));
         }
-        database[dbIndex] = item;
-        localStorage.setItem('executiveSRS', JSON.stringify(database));
         playNext();
     }
 </script>
