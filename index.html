@@ -47,7 +47,7 @@
 
 <div id="main-menu" class="container">
     <div id="sync-banner" class="hidden"></div>
-    <h2>Pepe先生の英語学習App.<span class="version-tag">v10.0</span></h2>
+    <h2>Pepe先生の英語学習App.<span class="version-tag">v10.1</span></h2>
     
     <div class="search-container">
         <input type="text" id="search-input" placeholder="ターゲットや和訳で検索..." oninput="handleSearch()">
@@ -118,7 +118,6 @@
 </div>
 
 <script>
-    // 内部データベース名やIDはバグ回避のため従来のままとします
     let database = JSON.parse(localStorage.getItem('executiveSRS_v9')) || [];
     let activeStock = [];
     let currentItem = null;
@@ -263,10 +262,11 @@
         }
     }
 
+    // カンマ、ピリオド、コロン、セミコロンで3秒空ける
     async function speakTextWithPauses(text, lang) {
-        const parts = text.split(/([,.])/); 
+        const parts = text.split(/([,.:;])/); 
         for (let part of parts) {
-            if (part === ',' || part === '.') {
+            if (part === ',' || part === '.' || part === ':' || part === ';') {
                 await new Promise(r => setTimeout(r, 3000));
             } else if (part.trim().length > 0) {
                 await new Promise(resolve => {
@@ -281,19 +281,22 @@
 
     function setEnglishVoice(ut) {
         ut.lang = 'en-US'; ut.rate = 0.85;
-        const v = voices.find(v => v.name.includes("Evan") || v.name.includes("Enhanced")) || voices.find(v => v.lang.startsWith("en"));
+        const v = voices.find(v => (v.name.includes("Evan") || v.name.includes("Enhanced")) && v.lang.startsWith("en")) || voices.find(v => v.lang.startsWith("en"));
         if (v) ut.voice = v;
     }
 
-function setJapaneseVoice(ut) {
-    ut.lang = 'ja-JP';
-    // ブラウザ・OSが持っているリストから「自然な声」を優先検索
-    const v = voices.find(v => v.name.includes("Google")) 
-             || voices.find(v => v.name.includes("Nanami")) 
-             || voices.find(v => v.name.includes("Kyoko")) 
-             || voices.find(v => v.lang === "ja-JP");
-    if (v) ut.voice = v;
-}
+    function setJapaneseVoice(ut) {
+        ut.lang = 'ja-JP';
+        // 拡張音声を最優先で検索
+        const targetVoice = 
+            voices.find(v => v.lang.startsWith("ja") && (v.name.includes("Enhanced") || v.name.includes("拡張") || v.name.includes("Premium"))) ||
+            voices.find(v => v.name.includes("Google 日本語")) ||
+            voices.find(v => v.name.includes("Siri")) ||
+            voices.find(v => v.name.includes("Nanami") || v.name.includes("Kyoko") || v.name.includes("Otoya")) ||
+            voices.find(v => v.lang === "ja-JP");
+
+        if (targetVoice) ut.voice = targetVoice;
+    }
 
     function speakJapanese(text, callback) {
         let ut = new SpeechSynthesisUtterance(text);
