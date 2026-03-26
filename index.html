@@ -13,13 +13,20 @@
         h2 { color: #2c3e50; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
         .version-tag { font-size: 0.5em; color: #bdc3c7; vertical-align: middle; margin-left: 10px; }
         
+        /* ダッシュボード */
+        .dashboard { background: #fdfefe; border: 2px solid #ecf0f1; border-left: 6px solid #2980b9; padding: 15px; border-radius: 8px; margin-bottom: 25px; text-align: left; }
+        .dashboard h3 { margin-top: 0; margin-bottom: 15px; color: #34495e; font-size: 1.2em; }
+        .task-item { font-size: 1.1em; margin: 10px 0; font-weight: bold; color: #2c3e50; display: flex; align-items: center; transition: 0.3s;}
+        .task-item.completed { color: #bdc3c7; text-decoration: line-through; }
+        .task-checkbox { margin-right: 10px; font-size: 1.3em; }
+
         .search-container { margin: 20px 0; }
         #search-input { width: 80%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em; }
         #search-results { position: absolute; width: 80%; left: 10%; background: white; border: 1px solid #ddd; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 100; max-height: 300px; overflow-y: auto; border-radius: 5px; }
         .search-result-item { text-align: left; padding: 12px; border-bottom: 1px solid #eee; cursor: pointer; }
         .search-result-item:hover { background: #f1f2f6; }
 
-        .menu-btn { width: 100%; font-size: 1.4em; padding: 20px; margin: 10px 0; background-color: #34495e; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        .menu-btn { width: 100%; font-size: 1.3em; padding: 18px; margin: 10px 0; background-color: #34495e; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
         .menu-btn:hover { background-color: #2c3e50; }
 
         .list-controls { margin-bottom: 15px; display: flex; justify-content: center; gap: 10px; }
@@ -44,7 +51,20 @@
 
 <div id="main-menu" class="container">
     <div id="sync-banner" class="hidden"></div>
-    <h2>Pepe先生の英語学習App.<span class="version-tag">v11.2</span></h2>
+    <h2>Pepe先生の英語学習App.<span class="version-tag">v12.0</span></h2>
+    
+    <div class="dashboard" id="dashboard-ui">
+        <h3>🔥 本日のミッション</h3>
+        <div class="task-item" id="task-new">
+            <span class="task-checkbox" id="check-new">⬜</span>
+            新規単語を習得する（<span id="new-progress">0</span> / 20）
+        </div>
+        <div class="task-item" id="task-review">
+            <span class="task-checkbox" id="check-review">⬜</span>
+            忘れかけの単語を復習（残り <span id="review-pending">0</span> 件）
+        </div>
+    </div>
+
     <div class="search-container">
         <input type="text" id="search-input" placeholder="ターゲットや和訳で検索..." oninput="handleSearch()">
         <div id="search-results" class="hidden"></div>
@@ -84,8 +104,9 @@
     </div>
     <div class="setup-group" style="text-align:left; margin-bottom:20px;">
         <h3>2. 学習モード</h3>
-        <label><input type="radio" name="mode" value="reproduction" checked> (1) リプロダクション (聴く重視)</label><br>
-        <label><input type="radio" name="mode" value="composition"> (2) 日本語=>英語 (忘却曲線適用)</label>
+        <label><input type="radio" name="mode" value="reproduction" checked> (1) リプロダクション (聴く重視・ランダム)</label><br><br>
+        <label><input type="radio" name="mode" value="new"> (2) 日本語=>英語 [新規20件] (未学習を順番に)</label><br><br>
+        <label><input type="radio" name="mode" value="review"> (3) 日本語=>英語 [本日の復習] (忘却曲線適用)</label>
     </div>
     <button class="menu-btn" style="background-color:#27ae60" onclick="startTraining()">学習を開始する</button>
 </div>
@@ -136,13 +157,58 @@
     let voices = [];
     let currentMode = "reproduction";
 
+    // 毎日の進捗管理
+    function getTodayString() {
+        const d = new Date();
+        return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+    }
+    let dailyStats = JSON.parse(localStorage.getItem('pepeDailyStats')) || { date: getTodayString(), newStudied: 0 };
+    if (dailyStats.date !== getTodayString()) {
+        dailyStats = { date: getTodayString(), newStudied: 0 };
+        localStorage.setItem('pepeDailyStats', JSON.stringify(dailyStats));
+    }
+
+    function updateDashboard() {
+        // 新規進捗
+        const newProg = document.getElementById('new-progress');
+        const taskNew = document.getElementById('task-new');
+        const checkNew = document.getElementById('check-new');
+        newProg.innerText = dailyStats.newStudied;
+        if (dailyStats.newStudied >= 20) {
+            taskNew.classList.add('completed');
+            checkNew.innerText = "✅";
+        } else {
+            taskNew.classList.remove('completed');
+            checkNew.innerText = "⬜";
+        }
+
+        // 復習の残り計算 (interval > 0 && nextReview <= now)
+        const pendingReviews = database.filter(i => i.interval > 0 && i.nextReview <= Date.now()).length;
+        const reviewProg = document.getElementById('review-pending');
+        const taskReview = document.getElementById('task-review');
+        const checkReview = document.getElementById('check-review');
+        reviewProg.innerText = pendingReviews;
+        
+        // 1件以上復習した実績があり、かつ残りが0の場合クリア
+        if (pendingReviews === 0 && database.some(i => i.interval > 0)) {
+            taskReview.classList.add('completed');
+            checkReview.innerText = "✅";
+        } else {
+            taskReview.classList.remove('completed');
+            checkReview.innerText = "⬜";
+        }
+    }
+
     function populateVoiceList() { voices = window.speechSynthesis.getVoices(); }
     window.speechSynthesis.onvoiceschanged = populateVoiceList;
 
     async function loadExternalData() {
         try {
             const response = await fetch('data.txt?nocache=' + new Date().getTime());
-            if (!response.ok) return;
+            if (!response.ok) {
+                updateDashboard();
+                return;
+            }
             const text = await response.text();
             const lines = text.split('\n');
             let newCount = 0;
@@ -153,7 +219,7 @@
                     const exists = database.some(item => item.target === target && item.sentence === parts[3].trim());
                     if (!exists) {
                         database.push({
-                            id: Date.now() + Math.random(),
+                            id: Date.now() + Math.random(), // 登録順のIDとして機能
                             target: target,
                             pronunciation: parts[1].trim(),
                             targetTranslation: parts[2].trim(),
@@ -174,12 +240,17 @@
                 banner.classList.remove('hidden');
                 setTimeout(() => banner.classList.add('hidden'), 4000);
             }
-        } catch (e) { console.error("Sync Error:", e); }
+            updateDashboard();
+        } catch (e) { 
+            console.error("Sync Error:", e); 
+            updateDashboard();
+        }
     }
 
     function goHome() {
         window.speechSynthesis.cancel();
         isSpeaking = false;
+        updateDashboard();
         document.querySelectorAll('.container').forEach(c => c.classList.add('hidden'));
         document.getElementById('main-menu').classList.remove('hidden');
         document.getElementById('search-results').classList.add('hidden');
@@ -235,13 +306,21 @@
         let pool = database.filter(item => selectedCats.includes(item.category));
         if (pool.length === 0) { alert("該当するデータがありません"); return; }
 
-        if (currentMode === "composition") {
-            let news = pool.filter(i => i.interval === 0).slice(0, 20);
+        if (currentMode === "new") {
+            let news = pool.filter(i => i.interval === 0);
+            if (news.length === 0) { alert("未学習の新規データがありません！"); return; }
+            news.sort((a, b) => a.id - b.id); // 登録順
+            activeStock = news.slice(0, 20); // 常に最初の20件
+            document.getElementById('ebbinghaus-controls').classList.remove('hidden');
+            document.getElementById('btn-skip').classList.add('hidden');
+        } else if (currentMode === "review") {
             let reviews = pool.filter(i => i.interval > 0 && i.nextReview <= Date.now());
-            activeStock = [...news, ...reviews].sort(() => Math.random() - 0.5);
+            if (reviews.length === 0) { alert("現在、復習期日が来ているデータはありません。素晴らしい！"); return; }
+            activeStock = reviews.sort(() => Math.random() - 0.5);
             document.getElementById('ebbinghaus-controls').classList.remove('hidden');
             document.getElementById('btn-skip').classList.add('hidden');
         } else {
+            // reproduction
             activeStock = pool.sort(() => Math.random() - 0.5);
             document.getElementById('ebbinghaus-controls').classList.add('hidden');
             document.getElementById('btn-skip').classList.remove('hidden');
@@ -251,7 +330,11 @@
     }
 
     function playNext() {
-        if (activeStock.length === 0) { alert("このセットは終了です。お疲れ様でした！"); goHome(); return; }
+        if (activeStock.length === 0) { 
+            alert("このセットは終了です。お疲れ様でした！"); 
+            goHome(); 
+            return; 
+        }
         currentItem = activeStock.shift();
         playAudioSequence();
     }
@@ -277,23 +360,18 @@
         }
     }
 
-    // 修正箇所：単語数判定を追加した動的ポーズ機能
     async function speakTextWithPauses(text, lang) {
         const parts = text.split(/([,.:;])/); 
         let lastSegmentWords = 0;
 
         for (let part of parts) {
             const isPunctuation = (part === ',' || part === '.' || part === ':' || part === ';');
-            
             if (isPunctuation) {
-                // 直前のセグメントが3単語以上の場合のみ3秒空ける
                 if (lastSegmentWords >= 3) {
                     await new Promise(r => setTimeout(r, 3000));
                 }
             } else if (part.trim().length > 0) {
-                // 単語数をカウント（空白で分割）
                 lastSegmentWords = part.trim().split(/\s+/).length;
-                
                 await new Promise(resolve => {
                     let ut = new SpeechSynthesisUtterance(part);
                     if (lang === 'en') setEnglishVoice(ut); else setJapaneseVoice(ut);
@@ -348,18 +426,24 @@
     }
 
     function gradeItem(grade) {
-        if (currentMode === "composition") {
+        if (currentMode === "new" || currentMode === "review") {
             let dbIndex = database.findIndex(i => i.id === currentItem.id);
             if (dbIndex !== -1) {
                 let item = database[dbIndex];
                 if (grade === 0) {
-                    item.interval = 0;
+                    // Again
                     item.nextReview = Date.now() + (1 * 60 * 1000);
                     activeStock.push(item);
                 } else {
-                    if (item.interval === 0) item.interval = 1;
+                    // Good
+                    if (item.interval === 0) {
+                        item.interval = 1;
+                        dailyStats.newStudied++; // 新規習得カウントUP
+                        localStorage.setItem('pepeDailyStats', JSON.stringify(dailyStats));
+                    }
                     else if (item.interval === 1) item.interval = 3;
                     else item.interval = Math.round(item.interval * (item.easeFactor || 2.5));
+                    
                     item.nextReview = Date.now() + (item.interval * 24 * 60 * 60 * 1000);
                 }
                 database[dbIndex] = item;
