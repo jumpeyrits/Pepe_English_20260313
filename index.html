@@ -51,17 +51,21 @@
 
 <div id="main-menu" class="container">
     <div id="sync-banner" class="hidden"></div>
-    <h2>Pepe先生の英語学習App.<span class="version-tag">v12.0</span></h2>
+    <h2>Pepe先生の英語学習App.<span class="version-tag">v12.1</span></h2>
     
     <div class="dashboard" id="dashboard-ui">
         <h3>🔥 本日のミッション</h3>
+        <div class="task-item" id="task-repro">
+            <span class="task-checkbox" id="check-repro">⬜</span>
+            (1) リプロダクション（<span id="repro-progress">0</span> / 10）
+        </div>
         <div class="task-item" id="task-new">
             <span class="task-checkbox" id="check-new">⬜</span>
-            新規単語を習得する（<span id="new-progress">0</span> / 20）
+            (2) 新規単語を習得する（<span id="new-progress">0</span> / 20）
         </div>
         <div class="task-item" id="task-review">
             <span class="task-checkbox" id="check-review">⬜</span>
-            忘れかけの単語を復習（残り <span id="review-pending">0</span> 件）
+            (2) 忘れかけの単語を復習（残り <span id="review-pending">0</span> 件）
         </div>
     </div>
 
@@ -125,7 +129,7 @@
     <div class="controls-row">
         <button class="action-btn" onclick="playAudioSequence()">もう一度聴く</button>
         <button id="btn-read-eng" class="action-btn" onclick="playEnglishOnly()">英文を読む</button>
-        <button id="btn-skip" class="action-btn" onclick="playNext()">次にいく</button>
+        <button id="btn-skip" class="action-btn" onclick="markReproductionAndNext()">次にいく</button>
     </div>
     <div class="controls-row" id="ebbinghaus-controls" style="margin-top: 15px;">
         <button class="action-btn" style="background-color:#d35400" onclick="gradeItem(0)">Again (もう一回)</button>
@@ -162,13 +166,26 @@
         const d = new Date();
         return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
     }
-    let dailyStats = JSON.parse(localStorage.getItem('pepeDailyStats')) || { date: getTodayString(), newStudied: 0 };
+    let dailyStats = JSON.parse(localStorage.getItem('pepeDailyStats')) || { date: getTodayString(), newStudied: 0, reproductionStudied: 0 };
     if (dailyStats.date !== getTodayString()) {
-        dailyStats = { date: getTodayString(), newStudied: 0 };
+        dailyStats = { date: getTodayString(), newStudied: 0, reproductionStudied: 0 };
         localStorage.setItem('pepeDailyStats', JSON.stringify(dailyStats));
     }
 
     function updateDashboard() {
+        // リプロダクション進捗
+        const reproProg = document.getElementById('repro-progress');
+        const taskRepro = document.getElementById('task-repro');
+        const checkRepro = document.getElementById('check-repro');
+        reproProg.innerText = dailyStats.reproductionStudied || 0;
+        if ((dailyStats.reproductionStudied || 0) >= 10) {
+            taskRepro.classList.add('completed');
+            checkRepro.innerText = "✅";
+        } else {
+            taskRepro.classList.remove('completed');
+            checkRepro.innerText = "⬜";
+        }
+
         // 新規進捗
         const newProg = document.getElementById('new-progress');
         const taskNew = document.getElementById('task-new');
@@ -182,14 +199,13 @@
             checkNew.innerText = "⬜";
         }
 
-        // 復習の残り計算 (interval > 0 && nextReview <= now)
+        // 復習の残り計算
         const pendingReviews = database.filter(i => i.interval > 0 && i.nextReview <= Date.now()).length;
         const reviewProg = document.getElementById('review-pending');
         const taskReview = document.getElementById('task-review');
         const checkReview = document.getElementById('check-review');
         reviewProg.innerText = pendingReviews;
         
-        // 1件以上復習した実績があり、かつ残りが0の場合クリア
         if (pendingReviews === 0 && database.some(i => i.interval > 0)) {
             taskReview.classList.add('completed');
             checkReview.innerText = "✅";
@@ -219,7 +235,7 @@
                     const exists = database.some(item => item.target === target && item.sentence === parts[3].trim());
                     if (!exists) {
                         database.push({
-                            id: Date.now() + Math.random(), // 登録順のIDとして機能
+                            id: Date.now() + Math.random(),
                             target: target,
                             pronunciation: parts[1].trim(),
                             targetTranslation: parts[2].trim(),
@@ -309,8 +325,8 @@
         if (currentMode === "new") {
             let news = pool.filter(i => i.interval === 0);
             if (news.length === 0) { alert("未学習の新規データがありません！"); return; }
-            news.sort((a, b) => a.id - b.id); // 登録順
-            activeStock = news.slice(0, 20); // 常に最初の20件
+            news.sort((a, b) => a.id - b.id);
+            activeStock = news.slice(0, 20);
             document.getElementById('ebbinghaus-controls').classList.remove('hidden');
             document.getElementById('btn-skip').classList.add('hidden');
         } else if (currentMode === "review") {
@@ -320,12 +336,24 @@
             document.getElementById('ebbinghaus-controls').classList.remove('hidden');
             document.getElementById('btn-skip').classList.add('hidden');
         } else {
-            // reproduction
             activeStock = pool.sort(() => Math.random() - 0.5);
             document.getElementById('ebbinghaus-controls').classList.add('hidden');
             document.getElementById('btn-skip').classList.remove('hidden');
         }
         showScreen('training-screen');
+        playNext();
+    }
+
+    // リプロダクション用「次にいく」時の進捗カウント処理
+    function markReproductionAndNext() {
+        if (currentMode === "reproduction") {
+            if (typeof dailyStats.reproductionStudied === 'undefined') {
+                dailyStats.reproductionStudied = 0;
+            }
+            dailyStats.reproductionStudied++;
+            localStorage.setItem('pepeDailyStats', JSON.stringify(dailyStats));
+            updateDashboard();
+        }
         playNext();
     }
 
@@ -431,15 +459,14 @@
             if (dbIndex !== -1) {
                 let item = database[dbIndex];
                 if (grade === 0) {
-                    // Again
                     item.nextReview = Date.now() + (1 * 60 * 1000);
                     activeStock.push(item);
                 } else {
-                    // Good
                     if (item.interval === 0) {
                         item.interval = 1;
-                        dailyStats.newStudied++; // 新規習得カウントUP
+                        dailyStats.newStudied++; 
                         localStorage.setItem('pepeDailyStats', JSON.stringify(dailyStats));
+                        updateDashboard();
                     }
                     else if (item.interval === 1) item.interval = 3;
                     else item.interval = Math.round(item.interval * (item.easeFactor || 2.5));
