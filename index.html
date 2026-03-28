@@ -13,12 +13,24 @@
         h2 { color: #2c3e50; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
         .version-tag { font-size: 0.5em; color: #bdc3c7; vertical-align: middle; margin-left: 10px; }
         
-        /* ダッシュボード */
+        /* ダッシュボード全般 */
         .dashboard { background: #fdfefe; border: 2px solid #ecf0f1; border-left: 6px solid #2980b9; padding: 15px; border-radius: 8px; margin-bottom: 25px; text-align: left; }
-        .dashboard h3 { margin-top: 0; margin-bottom: 15px; color: #34495e; font-size: 1.2em; }
-        .task-item { font-size: 1.1em; margin: 10px 0; font-weight: bold; color: #2c3e50; display: flex; align-items: center; transition: 0.3s;}
+        .dashboard h3 { margin-top: 0; margin-bottom: 12px; color: #34495e; font-size: 1.1em; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        
+        /* ミッション */
+        .task-item { font-size: 1.05em; margin: 8px 0; font-weight: bold; color: #2c3e50; display: flex; align-items: center; transition: 0.3s;}
         .task-item.completed { color: #bdc3c7; text-decoration: line-through; }
-        .task-checkbox { margin-right: 10px; font-size: 1.3em; }
+        .task-checkbox { margin-right: 10px; font-size: 1.2em; }
+
+        /* 進捗＆ログ */
+        .stat-line { display: flex; justify-content: space-between; margin: 5px 0; border-bottom: 1px dashed #eee; font-size: 0.95em; color: #555; }
+        .stat-line strong { color: #2980b9; }
+        #streak-display { font-weight: bold; color: #e74c3c; margin: 10px 0; font-size: 1.1em; }
+        
+        .chart-container { display: flex; align-items: flex-end; gap: 8px; height: 80px; margin-top: 15px; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+        .chart-bar-wrap { display: flex; flex-direction: column; align-items: center; flex: 1; }
+        .chart-bar { background-color: #2ecc71; width: 100%; border-radius: 3px 3px 0 0; text-align: center; color: white; font-size: 0.7em; font-weight: bold; transition: height 0.4s ease; display: flex; align-items: flex-start; justify-content: center; padding-top: 2px; }
+        .chart-label { font-size: 0.65em; color: #7f8c8d; margin-top: 5px; }
 
         .search-container { margin: 20px 0; }
         #search-input { width: 80%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em; }
@@ -51,7 +63,7 @@
 
 <div id="main-menu" class="container">
     <div id="sync-banner" class="hidden"></div>
-    <h2>Pepe先生の英語学習App.<span class="version-tag">v12.1</span></h2>
+    <h2>Pepe先生の英語学習App.<span class="version-tag">v12.2</span></h2>
     
     <div class="dashboard" id="dashboard-ui">
         <h3>🔥 本日のミッション</h3>
@@ -65,8 +77,15 @@
         </div>
         <div class="task-item" id="task-review">
             <span class="task-checkbox" id="check-review">⬜</span>
-            (2) 忘れかけの単語を復習（残り <span id="review-pending">0</span> 件）
+            (3) 忘れかけの単語を復習（残り <span id="review-pending">0</span> 件）
         </div>
+
+        <h3 style="margin-top: 20px;">📊 データベース制覇状況</h3>
+        <div id="overall-progress"></div>
+
+        <h3 style="margin-top: 20px;">📈 学習ログ</h3>
+        <div id="streak-display">🔥 連続学習: 0 日目</div>
+        <div class="chart-container" id="weekly-chart"></div>
     </div>
 
     <div class="search-container">
@@ -161,58 +180,99 @@
     let voices = [];
     let currentMode = "reproduction";
 
-    // 毎日の進捗管理
-    function getTodayString() {
+    function getTodayString(offsetDays = 0) {
         const d = new Date();
+        d.setDate(d.getDate() - offsetDays);
         return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
     }
+
     let dailyStats = JSON.parse(localStorage.getItem('pepeDailyStats')) || { date: getTodayString(), newStudied: 0, reproductionStudied: 0 };
     if (dailyStats.date !== getTodayString()) {
         dailyStats = { date: getTodayString(), newStudied: 0, reproductionStudied: 0 };
         localStorage.setItem('pepeDailyStats', JSON.stringify(dailyStats));
     }
 
+    // 学習履歴（直近グラフ用）
+    let studyHistory = JSON.parse(localStorage.getItem('pepeStudyHistory')) || {};
+
+    function recordStudyAction() {
+        const todayStr = getTodayString();
+        studyHistory[todayStr] = (studyHistory[todayStr] || 0) + 1;
+        localStorage.setItem('pepeStudyHistory', JSON.stringify(studyHistory));
+    }
+
     function updateDashboard() {
-        // リプロダクション進捗
+        // 1. ミッション進捗
         const reproProg = document.getElementById('repro-progress');
         const taskRepro = document.getElementById('task-repro');
         const checkRepro = document.getElementById('check-repro');
         reproProg.innerText = dailyStats.reproductionStudied || 0;
-        if ((dailyStats.reproductionStudied || 0) >= 10) {
-            taskRepro.classList.add('completed');
-            checkRepro.innerText = "✅";
-        } else {
-            taskRepro.classList.remove('completed');
-            checkRepro.innerText = "⬜";
-        }
+        if ((dailyStats.reproductionStudied || 0) >= 10) { taskRepro.classList.add('completed'); checkRepro.innerText = "✅"; } 
+        else { taskRepro.classList.remove('completed'); checkRepro.innerText = "⬜"; }
 
-        // 新規進捗
         const newProg = document.getElementById('new-progress');
         const taskNew = document.getElementById('task-new');
         const checkNew = document.getElementById('check-new');
         newProg.innerText = dailyStats.newStudied;
-        if (dailyStats.newStudied >= 20) {
-            taskNew.classList.add('completed');
-            checkNew.innerText = "✅";
-        } else {
-            taskNew.classList.remove('completed');
-            checkNew.innerText = "⬜";
-        }
+        if (dailyStats.newStudied >= 20) { taskNew.classList.add('completed'); checkNew.innerText = "✅"; } 
+        else { taskNew.classList.remove('completed'); checkNew.innerText = "⬜"; }
 
-        // 復習の残り計算
         const pendingReviews = database.filter(i => i.interval > 0 && i.nextReview <= Date.now()).length;
         const reviewProg = document.getElementById('review-pending');
         const taskReview = document.getElementById('task-review');
         const checkReview = document.getElementById('check-review');
         reviewProg.innerText = pendingReviews;
         
-        if (pendingReviews === 0 && database.some(i => i.interval > 0)) {
-            taskReview.classList.add('completed');
-            checkReview.innerText = "✅";
-        } else {
-            taskReview.classList.remove('completed');
-            checkReview.innerText = "⬜";
+        if (pendingReviews === 0 && database.some(i => i.interval > 0)) { taskReview.classList.add('completed'); checkReview.innerText = "✅"; } 
+        else { taskReview.classList.remove('completed'); checkReview.innerText = "⬜"; }
+
+        // 2. データベース制覇状況
+        const total = database.length;
+        const learned = database.filter(i => i.interval > 0).length;
+        const percent = total === 0 ? 0 : ((learned / total) * 100).toFixed(1);
+        let statsHtml = `<div class="stat-line"><span style="font-weight:bold; color:#2c3e50;">全体 (Overall)</span><strong>${learned} / ${total} (${percent}%)</strong></div>`;
+        
+        const categories = ["日常会話", "教育研究", "ヨット", "一般その他"];
+        categories.forEach(cat => {
+            const catItems = database.filter(i => i.category === cat);
+            const catTotal = catItems.length;
+            if (catTotal > 0) {
+                const catLearned = catItems.filter(i => i.interval > 0).length;
+                const catPct = ((catLearned / catTotal) * 100).toFixed(1);
+                statsHtml += `<div class="stat-line"><span>${cat}</span><span>${catLearned} / ${catTotal} (${catPct}%)</span></div>`;
+            }
+        });
+        document.getElementById('overall-progress').innerHTML = statsHtml;
+
+        // 3. 学習ログ（ストリーク＆グラフ）
+        let streak = 0;
+        if (studyHistory[getTodayString()] > 0) streak++;
+        for (let i = 1; i < 365; i++) {
+            if (studyHistory[getTodayString(i)] > 0) streak++;
+            else break;
         }
+        document.getElementById('streak-display').innerText = `🔥 連続学習: ${streak} 日目`;
+
+        let chartHtml = '';
+        let maxCount = 0;
+        for (let i = 6; i >= 0; i--) {
+            let count = studyHistory[getTodayString(i)] || 0;
+            if(count > maxCount) maxCount = count;
+        }
+        
+        for (let i = 6; i >= 0; i--) {
+            const d = new Date();
+            d.setDate(d.getDate() - i);
+            const count = studyHistory[getTodayString(i)] || 0;
+            const height = count > 0 ? Math.max((count / (maxCount || 1)) * 60, 15) : 0;
+            const displayStr = count > 0 ? count : '';
+            chartHtml += `
+                <div class="chart-bar-wrap">
+                    <div class="chart-bar" style="height:${height}px">${displayStr}</div>
+                    <div class="chart-label">${d.getMonth()+1}/${d.getDate()}</div>
+                </div>`;
+        }
+        document.getElementById('weekly-chart').innerHTML = chartHtml;
     }
 
     function populateVoiceList() { voices = window.speechSynthesis.getVoices(); }
@@ -221,10 +281,7 @@
     async function loadExternalData() {
         try {
             const response = await fetch('data.txt?nocache=' + new Date().getTime());
-            if (!response.ok) {
-                updateDashboard();
-                return;
-            }
+            if (!response.ok) { updateDashboard(); return; }
             const text = await response.text();
             const lines = text.split('\n');
             let newCount = 0;
@@ -344,15 +401,12 @@
         playNext();
     }
 
-    // リプロダクション用「次にいく」時の進捗カウント処理
     function markReproductionAndNext() {
         if (currentMode === "reproduction") {
-            if (typeof dailyStats.reproductionStudied === 'undefined') {
-                dailyStats.reproductionStudied = 0;
-            }
+            if (typeof dailyStats.reproductionStudied === 'undefined') dailyStats.reproductionStudied = 0;
             dailyStats.reproductionStudied++;
             localStorage.setItem('pepeDailyStats', JSON.stringify(dailyStats));
-            updateDashboard();
+            recordStudyAction();
         }
         playNext();
     }
@@ -466,7 +520,6 @@
                         item.interval = 1;
                         dailyStats.newStudied++; 
                         localStorage.setItem('pepeDailyStats', JSON.stringify(dailyStats));
-                        updateDashboard();
                     }
                     else if (item.interval === 1) item.interval = 3;
                     else item.interval = Math.round(item.interval * (item.easeFactor || 2.5));
@@ -475,6 +528,7 @@
                 }
                 database[dbIndex] = item;
                 localStorage.setItem('executiveSRS_v9', JSON.stringify(database));
+                recordStudyAction();
             }
         }
         playNext();
