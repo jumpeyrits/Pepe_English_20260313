@@ -63,7 +63,7 @@
 
 <div id="main-menu" class="container">
     <div id="sync-banner" class="hidden"></div>
-    <h2>Pepe先生の英語学習App.<span class="version-tag">v12.2</span></h2>
+    <h2>Pepe先生の英語学習App.<span class="version-tag">v12.3</span></h2>
     
     <div class="dashboard" id="dashboard-ui">
         <h3>🔥 本日のミッション</h3>
@@ -119,10 +119,7 @@
     <div class="setup-group" style="text-align:left; margin-bottom:20px;">
         <h3>1. 区分選択</h3>
         <div id="category-selectors">
-            <label><input type="checkbox" class="category-cb" value="日常会話" checked> 日常会話</label>
-            <label><input type="checkbox" class="category-cb" value="教育研究" checked> 教育研究</label>
-            <label><input type="checkbox" class="category-cb" value="ヨット" checked> ヨット</label>
-            <label><input type="checkbox" class="category-cb" value="一般その他" checked> 一般その他</label>
+            <span style='color:#7f8c8d; font-size:0.9em;'>データを読み込んでいます...</span>
         </div>
     </div>
     <div class="setup-group" style="text-align:left; margin-bottom:20px;">
@@ -192,7 +189,6 @@
         localStorage.setItem('pepeDailyStats', JSON.stringify(dailyStats));
     }
 
-    // 学習履歴（直近グラフ用）
     let studyHistory = JSON.parse(localStorage.getItem('pepeStudyHistory')) || {};
 
     function recordStudyAction() {
@@ -201,8 +197,22 @@
         localStorage.setItem('pepeStudyHistory', JSON.stringify(studyHistory));
     }
 
+    // 修正箇所：データからカテゴリを自動抽出してUIを生成する関数
+    function renderCategorySelectors() {
+        const categories = [...new Set(database.map(item => item.category))].filter(Boolean);
+        const container = document.getElementById('category-selectors');
+        if (categories.length === 0) {
+            container.innerHTML = "<span style='color:#7f8c8d; font-size:0.9em;'>データがありません</span>";
+            return;
+        }
+        container.innerHTML = categories.map(cat => `
+            <label style="margin-right:15px; display:inline-block;">
+                <input type="checkbox" class="category-cb" value="${cat}" checked> ${cat}
+            </label>
+        `).join('');
+    }
+
     function updateDashboard() {
-        // 1. ミッション進捗
         const reproProg = document.getElementById('repro-progress');
         const taskRepro = document.getElementById('task-repro');
         const checkRepro = document.getElementById('check-repro');
@@ -226,13 +236,13 @@
         if (pendingReviews === 0 && database.some(i => i.interval > 0)) { taskReview.classList.add('completed'); checkReview.innerText = "✅"; } 
         else { taskReview.classList.remove('completed'); checkReview.innerText = "⬜"; }
 
-        // 2. データベース制覇状況
         const total = database.length;
         const learned = database.filter(i => i.interval > 0).length;
         const percent = total === 0 ? 0 : ((learned / total) * 100).toFixed(1);
         let statsHtml = `<div class="stat-line"><span style="font-weight:bold; color:#2c3e50;">全体 (Overall)</span><strong>${learned} / ${total} (${percent}%)</strong></div>`;
         
-        const categories = ["日常会話", "教育研究", "ヨット", "一般その他"];
+        // 修正箇所：動的にカテゴリの進捗を計算
+        const categories = [...new Set(database.map(item => item.category))].filter(Boolean);
         categories.forEach(cat => {
             const catItems = database.filter(i => i.category === cat);
             const catTotal = catItems.length;
@@ -244,7 +254,6 @@
         });
         document.getElementById('overall-progress').innerHTML = statsHtml;
 
-        // 3. 学習ログ（ストリーク＆グラフ）
         let streak = 0;
         if (studyHistory[getTodayString()] > 0) streak++;
         for (let i = 1; i < 365; i++) {
@@ -281,7 +290,11 @@
     async function loadExternalData() {
         try {
             const response = await fetch('data.txt?nocache=' + new Date().getTime());
-            if (!response.ok) { updateDashboard(); return; }
+            if (!response.ok) { 
+                updateDashboard(); 
+                renderCategorySelectors(); // データがない場合もUIを更新
+                return; 
+            }
             const text = await response.text();
             const lines = text.split('\n');
             let newCount = 0;
@@ -299,7 +312,7 @@
                             sentence: parts[3].trim(),
                             sentenceTranslation: parts[4].trim(),
                             explanation: parts[5].trim(),
-                            category: parts[6].trim(),
+                            category: parts[6].trim(), // このカテゴリを自動判別します
                             interval: 0, easeFactor: 2.5, nextReview: Date.now()
                         });
                         newCount++;
@@ -314,9 +327,11 @@
                 setTimeout(() => banner.classList.add('hidden'), 4000);
             }
             updateDashboard();
+            renderCategorySelectors(); // データ更新後にチェックボックスを自動生成
         } catch (e) { 
             console.error("Sync Error:", e); 
             updateDashboard();
+            renderCategorySelectors();
         }
     }
 
@@ -377,7 +392,7 @@
         currentMode = document.querySelector('input[name="mode"]:checked').value;
         const selectedCats = Array.from(document.querySelectorAll('.category-cb:checked')).map(cb => cb.value);
         let pool = database.filter(item => selectedCats.includes(item.category));
-        if (pool.length === 0) { alert("該当するデータがありません"); return; }
+        if (pool.length === 0) { alert("該当するデータがありません。カテゴリを選択してください。"); return; }
 
         if (currentMode === "new") {
             let news = pool.filter(i => i.interval === 0);
