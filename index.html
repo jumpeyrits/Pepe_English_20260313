@@ -63,7 +63,7 @@
 
 <div id="main-menu" class="container">
     <div id="sync-banner" class="hidden"></div>
-    <h2>Pepe先生の英語学習App.<span class="version-tag">v12.3</span></h2>
+    <h2>Pepe先生の英語学習App.<span class="version-tag">v12.4</span></h2>
     
     <div class="dashboard" id="dashboard-ui">
         <h3>🔥 本日のミッション</h3>
@@ -197,7 +197,7 @@
         localStorage.setItem('pepeStudyHistory', JSON.stringify(studyHistory));
     }
 
-    // 修正箇所：データからカテゴリを自動抽出してUIを生成する関数
+    // 究極の自動化：チェックボックスの動的生成
     function renderCategorySelectors() {
         const categories = [...new Set(database.map(item => item.category))].filter(Boolean);
         const container = document.getElementById('category-selectors');
@@ -206,7 +206,7 @@
             return;
         }
         container.innerHTML = categories.map(cat => `
-            <label style="margin-right:15px; display:inline-block;">
+            <label style="margin-right:15px; display:inline-block; margin-bottom:10px;">
                 <input type="checkbox" class="category-cb" value="${cat}" checked> ${cat}
             </label>
         `).join('');
@@ -241,7 +241,7 @@
         const percent = total === 0 ? 0 : ((learned / total) * 100).toFixed(1);
         let statsHtml = `<div class="stat-line"><span style="font-weight:bold; color:#2c3e50;">全体 (Overall)</span><strong>${learned} / ${total} (${percent}%)</strong></div>`;
         
-        // 修正箇所：動的にカテゴリの進捗を計算
+        // 究極の自動化：進捗率も動的に計算
         const categories = [...new Set(database.map(item => item.category))].filter(Boolean);
         categories.forEach(cat => {
             const catItems = database.filter(i => i.category === cat);
@@ -249,306 +249,3 @@
             if (catTotal > 0) {
                 const catLearned = catItems.filter(i => i.interval > 0).length;
                 const catPct = ((catLearned / catTotal) * 100).toFixed(1);
-                statsHtml += `<div class="stat-line"><span>${cat}</span><span>${catLearned} / ${catTotal} (${catPct}%)</span></div>`;
-            }
-        });
-        document.getElementById('overall-progress').innerHTML = statsHtml;
-
-        let streak = 0;
-        if (studyHistory[getTodayString()] > 0) streak++;
-        for (let i = 1; i < 365; i++) {
-            if (studyHistory[getTodayString(i)] > 0) streak++;
-            else break;
-        }
-        document.getElementById('streak-display').innerText = `🔥 連続学習: ${streak} 日目`;
-
-        let chartHtml = '';
-        let maxCount = 0;
-        for (let i = 6; i >= 0; i--) {
-            let count = studyHistory[getTodayString(i)] || 0;
-            if(count > maxCount) maxCount = count;
-        }
-        
-        for (let i = 6; i >= 0; i--) {
-            const d = new Date();
-            d.setDate(d.getDate() - i);
-            const count = studyHistory[getTodayString(i)] || 0;
-            const height = count > 0 ? Math.max((count / (maxCount || 1)) * 60, 15) : 0;
-            const displayStr = count > 0 ? count : '';
-            chartHtml += `
-                <div class="chart-bar-wrap">
-                    <div class="chart-bar" style="height:${height}px">${displayStr}</div>
-                    <div class="chart-label">${d.getMonth()+1}/${d.getDate()}</div>
-                </div>`;
-        }
-        document.getElementById('weekly-chart').innerHTML = chartHtml;
-    }
-
-    function populateVoiceList() { voices = window.speechSynthesis.getVoices(); }
-    window.speechSynthesis.onvoiceschanged = populateVoiceList;
-
-    async function loadExternalData() {
-        try {
-            const response = await fetch('data.txt?nocache=' + new Date().getTime());
-            if (!response.ok) { 
-                updateDashboard(); 
-                renderCategorySelectors(); // データがない場合もUIを更新
-                return; 
-            }
-            const text = await response.text();
-            const lines = text.split('\n');
-            let newCount = 0;
-            lines.forEach(line => {
-                const parts = line.split('\t');
-                if (parts.length >= 7) {
-                    const target = parts[0].trim();
-                    const exists = database.some(item => item.target === target && item.sentence === parts[3].trim());
-                    if (!exists) {
-                        database.push({
-                            id: Date.now() + Math.random(),
-                            target: target,
-                            pronunciation: parts[1].trim(),
-                            targetTranslation: parts[2].trim(),
-                            sentence: parts[3].trim(),
-                            sentenceTranslation: parts[4].trim(),
-                            explanation: parts[5].trim(),
-                            category: parts[6].trim(), // このカテゴリを自動判別します
-                            interval: 0, easeFactor: 2.5, nextReview: Date.now()
-                        });
-                        newCount++;
-                    }
-                }
-            });
-            if (newCount > 0) {
-                localStorage.setItem('executiveSRS_v9', JSON.stringify(database));
-                const banner = document.getElementById('sync-banner');
-                banner.innerText = `${newCount}件の新規データを同期しました`;
-                banner.classList.remove('hidden');
-                setTimeout(() => banner.classList.add('hidden'), 4000);
-            }
-            updateDashboard();
-            renderCategorySelectors(); // データ更新後にチェックボックスを自動生成
-        } catch (e) { 
-            console.error("Sync Error:", e); 
-            updateDashboard();
-            renderCategorySelectors();
-        }
-    }
-
-    function goHome() {
-        window.speechSynthesis.cancel();
-        isSpeaking = false;
-        updateDashboard();
-        document.querySelectorAll('.container').forEach(c => c.classList.add('hidden'));
-        document.getElementById('main-menu').classList.remove('hidden');
-        document.getElementById('search-results').classList.add('hidden');
-    }
-
-    function showScreen(screenId) {
-        document.querySelectorAll('.container').forEach(c => c.classList.add('hidden'));
-        document.getElementById(screenId).classList.remove('hidden');
-    }
-
-    function handleSearch() {
-        const query = document.getElementById('search-input').value.toLowerCase();
-        const resultsDiv = document.getElementById('search-results');
-        if (!query) { resultsDiv.classList.add('hidden'); return; }
-        const matched = database.filter(i => i.target.toLowerCase().includes(query) || i.targetTranslation.includes(query));
-        if (matched.length > 0) {
-            resultsDiv.innerHTML = matched.slice(0, 15).map(item => `
-                <div class="search-result-item" onclick="viewSpecificItem('${item.id}')">
-                    <strong>${item.target}</strong> <small>(${item.category})</small><br>
-                    <span style="color:#666">${item.targetTranslation}</span>
-                </div>
-            `).join('');
-            resultsDiv.classList.remove('hidden');
-        } else { resultsDiv.classList.add('hidden'); }
-    }
-
-    function viewSpecificItem(id) {
-        currentItem = database.find(i => String(i.id) === String(id));
-        showScreen('training-screen');
-        revealData();
-        document.getElementById('ebbinghaus-controls').classList.add('hidden');
-        document.getElementById('btn-skip').classList.remove('hidden');
-    }
-
-    function showAllDataScreen() { showScreen('all-data-screen'); renderAllData('alphabet'); }
-
-    function renderAllData(sortType) {
-        let sorted = [...database];
-        if (sortType === 'alphabet') sorted.sort((a, b) => a.target.localeCompare(b.target));
-        else sorted.sort((a, b) => a.category.localeCompare(b.category));
-        document.getElementById('all-data-body').innerHTML = sorted.map(i => `
-            <tr onclick="viewSpecificItem('${i.id}')" style="cursor:pointer">
-                <td><strong>${i.target}</strong></td>
-                <td>${i.targetTranslation}</td>
-                <td>${i.category}</td>
-            </tr>
-        `).join('');
-    }
-
-    function startTraining() {
-        currentMode = document.querySelector('input[name="mode"]:checked').value;
-        const selectedCats = Array.from(document.querySelectorAll('.category-cb:checked')).map(cb => cb.value);
-        let pool = database.filter(item => selectedCats.includes(item.category));
-        if (pool.length === 0) { alert("該当するデータがありません。カテゴリを選択してください。"); return; }
-
-        if (currentMode === "new") {
-            let news = pool.filter(i => i.interval === 0);
-            if (news.length === 0) { alert("未学習の新規データがありません！"); return; }
-            news.sort((a, b) => a.id - b.id);
-            activeStock = news.slice(0, 20);
-            document.getElementById('ebbinghaus-controls').classList.remove('hidden');
-            document.getElementById('btn-skip').classList.add('hidden');
-        } else if (currentMode === "review") {
-            let reviews = pool.filter(i => i.interval > 0 && i.nextReview <= Date.now());
-            if (reviews.length === 0) { alert("現在、復習期日が来ているデータはありません。素晴らしい！"); return; }
-            activeStock = reviews.sort(() => Math.random() - 0.5);
-            document.getElementById('ebbinghaus-controls').classList.remove('hidden');
-            document.getElementById('btn-skip').classList.add('hidden');
-        } else {
-            activeStock = pool.sort(() => Math.random() - 0.5);
-            document.getElementById('ebbinghaus-controls').classList.add('hidden');
-            document.getElementById('btn-skip').classList.remove('hidden');
-        }
-        showScreen('training-screen');
-        playNext();
-    }
-
-    function markReproductionAndNext() {
-        if (currentMode === "reproduction") {
-            if (typeof dailyStats.reproductionStudied === 'undefined') dailyStats.reproductionStudied = 0;
-            dailyStats.reproductionStudied++;
-            localStorage.setItem('pepeDailyStats', JSON.stringify(dailyStats));
-            recordStudyAction();
-        }
-        playNext();
-    }
-
-    function playNext() {
-        if (activeStock.length === 0) { 
-            alert("このセットは終了です。お疲れ様でした！"); 
-            goHome(); 
-            return; 
-        }
-        currentItem = activeStock.shift();
-        playAudioSequence();
-    }
-
-    async function playAudioSequence() {
-        if (isSpeaking) return;
-        isSpeaking = true;
-        window.speechSynthesis.cancel();
-        toggleButtons(true);
-        document.getElementById('text-container').classList.add('hidden');
-        document.getElementById('status-text').classList.remove('hidden');
-
-        if (currentMode === "reproduction") {
-            document.getElementById('status-text').innerHTML = "Listening...";
-            await speakTextWithPauses(currentItem.sentence, 'en');
-            setTimeout(async () => {
-                await speakTextWithPauses(currentItem.sentence, 'en');
-                revealData();
-            }, 1000);
-        } else {
-            document.getElementById('status-text').innerHTML = "日本語を英語に...";
-            speakJapanese(currentItem.targetTranslation, revealData);
-        }
-    }
-
-    async function speakTextWithPauses(text, lang) {
-        const parts = text.split(/([,.:;])/); 
-        let lastSegmentWords = 0;
-
-        for (let part of parts) {
-            const isPunctuation = (part === ',' || part === '.' || part === ':' || part === ';');
-            if (isPunctuation) {
-                if (lastSegmentWords >= 3) {
-                    await new Promise(r => setTimeout(r, 3000));
-                }
-            } else if (part.trim().length > 0) {
-                lastSegmentWords = part.trim().split(/\s+/).length;
-                await new Promise(resolve => {
-                    let ut = new SpeechSynthesisUtterance(part);
-                    if (lang === 'en') setEnglishVoice(ut); else setJapaneseVoice(ut);
-                    ut.onend = resolve;
-                    window.speechSynthesis.speak(ut);
-                });
-            }
-        }
-    }
-
-    function setEnglishVoice(ut) {
-        ut.lang = 'en-US'; ut.rate = 0.85;
-        const v = voices.find(v => (v.name.includes("Evan") || v.name.includes("Enhanced")) && v.lang.startsWith("en")) || voices.find(v => v.lang.startsWith("en"));
-        if (v) ut.voice = v;
-    }
-
-    function setJapaneseVoice(ut) {
-        ut.lang = 'ja-JP';
-        const targetVoice = 
-            voices.find(v => v.lang.startsWith("ja") && (v.name.includes("Enhanced") || v.name.includes("拡張") || v.name.includes("Premium"))) ||
-            voices.find(v => v.name.includes("Google 日本語")) ||
-            voices.find(v => v.name.includes("Siri")) ||
-            voices.find(v => v.name.includes("Nanami") || v.name.includes("Kyoko") || v.name.includes("Otoya")) ||
-            voices.find(v => v.lang === "ja-JP");
-        if (targetVoice) ut.voice = targetVoice;
-    }
-
-    function speakJapanese(text, callback) {
-        let ut = new SpeechSynthesisUtterance(text);
-        setJapaneseVoice(ut);
-        ut.onend = callback;
-        window.speechSynthesis.speak(ut);
-    }
-
-    function playEnglishOnly() { speakTextWithPauses(currentItem.sentence, 'en'); }
-
-    function revealData() {
-        document.getElementById('status-text').classList.add('hidden');
-        document.getElementById('target-display').innerText = currentItem.target;
-        document.getElementById('pronunciation-display').innerText = (currentItem.pronunciation === '-') ? "" : currentItem.pronunciation;
-        document.getElementById('target-trans-display').innerText = currentItem.targetTranslation;
-        document.getElementById('sentence-display').innerText = currentItem.sentence;
-        document.getElementById('sentence-trans-display').innerText = currentItem.sentenceTranslation;
-        document.getElementById('explanation-display').innerHTML = currentItem.explanation;
-        document.getElementById('text-container').classList.remove('hidden');
-        toggleButtons(false);
-        isSpeaking = false;
-    }
-
-    function toggleButtons(disabled) {
-        document.querySelectorAll('#training-screen button:not(.btn-home)').forEach(b => b.disabled = disabled);
-    }
-
-    function gradeItem(grade) {
-        if (currentMode === "new" || currentMode === "review") {
-            let dbIndex = database.findIndex(i => i.id === currentItem.id);
-            if (dbIndex !== -1) {
-                let item = database[dbIndex];
-                if (grade === 0) {
-                    item.nextReview = Date.now() + (1 * 60 * 1000);
-                    activeStock.push(item);
-                } else {
-                    if (item.interval === 0) {
-                        item.interval = 1;
-                        dailyStats.newStudied++; 
-                        localStorage.setItem('pepeDailyStats', JSON.stringify(dailyStats));
-                    }
-                    else if (item.interval === 1) item.interval = 3;
-                    else item.interval = Math.round(item.interval * (item.easeFactor || 2.5));
-                    
-                    item.nextReview = Date.now() + (item.interval * 24 * 60 * 60 * 1000);
-                }
-                database[dbIndex] = item;
-                localStorage.setItem('executiveSRS_v9', JSON.stringify(database));
-                recordStudyAction();
-            }
-        }
-        playNext();
-    }
-</script>
-
-</body>
-</html>
