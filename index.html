@@ -57,13 +57,21 @@
         
         #status-text { font-size: 1.5em; color: #8e44ad; font-weight: bold; min-height: 200px; display: flex; align-items: center; justify-content: center; flex-direction: column; }
         #sync-banner { background-color: #27ae60; color: white; padding: 8px; font-size: 0.9em; position: absolute; top: 0; left: 0; right: 0; border-radius: 8px 8px 0 0; }
+        
+        .local-loader { background: #f1f2f6; padding: 10px; border-radius: 5px; font-size: 0.9em; color: #555; margin-bottom: 20px; text-align: left; border: 1px solid #ddd; }
     </style>
 </head>
 <body id="app-body" class="hidden">
 
 <div id="main-menu" class="container">
     <div id="sync-banner" class="hidden"></div>
-    <h2>Pepe先生の英語学習App.<span class="version-tag">v12.4</span></h2>
+    <h2>Pepe先生の英語学習App.<span class="version-tag">v12.5</span></h2>
+    
+    <div class="local-loader">
+        <strong>📂 データ手動読み込み</strong><br>
+        <small>ブラウザの制限で自動読み込みができない場合は、ここから data.txt を選択してください。</small><br>
+        <input type="file" id="file-input" accept=".txt" onchange="handleFileUpload(event)" style="margin-top: 8px;">
+    </div>
     
     <div class="dashboard" id="dashboard-ui">
         <h3>🔥 本日のミッション</h3>
@@ -131,121 +139,4 @@
     <button class="menu-btn" style="background-color:#27ae60" onclick="startTraining()">学習を開始する</button>
 </div>
 
-<div id="training-screen" class="container hidden">
-    <button class="btn-home" onclick="goHome()">🏠</button>
-    <div id="status-text"><span>準備中...</span></div>
-    <div id="text-container" class="hidden">
-        <div class="target-word" id="target-display"></div>
-        <div class="pronunciation" id="pronunciation-display"></div>
-        <div class="target-translation" id="target-trans-display"></div>
-        <div class="sentence" id="sentence-display"></div>
-        <div class="translation" id="sentence-trans-display"></div>
-        <div class="explanation" id="explanation-display"></div>
-    </div>
-    <div class="controls-row">
-        <button class="action-btn" onclick="playAudioSequence()">もう一度聴く</button>
-        <button id="btn-read-eng" class="action-btn" onclick="playEnglishOnly()">英文を読む</button>
-        <button id="btn-skip" class="action-btn" onclick="markReproductionAndNext()">次にいく</button>
-    </div>
-    <div class="controls-row" id="ebbinghaus-controls" style="margin-top: 15px;">
-        <button class="action-btn" style="background-color:#d35400" onclick="gradeItem(0)">Again (もう一回)</button>
-        <button class="action-btn" style="background-color:#2980b9" onclick="gradeItem(1)">Good (大丈夫)</button>
-    </div>
-    <div class="controls-row">
-        <button class="action-btn" style="background-color:#34495e; margin-top:10px;" onclick="showAllDataScreen()">データリストに戻る</button>
-    </div>
-</div>
-
-<script>
-    const AUTH_PASS = "pepe@rits";
-    function authenticate() {
-        const userInput = prompt("Pepe先生、パスワードを入力してください:");
-        if (userInput === AUTH_PASS) {
-            document.getElementById('app-body').classList.remove('hidden');
-            loadExternalData();
-        } else {
-            alert("パスワードが違います。");
-            window.location.reload();
-        }
-    }
-    window.onload = authenticate;
-
-    let database = JSON.parse(localStorage.getItem('executiveSRS_v9')) || [];
-    let activeStock = [];
-    let currentItem = null;
-    let isSpeaking = false;
-    let voices = [];
-    let currentMode = "reproduction";
-
-    function getTodayString(offsetDays = 0) {
-        const d = new Date();
-        d.setDate(d.getDate() - offsetDays);
-        return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
-    }
-
-    let dailyStats = JSON.parse(localStorage.getItem('pepeDailyStats')) || { date: getTodayString(), newStudied: 0, reproductionStudied: 0 };
-    if (dailyStats.date !== getTodayString()) {
-        dailyStats = { date: getTodayString(), newStudied: 0, reproductionStudied: 0 };
-        localStorage.setItem('pepeDailyStats', JSON.stringify(dailyStats));
-    }
-
-    let studyHistory = JSON.parse(localStorage.getItem('pepeStudyHistory')) || {};
-
-    function recordStudyAction() {
-        const todayStr = getTodayString();
-        studyHistory[todayStr] = (studyHistory[todayStr] || 0) + 1;
-        localStorage.setItem('pepeStudyHistory', JSON.stringify(studyHistory));
-    }
-
-    // 究極の自動化：チェックボックスの動的生成
-    function renderCategorySelectors() {
-        const categories = [...new Set(database.map(item => item.category))].filter(Boolean);
-        const container = document.getElementById('category-selectors');
-        if (categories.length === 0) {
-            container.innerHTML = "<span style='color:#7f8c8d; font-size:0.9em;'>データがありません</span>";
-            return;
-        }
-        container.innerHTML = categories.map(cat => `
-            <label style="margin-right:15px; display:inline-block; margin-bottom:10px;">
-                <input type="checkbox" class="category-cb" value="${cat}" checked> ${cat}
-            </label>
-        `).join('');
-    }
-
-    function updateDashboard() {
-        const reproProg = document.getElementById('repro-progress');
-        const taskRepro = document.getElementById('task-repro');
-        const checkRepro = document.getElementById('check-repro');
-        reproProg.innerText = dailyStats.reproductionStudied || 0;
-        if ((dailyStats.reproductionStudied || 0) >= 10) { taskRepro.classList.add('completed'); checkRepro.innerText = "✅"; } 
-        else { taskRepro.classList.remove('completed'); checkRepro.innerText = "⬜"; }
-
-        const newProg = document.getElementById('new-progress');
-        const taskNew = document.getElementById('task-new');
-        const checkNew = document.getElementById('check-new');
-        newProg.innerText = dailyStats.newStudied;
-        if (dailyStats.newStudied >= 20) { taskNew.classList.add('completed'); checkNew.innerText = "✅"; } 
-        else { taskNew.classList.remove('completed'); checkNew.innerText = "⬜"; }
-
-        const pendingReviews = database.filter(i => i.interval > 0 && i.nextReview <= Date.now()).length;
-        const reviewProg = document.getElementById('review-pending');
-        const taskReview = document.getElementById('task-review');
-        const checkReview = document.getElementById('check-review');
-        reviewProg.innerText = pendingReviews;
-        
-        if (pendingReviews === 0 && database.some(i => i.interval > 0)) { taskReview.classList.add('completed'); checkReview.innerText = "✅"; } 
-        else { taskReview.classList.remove('completed'); checkReview.innerText = "⬜"; }
-
-        const total = database.length;
-        const learned = database.filter(i => i.interval > 0).length;
-        const percent = total === 0 ? 0 : ((learned / total) * 100).toFixed(1);
-        let statsHtml = `<div class="stat-line"><span style="font-weight:bold; color:#2c3e50;">全体 (Overall)</span><strong>${learned} / ${total} (${percent}%)</strong></div>`;
-        
-        // 究極の自動化：進捗率も動的に計算
-        const categories = [...new Set(database.map(item => item.category))].filter(Boolean);
-        categories.forEach(cat => {
-            const catItems = database.filter(i => i.category === cat);
-            const catTotal = catItems.length;
-            if (catTotal > 0) {
-                const catLearned = catItems.filter(i => i.interval > 0).length;
-                const catPct = ((catLearned / catTotal) * 100).toFixed(1);
+<div id="training-screen" class="container hidden
