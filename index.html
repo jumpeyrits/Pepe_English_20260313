@@ -14,7 +14,7 @@
         .version-tag { font-size: 0.5em; color: #bdc3c7; vertical-align: middle; margin-left: 10px; }
         
         /* ダッシュボード全般 */
-        .dashboard { background: #fdfefe; border: 2px solid #ecf0f1; border-left: 6px solid #2980b9; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: left; }
+        .dashboard { background: #fdfefe; border: 2px solid #ecf0f1; border-left: 6px solid #2980b9; padding: 15px; border-radius: 8px; margin-bottom: 25px; text-align: left; }
         .dashboard h3 { margin-top: 0; margin-bottom: 12px; color: #34495e; font-size: 1.1em; border-bottom: 1px solid #eee; padding-bottom: 5px; }
         
         /* ミッション */
@@ -32,16 +32,6 @@
         .chart-bar { background-color: #2ecc71; width: 100%; border-radius: 3px 3px 0 0; text-align: center; color: white; font-size: 0.7em; font-weight: bold; transition: height 0.4s ease; display: flex; align-items: flex-start; justify-content: center; padding-top: 2px; }
         .chart-label { font-size: 0.65em; color: #7f8c8d; margin-top: 5px; }
 
-        /* READMEアコーディオン */
-        details.readme-container { margin-bottom: 25px; background: #fdfefe; border: 2px solid #ecf0f1; border-left: 6px solid #8e44ad; border-radius: 8px; text-align: left; }
-        details.readme-container summary { padding: 15px; font-size: 1.1em; font-weight: bold; color: #2c3e50; cursor: pointer; outline: none; list-style: none; }
-        details.readme-container summary::-webkit-details-marker { display: none; }
-        details.readme-container summary::before { content: "📖 "; margin-right: 5px; }
-        .readme-content { padding: 0 15px 15px 15px; font-size: 0.95em; color: #444; line-height: 1.6; }
-        .readme-content h4 { color: #8e44ad; margin: 15px 0 5px 0; border-bottom: 1px dashed #eee; padding-bottom: 5px; }
-        .readme-content ul, .readme-content ol { padding-left: 20px; margin-top: 5px; }
-        .readme-content code { background: #f1f2f6; padding: 2px 6px; border-radius: 4px; color: #c0392b; font-family: monospace; font-size: 0.9em;}
-
         .search-container { margin: 20px 0; }
         #search-input { width: 80%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em; }
         #search-results { position: absolute; width: 80%; left: 10%; background: white; border: 1px solid #ddd; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 100; max-height: 300px; overflow-y: auto; border-radius: 5px; }
@@ -50,8 +40,8 @@
 
         .menu-btn { width: 100%; font-size: 1.3em; padding: 18px; margin: 10px 0; background-color: #34495e; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
         .menu-btn:hover { background-color: #2c3e50; }
-        .menu-btn.podcast-btn { background-color: #d35400; }
-        .menu-btn.podcast-btn:hover { background-color: #e67e22; }
+        .podcast-btn { background-color: #d35400; }
+        .podcast-btn:hover { background-color: #e67e22; }
 
         .list-controls { margin-bottom: 15px; display: flex; justify-content: center; gap: 10px; }
         .data-list-table { width: 100%; border-collapse: collapse; text-align: left; }
@@ -68,7 +58,16 @@
         .action-btn { font-size: 1.1em; padding: 12px 20px; cursor: pointer; border: none; border-radius: 5px; background-color: #7f8c8d; color: white; font-weight: bold; flex: 1; }
         
         #status-text { font-size: 1.5em; color: #8e44ad; font-weight: bold; min-height: 200px; display: flex; align-items: center; justify-content: center; flex-direction: column; }
-        #sync-banner { background-color: #27ae60; color: white; padding: 8px; font-size: 0.9em; position: absolute; top: 0; left: 0; right: 0; border-radius: 8px 8px 0 0; z-index: 999; }
+        #sync-banner { background-color: #27ae60; color: white; padding: 8px; font-size: 0.9em; position: absolute; top: 0; left: 0; right: 0; border-radius: 8px 8px 0 0; z-index: 100;}
+
+        /* README専用スタイル */
+        .readme-content { text-align: left; padding: 0 10px; }
+        .readme-content h3 { color: #2980b9; margin-top: 30px; border-bottom: 2px solid #ecf0f1; padding-bottom: 8px; font-size: 1.3em; }
+        .readme-content p, .readme-content li { line-height: 1.8; color: #444; font-size: 1.05em; margin-bottom: 10px; }
+        .readme-content code { background: #f1f2f6; padding: 3px 8px; border-radius: 4px; color: #c0392b; font-family: monospace; font-size: 0.95em; font-weight: bold; }
+        .readme-content strong { color: #2c3e50; }
+        .readme-content ol { padding-left: 20px; }
+        .readme-content ul { padding-left: 20px; }
 
         /* Podcast Capture専用スタイル */
         .capture-box { background: #fdfefe; border: 2px solid #e67e22; border-radius: 8px; padding: 25px; margin-top: 20px; text-align: left; }
@@ -79,45 +78,17 @@
         .capture-btn:hover { background-color: #d35400; }
         
         /* 外部リンクラッパー */
-        .external-links { display: flex; justify-content: center; gap: 10px; margin-top: 20px; }
-        .ext-link-btn { padding: 10px 15px; font-size: 0.9em; font-weight: bold; color: #333; background: #eee; border-radius: 5px; text-decoration: none; display: inline-block; }
-        .ext-link-btn:hover { background: #ddd; }
+        .external-links { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+        .ext-link-btn { padding: 15px; font-size: 1.1em; font-weight: bold; color: white; background: #8e44ad; border-radius: 5px; text-decoration: none; display: block; transition: 0.2s; }
+        .ext-link-btn:hover { background: #732d91; }
     </style>
 </head>
 <body id="app-body" class="hidden">
 
 <div id="main-menu" class="container">
     <div id="sync-banner" class="hidden"></div>
-    <h2>Pepe先生の英語学習App.<span class="version-tag">v13.1</span></h2>
+    <h2>Pepe先生の英語学習App.<span class="version-tag">v13.2</span></h2>
     
-    <details class="readme-container">
-        <summary>使い方・仕様 (README) を開く</summary>
-        <div class="readme-content">
-            <h4>🚀 アプリの3大特徴</h4>
-            <ul>
-                <li><strong>忘却曲線アルゴリズム</strong>: 記憶が薄れる最適なタイミングで「復習」を自動出題します。</li>
-                <li><strong>進捗の完全可視化</strong>: 下記ダッシュボードで本日のミッションや連続学習日数を把握できます。</li>
-                <li><strong>Podcastキャプチャ機能</strong>: CNN等のリスニング中、気になった表現を「摩擦ゼロ」でアプリのデータベースに仮登録できます。</li>
-            </ul>
-
-            <h4>📂 data.txt の取り扱いについて</h4>
-            <ul>
-                <li><strong>フォーマット</strong>: 1行につき1つの表現。項目は必ず「タブ（Tab）」で区切り、以下の7項目を記述してください。<br>
-                <code>ターゲット表現</code> / <code>発音記号（ない場合は -）</code> / <code>和訳</code> / <code>例文</code> / <code>例文和訳</code> / <code>解説</code> / <code>カテゴリ</code></li>
-                <li><strong>カテゴリの自由追加</strong>: 7項目目の「カテゴリ」に新しい名前（例：会計学、CNNなど）を書くだけで自動認識されます。</li>
-                <li><strong>履歴の保持</strong>: ファイルを更新しても、「いつ学習して次はいつ復習するか」の履歴は自動で引き継がれます。</li>
-            </ul>
-
-            <h4>💡 一流の学習ルーティン</h4>
-            <ol>
-                <li><strong>(1) Podcastインプット (移動中)</strong>: バックグラウンドでCNNを聴きながら、気になった表現を専用画面から即座にストックします。</li>
-                <li><strong>(2) リプロダクション（耳慣らし）</strong>: ランダムに英語の音声を聴き、口に出すトレーニングを「10回」行います。</li>
-                <li><strong>(3) 新規単語の習得</strong>: 未学習の単語（ストックした表現含む）を1日「20件」学びます。</li>
-                <li><strong>(4) 本日の復習（記憶の定着）</strong>: 忘却曲線が今日と判断した単語だけが出題されます。これを「残り 0 件」にすることが目標です。</li>
-            </ol>
-        </div>
-    </details>
-
     <div class="dashboard" id="dashboard-ui">
         <h3>🔥 本日のミッション</h3>
         <div class="task-item" id="task-repro">
@@ -145,26 +116,56 @@
         <input type="text" id="search-input" placeholder="ターゲットや和訳で検索..." oninput="handleSearch()">
         <div id="search-results" class="hidden"></div>
     </div>
-    
+
     <button class="menu-btn podcast-btn" onclick="showScreen('podcast-capture-screen')">🎧 Podcast 瞬間キャプチャ</button>
     <button class="menu-btn" onclick="showScreen('setup-screen')">✏️ 単語・リプロダクション学習</button>
     <button class="menu-btn" onclick="showAllDataScreen()" style="background-color: #2980b9;">📋 全データ表示 (All List)</button>
+    <button class="menu-btn" onclick="showScreen('readme-screen')" style="background-color: #8e44ad; margin-top: 20px;">使い方・仕様 (README)</button>
 </div>
 
 <div id="podcast-capture-screen" class="container hidden">
     <button class="btn-home" onclick="goHome()">🏠</button>
     <h2>🎧 瞬間キャプチャ</h2>
     
+    <div class="external-links">
+        <a href="podcast://podcasts.apple.com/jp/podcast/the-assignment-with-audie-cornish/id1653179609" class="ext-link-btn">▶️ The Assignment (Audie Cornish)</a>
+        <a href="podcast://podcasts.apple.com/jp/podcast/cnn-this-morning/id1652102240" class="ext-link-btn" style="background-color: #c0392b;">▶️ CNN This Morning (Daily News)</a>
+    </div>
+
     <div class="capture-box">
-        <p>バックグラウンドでCNN This Morningなどを再生しながら、耳に留まった表現をここに入力して即座にストックします。</p>
+        <p>バックグラウンドでPodcastを再生しながら、耳に留まった表現をここに入力して即座にストックします。</p>
         <input type="text" id="quick-capture-input" class="capture-input" placeholder="例: down to the wire" autocomplete="off">
         <button class="capture-btn" onclick="quickSavePhrase()">⚡️ ローカル辞書にストック</button>
         <div id="capture-feedback" style="color: #27ae60; font-weight: bold; text-align: center; margin-top: 10px; min-height: 1.2em;"></div>
     </div>
+</div>
 
-    <div class="external-links">
-        <a href="https://podcasts.apple.com/" target="_blank" class="ext-link-btn">▶️ Apple Podcasts</a>
-        <a href="https://open.spotify.com/" target="_blank" class="ext-link-btn">▶️ Spotify</a>
+<div id="readme-screen" class="container hidden">
+    <button class="btn-home" onclick="goHome()">🏠</button>
+    <h2>使い方・仕様 (README)</h2>
+    
+    <div class="readme-content">
+        <h3>🚀 英語学習Appの特徴</h3>
+        <ul>
+            <li><strong>忘却曲線アルゴリズム</strong>: 記憶が薄れる最適なタイミングで復習を自動出題します。</li>
+            <li><strong>動的UI生成（メンテナンスフリー）</strong>: データファイルの内容に応じて、学習画面のカテゴリ選択などが全自動で生成されます。</li>
+            <li><strong>Podcastキャプチャ</strong>: アプリから直接Podcastを開き、聴取中に気になった表現を即座に「CNN」カテゴリとして仮登録できます。</li>
+        </ul>
+
+        <h3>📂 data.txt の取り扱いについて</h3>
+        <p>アプリは起動時、同じ階層にある <code>data.txt</code> を自動で読み込みます。</p>
+        <ul>
+            <li><strong>データフォーマット</strong>: 1行につき1つの表現。タブ（Tab）で区切り、7項目（ターゲット/発音/和訳/例文/例文和訳/解説/カテゴリ）を記述してください。</li>
+            <li><strong>データの更新と履歴保持</strong>: テキストを更新しても、「いつ学習して次はいつ復習するか」という学習履歴は自動で引き継がれます。また、Podcastキャプチャで追加した仮登録データも保持されます（後でdata.txtに清書してください）。</li>
+        </ul>
+
+        <h3>💡 一流の学習ルーティン</h3>
+        <ol>
+            <li><strong>(1) インプット</strong>: Podcastを聴きながら、生きた英語表現をキャプチャしてストックします。</li>
+            <li><strong>(2) リプロダクション</strong>: ランダムに英語音声を聴き、口に出すトレーニングを10回行います。</li>
+            <li><strong>(3) 新規習得</strong>: 未学習の単語を1日20件学びます。</li>
+            <li><strong>(4) 復習</strong>: 忘却曲線が今日と判断した単語を出題。「残り0件」にすることが最終目標です。</li>
+        </ol>
     </div>
 </div>
 
@@ -441,7 +442,7 @@
         document.querySelectorAll('.container').forEach(c => c.classList.add('hidden'));
         document.getElementById(screenId).classList.remove('hidden');
         if(screenId === 'podcast-capture-screen') {
-            document.getElementById('quick-capture-input').focus();
+            setTimeout(() => document.getElementById('quick-capture-input').focus(), 100);
         }
     }
 
@@ -485,7 +486,6 @@
         updateDashboard();
     }
 
-    // Enterキーでも保存できるようにする
     document.getElementById('quick-capture-input').addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
             quickSavePhrase();
