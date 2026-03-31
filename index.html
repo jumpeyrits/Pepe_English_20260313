@@ -14,13 +14,13 @@
         .version-tag { font-size: 0.5em; color: #bdc3c7; vertical-align: middle; margin-left: 10px; }
         
         /* ダッシュボード全般 */
-        .dashboard { background: #fdfefe; border: 2px solid #ecf0f1; border-left: 6px solid #2980b9; padding: 15px; border-radius: 8px; margin-bottom: 25px; text-align: left; }
+        .dashboard { background: #fdfefe; border: 2px solid #ecf0f1; border-left: 6px solid #2980b9; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: left; }
         .dashboard h3 { margin-top: 0; margin-bottom: 12px; color: #34495e; font-size: 1.1em; border-bottom: 1px solid #eee; padding-bottom: 5px; }
         
         /* ミッション */
         .task-item { font-size: 1.05em; margin: 8px 0; font-weight: bold; color: #2c3e50; display: flex; align-items: center; transition: 0.3s;}
         .task-item.completed { color: #bdc3c7; text-decoration: line-through; }
-        .task-checkbox { margin-right: 10px; font-size: 1.2em; }
+        .task-checkbox { margin-right: 10px; font-size: 1.3em; }
 
         /* 進捗＆ログ */
         .stat-line { display: flex; justify-content: space-between; margin: 5px 0; border-bottom: 1px dashed #eee; font-size: 0.95em; color: #555; }
@@ -32,6 +32,16 @@
         .chart-bar { background-color: #2ecc71; width: 100%; border-radius: 3px 3px 0 0; text-align: center; color: white; font-size: 0.7em; font-weight: bold; transition: height 0.4s ease; display: flex; align-items: flex-start; justify-content: center; padding-top: 2px; }
         .chart-label { font-size: 0.65em; color: #7f8c8d; margin-top: 5px; }
 
+        /* READMEアコーディオン */
+        details.readme-container { margin-bottom: 25px; background: #fdfefe; border: 2px solid #ecf0f1; border-left: 6px solid #8e44ad; border-radius: 8px; text-align: left; }
+        details.readme-container summary { padding: 15px; font-size: 1.1em; font-weight: bold; color: #2c3e50; cursor: pointer; outline: none; list-style: none; }
+        details.readme-container summary::-webkit-details-marker { display: none; }
+        details.readme-container summary::before { content: "📖 "; margin-right: 5px; }
+        .readme-content { padding: 0 15px 15px 15px; font-size: 0.95em; color: #444; line-height: 1.6; }
+        .readme-content h4 { color: #8e44ad; margin: 15px 0 5px 0; border-bottom: 1px dashed #eee; padding-bottom: 5px; }
+        .readme-content ul, .readme-content ol { padding-left: 20px; margin-top: 5px; }
+        .readme-content code { background: #f1f2f6; padding: 2px 6px; border-radius: 4px; color: #c0392b; font-family: monospace; font-size: 0.9em;}
+
         .search-container { margin: 20px 0; }
         #search-input { width: 80%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em; }
         #search-results { position: absolute; width: 80%; left: 10%; background: white; border: 1px solid #ddd; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 100; max-height: 300px; overflow-y: auto; border-radius: 5px; }
@@ -40,6 +50,8 @@
 
         .menu-btn { width: 100%; font-size: 1.3em; padding: 18px; margin: 10px 0; background-color: #34495e; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s; }
         .menu-btn:hover { background-color: #2c3e50; }
+        .menu-btn.podcast-btn { background-color: #d35400; }
+        .menu-btn.podcast-btn:hover { background-color: #e67e22; }
 
         .list-controls { margin-bottom: 15px; display: flex; justify-content: center; gap: 10px; }
         .data-list-table { width: 100%; border-collapse: collapse; text-align: left; }
@@ -56,24 +68,68 @@
         .action-btn { font-size: 1.1em; padding: 12px 20px; cursor: pointer; border: none; border-radius: 5px; background-color: #7f8c8d; color: white; font-weight: bold; flex: 1; }
         
         #status-text { font-size: 1.5em; color: #8e44ad; font-weight: bold; min-height: 200px; display: flex; align-items: center; justify-content: center; flex-direction: column; }
-        #sync-banner { background-color: #27ae60; color: white; padding: 8px; font-size: 0.9em; position: absolute; top: 0; left: 0; right: 0; border-radius: 8px 8px 0 0; }
+        #sync-banner { background-color: #27ae60; color: white; padding: 8px; font-size: 0.9em; position: absolute; top: 0; left: 0; right: 0; border-radius: 8px 8px 0 0; z-index: 999; }
 
-        /* README専用スタイル */
-        .readme-content { text-align: left; padding: 0 10px; }
-        .readme-content h3 { color: #2980b9; margin-top: 30px; border-bottom: 2px solid #ecf0f1; padding-bottom: 8px; font-size: 1.3em; }
-        .readme-content p, .readme-content li { line-height: 1.8; color: #444; font-size: 1.05em; margin-bottom: 10px; }
-        .readme-content code { background: #f1f2f6; padding: 3px 8px; border-radius: 4px; color: #c0392b; font-family: monospace; font-size: 0.95em; font-weight: bold; }
-        .readme-content strong { color: #2c3e50; }
-        .readme-content ol { padding-left: 20px; }
-        .readme-content ul { padding-left: 20px; }
+        /* Podcast専用スタイル */
+        #podcast-player-area { width: 100%; margin-bottom: 20px; }
+        audio { width: 100%; border-radius: 8px; outline: none; }
+        
+        #transcript-container { height: 400px; overflow-y: auto; text-align: left; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #fafafa; font-size: 1.1em; line-height: 1.8; position: relative; }
+        
+        .transcript-line { padding: 8px; border-radius: 5px; cursor: pointer; transition: background-color 0.2s; margin-bottom: 8px; display: flex; align-items: flex-start; }
+        .transcript-line:hover { background-color: #e0f7fa; }
+        .transcript-line.active { background-color: #b2ebf2; font-weight: bold; border-left: 4px solid #00acc1; }
+        .time-label { color: #95a5a6; font-size: 0.8em; margin-right: 15px; min-width: 45px; user-select: none; padding-top: 4px;}
+        .text-content { flex: 1; }
+        
+        .add-word-btn { background: none; border: none; font-size: 1.3em; cursor: pointer; color: #e74c3c; margin-left: 10px; padding: 0 5px; transition: transform 0.2s; }
+        .add-word-btn:hover { transform: scale(1.3); }
+
+        .podcast-controls { display: flex; justify-content: center; gap: 15px; margin-top: 15px; }
+        .p-btn { padding: 10px 20px; font-size: 1em; font-weight: bold; color: white; background-color: #34495e; border: none; border-radius: 5px; cursor: pointer; }
+        .p-btn:hover { background-color: #2c3e50; }
+
+        /* 単語登録モーダル */
+        #word-modal { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 25px; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); z-index: 1000; width: 90%; max-width: 400px; text-align: left; }
+        .modal-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 999; }
+        .modal-input { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-size: 1em; }
+        .modal-label { font-weight: bold; color: #2c3e50; margin-bottom: 5px; display: block; font-size: 0.9em; }
     </style>
 </head>
 <body id="app-body" class="hidden">
 
 <div id="main-menu" class="container">
     <div id="sync-banner" class="hidden"></div>
-    <h2>Pepe先生の英語学習App.<span class="version-tag">v12.7</span></h2>
+    <h2>Pepe先生の英語学習App.<span class="version-tag">v13.0</span></h2>
     
+    <details class="readme-container">
+        <summary>使い方・仕様 (README) を開く</summary>
+        <div class="readme-content">
+            <h4>🚀 アプリの3大特徴</h4>
+            <ul>
+                <li><strong>忘却曲線アルゴリズム</strong>: 記憶が薄れる最適なタイミングで「復習」を自動出題します。</li>
+                <li><strong>進捗の完全可視化</strong>: 下記ダッシュボードで本日のミッションや連続学習日数を把握できます。</li>
+                <li><strong>動的UI生成</strong>: <code>data.txt</code> の内容に応じ、学習カテゴリの選択肢が全自動で生成されます。</li>
+            </ul>
+
+            <h4>📂 data.txt の取り扱いについて</h4>
+            <ul>
+                <li><strong>フォーマット</strong>: 1行につき1つの表現。項目は必ず「タブ（Tab）」で区切り、以下の7項目を記述してください。<br>
+                <code>ターゲット表現</code> / <code>発音記号（ない場合は -）</code> / <code>和訳</code> / <code>例文</code> / <code>例文和訳</code> / <code>解説</code> / <code>カテゴリ</code></li>
+                <li><strong>カテゴリの自由追加</strong>: 7項目目の「カテゴリ」に新しい名前（例：会計学、出張用など）を記述するだけで、アプリ側に自動で新しいカテゴリとして認識・表示されます。</li>
+                <li><strong>データの更新と履歴保持</strong>: <code>data.txt</code> の和訳やカテゴリを修正・追加しても、<strong>「いつ学習して次はいつ復習するか」という学習履歴は自動で引き継がれます</strong>。また、不要な行をテキストから削除すれば、アプリ内からも幽霊データとして残ることなく綺麗に消去されます。</li>
+            </ul>
+
+            <h4>💡 一流の学習ルーティン（推奨される使い方）</h4>
+            <ol>
+                <li><strong>(1) Podcastインプット</strong>: 移動中などにCNNを聴き、気になる表現を即座にストックします。</li>
+                <li><strong>(2) リプロダクション（耳慣らし）</strong>: ランダムに英語の音声を聴き、口に出すトレーニングを「10回」行います。</li>
+                <li><strong>(3) 新規単語の習得（インプット）</strong>: 未学習の単語を1日「20件」、登録順に学習します。</li>
+                <li><strong>(4) 本日の復習（記憶の定着）</strong>: 忘却曲線が今日と判断した単語だけが出題されます。ここを「残り 0 件」にすることが目標です。</li>
+            </ol>
+        </div>
+    </details>
+
     <div class="dashboard" id="dashboard-ui">
         <h3>🔥 本日のミッション</h3>
         <div class="task-item" id="task-repro">
@@ -101,40 +157,85 @@
         <input type="text" id="search-input" placeholder="ターゲットや和訳で検索..." oninput="handleSearch()">
         <div id="search-results" class="hidden"></div>
     </div>
-    <button class="menu-btn" onclick="showScreen('setup-screen')">学習モード (Learning)</button>
-    <button class="menu-btn" onclick="showAllDataScreen()" style="background-color: #2980b9;">全データ表示 (All List)</button>
-    <button class="menu-btn" onclick="showScreen('readme-screen')" style="background-color: #8e44ad; margin-top: 20px;">使い方・仕様 (README)</button>
+    
+    <button class="menu-btn podcast-btn" onclick="showScreen('podcast-screen')">🎧 Podcast (CNN) 学習モード</button>
+    <button class="menu-btn" onclick="showScreen('setup-screen')">✏️ 単語・リプロダクション学習</button>
+    <button class="menu-btn" onclick="showAllDataScreen()" style="background-color: #2980b9;">📋 全データ表示 (All List)</button>
 </div>
 
-<div id="readme-screen" class="container hidden">
+<div id="podcast-screen" class="container hidden">
     <button class="btn-home" onclick="goHome()">🏠</button>
-    <h2>使い方・仕様 (README)</h2>
+    <h2>CNN This Morning</h2>
+    <p style="color: #7f8c8d; font-size: 0.9em; margin-top: -15px; margin-bottom: 15px;">タップ/クリックでその位置から再生。<br>「➕」ボタンで単語帳にストック。</p>
     
-    <div class="readme-content">
-        <h3>🚀 英語学習Appの3大特徴</h3>
-        <p>本アプリは、多忙なビジネス・研究環境において、語学を「一生の知的財産」として効率的に定着させるために設計されています。</p>
-        <ul>
-            <li><strong>忘却曲線アルゴリズム</strong>: エビングハウスの忘却曲線に基づき、記憶が薄れる最適なタイミングで「復習」を自動出題します。</li>
-            <li><strong>進捗の完全可視化</strong>: ホーム画面のダッシュボードにて、「今日のミッション」「カテゴリ別の制覇率」「連続学習日数（ストリーク）」が一目で把握できます。</li>
-            <li><strong>動的UI生成（メンテナンスフリー）</strong>: 読み込んだデータファイルの内容に応じて、学習画面のカテゴリ選択チェックボックスなどが全自動で生成されます。</li>
-        </ul>
+    <div id="podcast-player-area">
+        <audio id="audio-player" controls>
+            <source src="https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg" type="audio/mpeg">
+            お使いのブラウザは音声再生をサポートしていません。
+        </audio>
+        
+        <div class="podcast-controls">
+            <button class="p-btn" onclick="skipAudio(-5)">⏪ 5秒戻る</button>
+            <button class="p-btn" onclick="togglePlayPause()" id="play-pause-btn">再生</button>
+            <button class="p-btn" onclick="skipAudio(5)">5秒進む ⏩</button>
+        </div>
+    </div>
 
-        <h3>📂 data.txt の取り扱いについて</h3>
-        <p>アプリは起動時、同じ階層（GitHubリポジトリ内）にある <code>data.txt</code> を自動で読み込みます。</p>
-        <ul>
-            <li><strong>データフォーマット</strong>: 1行につき1つの表現。項目は必ず「タブ（Tab）」で区切り、以下の7項目を記述してください。<br>
-            <code>ターゲット表現</code> / <code>発音記号（ない場合は -）</code> / <code>和訳</code> / <code>例文</code> / <code>例文和訳</code> / <code>解説</code> / <code>カテゴリ</code></li>
-            <li><strong>カテゴリの自由追加</strong>: 7項目目の「カテゴリ」に新しい名前（例：会計学、出張用など）を記述するだけで、アプリ側に自動で新しいカテゴリとして認識・表示されます。</li>
-            <li><strong>データの更新と履歴保持</strong>: <code>data.txt</code> の和訳やカテゴリを修正・追加しても、<strong>「いつ学習して次はいつ復習するか」という学習履歴は自動で引き継がれます</strong>。また、不要な行をテキストから削除すれば、アプリ内からも幽霊データとして残ることなく綺麗に消去されます。</li>
-        </ul>
+    <div id="transcript-container">
+        <div class="transcript-line" data-start="0" data-end="2">
+            <span class="time-label">0:00</span>
+            <span class="text-content">Welcome to CNN This Morning. I'm Kasie Hunt.</span>
+            <button class="add-word-btn" title="この文をストック" onclick="openWordModal('Welcome to CNN This Morning. I\\'m Kasie Hunt.')">➕</button>
+        </div>
+        <div class="transcript-line" data-start="2" data-end="5">
+            <span class="time-label">0:02</span>
+            <span class="text-content">We are following breaking news out of Washington.</span>
+            <button class="add-word-btn" title="この文をストック" onclick="openWordModal('We are following breaking news out of Washington.')">➕</button>
+        </div>
+        <div class="transcript-line" data-start="5" data-end="9">
+            <span class="time-label">0:05</span>
+            <span class="text-content">The negotiations went down to the wire, but they finally reached an agreement.</span>
+            <button class="add-word-btn" title="この文をストック" onclick="openWordModal('The negotiations went down to the wire, but they finally reached an agreement.')">➕</button>
+        </div>
+        <div class="transcript-line" data-start="9" data-end="13">
+            <span class="time-label">0:09</span>
+            <span class="text-content">Let's cut to the chase and hear from our correspondent at the White House.</span>
+            <button class="add-word-btn" title="この文をストック" onclick="openWordModal('Let\\'s cut to the chase and hear from our correspondent at the White House.')">➕</button>
+        </div>
+        <div class="transcript-line" data-start="13" data-end="17">
+            <span class="time-label">0:13</span>
+            <span class="text-content">The bottom line is that the market is reacting positively to this new policy.</span>
+            <button class="add-word-btn" title="この文をストック" onclick="openWordModal('The bottom line is that the market is reacting positively to this new policy.')">➕</button>
+        </div>
+        <div class="transcript-line" data-start="17" data-end="22">
+            <span class="time-label">0:17</span>
+            <span class="text-content">However, critics argue that this might just be a quick fix rather than a long-term solution.</span>
+            <button class="add-word-btn" title="この文をストック" onclick="openWordModal('However, critics argue that this might just be a quick fix rather than a long-term solution.')">➕</button>
+        </div>
+        <div class="transcript-line" data-start="22" data-end="30">
+            <span class="time-label">0:22</span>
+            <span class="text-content">We will keep you posted as the situation develops throughout the day.</span>
+            <button class="add-word-btn" title="この文をストック" onclick="openWordModal('We will keep you posted as the situation develops throughout the day.')">➕</button>
+        </div>
+    </div>
+</div>
 
-        <h3>💡 一流の学習ルーティン（推奨される使い方）</h3>
-        <p>「どんな一流の才能も、一流の習慣には勝てない」。以下の3ステップを毎日の習慣にしてください。</p>
-        <ol>
-            <li><strong>(1) リプロダクション（耳慣らし）</strong><br>まずはランダムに英語の音声を聴き、口に出すトレーニングを「10回」行い、脳を英語モードに切り替えます。</li>
-            <li><strong>(2) 新規単語の習得（インプット）</strong><br>未学習の単語を1日「20件」、登録順に学習します。ここで初めて「Good」を押した単語が、復習サイクルに乗ります。</li>
-            <li><strong>(3) 本日の復習（記憶の定着）</strong><br>忘却曲線が「今日忘れる頃だ」と判断した単語だけが出題されます。ここを「残り 0 件」にし、ミッションのチェックボックスをすべて✅にすることが毎日の最終目標です。</li>
-        </ol>
+<div id="modal-backdrop" class="modal-bg hidden" onclick="closeWordModal()"></div>
+<div id="word-modal" class="hidden">
+    <h3 style="margin-top:0; color:#e74c3c;">⚡️ 表現をストック</h3>
+    
+    <label class="modal-label">抽出した例文 (Sentence)</label>
+    <textarea id="modal-sentence" class="modal-input" style="height: 60px; resize: none; background-color: #f8f9fa; color:#555;" readonly></textarea>
+    
+    <label class="modal-label">ターゲット表現 (Target)</label>
+    <input type="text" id="modal-target" class="modal-input" placeholder="例: down to the wire">
+    
+    <label class="modal-label">和訳 (Translation)</label>
+    <input type="text" id="modal-translation" class="modal-input" placeholder="例: ギリギリまでもつれ込む">
+    
+    <div style="display:flex; justify-content:flex-end; gap:10px;">
+        <button class="p-btn" style="background-color:#95a5a6;" onclick="closeWordModal()">キャンセル</button>
+        <button class="p-btn" style="background-color:#27ae60;" onclick="saveNewWord()">保存して続ける</button>
     </div>
 </div>
 
@@ -393,6 +494,13 @@
     function goHome() {
         window.speechSynthesis.cancel();
         isSpeaking = false;
+        
+        // Podcast再生停止処理
+        const audio = document.getElementById('audio-player');
+        if(audio) audio.pause();
+        const ppBtn = document.getElementById('play-pause-btn');
+        if(ppBtn) ppBtn.innerText = "再生";
+
         updateDashboard();
         document.querySelectorAll('.container').forEach(c => c.classList.add('hidden'));
         document.getElementById('main-menu').classList.remove('hidden');
@@ -443,6 +551,113 @@
         `).join('');
     }
 
+    // --- Podcast プレイヤー制御 ---
+    const audioPlayer = document.getElementById('audio-player');
+    const transcriptLines = document.querySelectorAll('.transcript-line');
+    const playPauseBtn = document.getElementById('play-pause-btn');
+
+    function togglePlayPause() {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+            playPauseBtn.innerText = "一時停止";
+        } else {
+            audioPlayer.pause();
+            playPauseBtn.innerText = "再生";
+        }
+    }
+
+    function skipAudio(seconds) {
+        audioPlayer.currentTime += seconds;
+    }
+
+    // 時間更新イベントでハイライトを同期
+    audioPlayer.addEventListener('timeupdate', () => {
+        const currentTime = audioPlayer.currentTime;
+        transcriptLines.forEach(line => {
+            const start = parseFloat(line.getAttribute('data-start'));
+            const end = parseFloat(line.getAttribute('data-end'));
+            
+            if (currentTime >= start && currentTime < end) {
+                line.classList.add('active');
+                // 自動スクロール処理
+                const container = document.getElementById('transcript-container');
+                if(line.offsetTop < container.scrollTop || line.offsetTop > container.scrollTop + container.clientHeight - 50) {
+                    container.scrollTop = line.offsetTop - container.clientHeight / 2;
+                }
+            } else {
+                line.classList.remove('active');
+            }
+        });
+    });
+
+    // テキストタップでその時間にシーク
+    transcriptLines.forEach(line => {
+        line.addEventListener('click', (e) => {
+            // もし＋ボタンを押した場合はシークしない
+            if(e.target.classList.contains('add-word-btn')) return;
+            
+            const start = parseFloat(line.getAttribute('data-start'));
+            audioPlayer.currentTime = start;
+            audioPlayer.play();
+            playPauseBtn.innerText = "一時停止";
+        });
+    });
+
+    // --- 単語登録モーダル制御 ---
+    function openWordModal(sentence) {
+        document.getElementById('modal-sentence').value = sentence;
+        document.getElementById('modal-target').value = '';
+        document.getElementById('modal-translation').value = '';
+        
+        document.getElementById('modal-backdrop').classList.remove('hidden');
+        document.getElementById('word-modal').classList.remove('hidden');
+        
+        // 音声を一時停止
+        if(!audioPlayer.paused) {
+            audioPlayer.pause();
+            playPauseBtn.innerText = "再生";
+        }
+    }
+
+    function closeWordModal() {
+        document.getElementById('modal-backdrop').classList.add('hidden');
+        document.getElementById('word-modal').classList.add('hidden');
+    }
+
+    function saveNewWord() {
+        const target = document.getElementById('modal-target').value.trim();
+        const trans = document.getElementById('modal-translation').value.trim();
+        const sentence = document.getElementById('modal-sentence').value.trim();
+
+        if(!target || !trans) {
+            alert("ターゲット表現と和訳は必須です。");
+            return;
+        }
+
+        // 新しいデータをデータベースに追加
+        database.push({
+            id: Date.now() + Math.random(),
+            target: target,
+            pronunciation: "-",
+            targetTranslation: trans,
+            sentence: sentence,
+            sentenceTranslation: "※CNN文字起こしのため和訳なし",
+            explanation: "Podcast (CNN) からストック",
+            category: "CNN", // 自動的にCNNカテゴリになる
+            interval: 0, 
+            easeFactor: 2.5, 
+            nextReview: Date.now()
+        });
+
+        localStorage.setItem('executiveSRS_v9', JSON.stringify(database));
+        closeWordModal();
+        alert(`「${target}」をストックしました！明日の新規ミッションに登場します。`);
+        
+        renderCategorySelectors(); // カテゴリUIを更新
+        updateDashboard(); // 全体進捗などを更新
+    }
+
+    // --- 既存の学習モード制御 ---
     function startTraining() {
         currentMode = document.querySelector('input[name="mode"]:checked').value;
         const selectedCats = Array.from(document.querySelectorAll('.category-cb:checked')).map(cb => cb.value);
